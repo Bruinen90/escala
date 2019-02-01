@@ -1,0 +1,58 @@
+.container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--menu-grey);
+    color: #fff;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 10%;
+    z-index: 10;
+}
+
+.toggler {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 10%;
+    cursor: pointer;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transition: all .5s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+}
+
+.header {
+    font-size: 20px;
+    position: relative;
+    width: auto;
+    align-self: flex-start;
+}
+
+.navItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+    margin: 10vh 0;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 500px;
+    }
+
+    .toggler {
+        font-size: 20px;
+    }
+}

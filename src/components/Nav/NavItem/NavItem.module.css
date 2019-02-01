@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.number {
+    align-self: flex-end;
+    margin-right: 1rem;
+    font-weight: lighter;
+}
+
+.number::before {
+    content: "0";
+}
+
+.text {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+}
+
+.active::after {
+    content: "_";
+    color: red;
+    margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+    .text {
+        font-size: 24px;
+    }
+}
