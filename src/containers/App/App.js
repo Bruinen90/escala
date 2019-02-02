@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import { Route, Switch} from 'react-router-dom';
 
 import styles from './App.module.css';
-import Nav from '../../components/Nav/Nav.js';
+import Nav from '../../components/Nav/Nav';
+import Footer from '../../components/Footer/Footer';
 
-import Home from '../Home/Home.js';
-import Products from '../Products/Products.js';
-import Info from '../Info/Info.js';
-import Cooperation from '../Cooperation/Cooperation.js';
-import About from '../About/About.js';
-import Contact from '../Contact/Contact.js';
+import Home from '../Home/Home';
+import Products from '../Products/Products';
+import Info from '../Info/Info';
+import Cooperation from '../Cooperation/Cooperation';
+import About from '../About/About';
+import Contact from '../Contact/Contact';
 
 class App extends Component {
     state = {
@@ -35,6 +36,7 @@ class App extends Component {
                 <Route path='/Contact' component={Contact} />
             </Switch>
         </section>
+        <Footer />
       </div>
     );
   }
