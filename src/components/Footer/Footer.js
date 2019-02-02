@@ -5,7 +5,7 @@ import SocialIcons from '../SocialIcons/SocialIcons';
 
 const Footer = () => (
     <div className={styles.container}>
-        <div>
+        <div className={styles.logo}>
             <Logo
                 relative={true}
             />
