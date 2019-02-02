@@ -4,6 +4,7 @@ import { Route, Switch} from 'react-router-dom';
 import styles from './App.module.css';
 import Nav from '../../components/Nav/Nav';
 import Footer from '../../components/Footer/Footer';
+import Product from '../Product/Product';
 
 import Home from '../Home/Home';
 import Products from '../Products/Products';
@@ -20,6 +21,16 @@ class App extends Component {
         this.setState({showMenu: !this.state.showMenu})
     }
   render() {
+      const allProducts = [];
+      for(let i = 1; i<9; i++) {
+          allProducts.push(
+              <Route path={`/products/product_${i}`} key={i}>
+                <Product
+                    index = {i}
+                />
+              </Route>
+          )
+      }
     return (
       <div className="App">
         <Nav
@@ -28,12 +39,13 @@ class App extends Component {
         />
         <section className={styles.mainContainer}>
             <Switch>
-                <Route path='/home' component={Home} />
-                <Route path='/products' component={Products} />
+                <Route path='/' exact component={Home} />
+                <Route path='/products' exact component={Products} />
                 <Route path='/info' component={Info} />
                 <Route path='/cooperation' component={Cooperation} />
                 <Route path='/about' component={About} />
-                <Route path='/Contact' component={Contact} />
+                <Route path='/contact' component={Contact} />
+                {allProducts}
             </Switch>
         </section>
         <Footer />

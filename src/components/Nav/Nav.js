@@ -24,7 +24,7 @@ class Nav extends Component {
        }
 
        let navItems = [
-           {fullName: 'Home', target: '/home'},
+           {fullName: 'Home', target: '/', exact: true},
            {fullName: 'Produkty', target: '/products'},
            {fullName: 'Info', target: '/info'},
            {fullName: 'Współpraca', target: '/cooperation'},
@@ -38,6 +38,7 @@ class Nav extends Component {
                    text={item.fullName}
                    target={item.target}
                    key={item.fullName}
+                   exact={item.exact}
                />
            )
        })
