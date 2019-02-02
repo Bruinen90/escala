@@ -23,6 +23,7 @@ const Footer = () => (
                 <a
                     href="https://www.google.com/maps/dir/?api=1&destination=QVB&destination_place_id=EiRDZWdpZWxuaWFuYSAyOSwgMzgtNTAwIFNhbm9rLCBQb2xhbmQiMBIuChQKEgkDC54enG08RxH3m4d5kVR9rhAdKhQKEgkbFEKynm08RxEosicDQtdQVA"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
                     ul. Cegielniana 29<br/>
                     38-500 Sanok

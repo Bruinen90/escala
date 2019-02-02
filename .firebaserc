@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "escala build": "escala-cd821",
+    "default": "escala-cd821"
+  }
+}

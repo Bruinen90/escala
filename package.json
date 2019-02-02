@@ -22,9 +22,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "homepage": "https://bruinen90.github.io/escala/build/",
-  "devDependencies": {
-    "gh-pages": "^2.0.1"
-  }
+  ]
 }
