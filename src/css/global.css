@@ -1,6 +1,7 @@
 :root {
     --desktop: 768px;
     --menu-grey: rgba(0,0,0,.5);
+    --color-red: red;
 }
 
 body {

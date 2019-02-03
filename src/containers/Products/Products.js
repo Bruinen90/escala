@@ -1,51 +1,11 @@
 import React, { Component } from 'react';
 import styles from './Products.module.css';
 import ProductThumb from './ProductThumb/ProductThumb';
+import productsData from '../../data/products';
 
 class Products extends Component {
     render() {
-        const productsData = [
-            {
-                name: 'belle',
-                type: 'komoda',
-            },
-            {
-                name: 'rust',
-                type: 'komoda',
-            },
-            {
-                name: 'lagoon',
-                type: 'komoda',
-            },
-            {
-                name: 'belle',
-                type: 'komoda',
-            },
-            {
-                name: 'rust',
-                type: 'komoda',
-            },
-            {
-                name: 'lagoon',
-                type: 'komoda',
-            },
-            {
-                name: 'żelazo',
-                type: 'komoda',
-            },
-            {
-                name: 'żelazo',
-                type: 'komoda',
-            },
-            {
-                name: 'żelazo',
-                type: 'komoda',
-            },
-            {
-                name: 'żelazo',
-                type: 'komoda',
-            },
-        ];
+
         const productsOutput = productsData.map((product, index) => {
             return(
                 <ProductThumb

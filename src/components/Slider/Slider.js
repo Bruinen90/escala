@@ -54,8 +54,11 @@ class Slider extends Component {
             />
           )
       }
+      const fullHeightMobile = {
+          height: window.innerHeight + 'px',
+      }
     return (
-      <div className={styles.slider}>
+      <div className={styles.slider} style={fullHeightMobile}>
         {slides}
         <SocialIcons />
         <SliderIcons
