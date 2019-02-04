@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Products.module.css';
+
+import SubPage from '../SubPage/SubPage';
 import ProductThumb from './ProductThumb/ProductThumb';
 import productsData from '../../data/products';
 
@@ -17,11 +19,13 @@ class Products extends Component {
             )
         })
         return (
-            <div className={styles.container}>
-                <div className={styles.grid}>
-                    {productsOutput}
+            <SubPage>
+                <div className={styles.container}>
+                    <div className={styles.grid}>
+                        {productsOutput}
+                    </div>
                 </div>
-            </div>
+            </SubPage>
         );
     }
 }

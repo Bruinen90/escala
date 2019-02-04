@@ -1,3 +1,17 @@
 .container {
     width: 85px;
 }
+
+.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    .topLeft {
+        margin-top: 25px;
+    }
+}
