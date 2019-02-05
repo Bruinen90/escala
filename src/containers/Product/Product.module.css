@@ -63,11 +63,13 @@ h5 {
         grid-template: auto / 1fr 3fr;
         margin-top: 60px;
         grid-row-gap: 10vh;
+        padding: 0;
     }
 
     .bigImgCont {
         width: auto;
         height: 100%;
-        margin-right: -60px;
+        margin-right: -40px;
+        margin-left: 0;
     }
 }
