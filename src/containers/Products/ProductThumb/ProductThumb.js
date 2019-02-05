@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './ProductThumb.module.css';
 import { withRouter } from 'react-router-dom';
-import img from '../../../img/products/product_1/img_1.jpg';
+import product from '../../../data/products';
 
 class ProductThumb extends Component {
     state = {
@@ -9,7 +9,7 @@ class ProductThumb extends Component {
     }
 
     hoverHandler = (on) => {
-        on ? this.setState({picNum: 2}) : this.setState({picNum: 1})
+        on ? this.setState({picNum: product[this.props.index].imagesCount}) : this.setState({picNum: 1})
     }
     render() {
         return (
@@ -21,7 +21,7 @@ class ProductThumb extends Component {
             >
                 <div className={styles.imageContainer}>
                     <img
-                        src={require(`../../../img/products/product_${this.props.index+1}/img_${this.state.picNum}.jpg`)}
+                        src={require(`../../../img/products/product_${this.props.index+1}/${this.state.picNum}.jpg`)}
                         alt="Test"
                         className={styles.thumb}
                     />

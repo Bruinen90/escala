@@ -23,6 +23,11 @@
     position: relative;
 }
 
+.text:hover::after {
+    content: "_";
+    margin-left: 10px;
+}
+
 .active::after {
     content: "_";
     color: red;

@@ -50,7 +50,7 @@ h5 {
 }
 
 .bigImgCont {
-    width: auto;
+    width: 100vw;
     height: 300px;
     margin-left: -50px;
     background-size: cover;

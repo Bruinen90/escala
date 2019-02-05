@@ -8,7 +8,7 @@ const About = (props) => {
     const content = [];
     data.sections.forEach((section, index) => {
         content.push(
-            <div className={styles.row}>
+            <div className={styles.row} key={index}>
                 <div className={styles.text}>
                     <h3 className={styles.header}>
                         {section.header}

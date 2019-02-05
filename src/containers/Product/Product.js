@@ -20,7 +20,8 @@ class Product extends Component {
                 />
             )
         }
-        const bigImg = require(`../../img/products/product_${this.props.index}/img_scene.jpg`);
+        const imagesCount = product[i].imagesCount;
+        const bigImg = require(`../../img/products/product_${this.props.index}/${imagesCount}.jpg`);
         return (
             <SubPage>
                 <div className={styles.grid}>

@@ -13,6 +13,8 @@ import Cooperation from '../Cooperation/Cooperation';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 
+import productsData from '../../data/products';
+
 class App extends Component {
     state = {
         showMenu: false,
@@ -22,7 +24,7 @@ class App extends Component {
     }
   render() {
       const allProducts = [];
-      for(let i = 1; i<9; i++) {
+      for(let i = 1; i<productsData.length+1; i++) {
           allProducts.push(
               <Route path={`/products/product_${i}`} key={i}>
                 <Product

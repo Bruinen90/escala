@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styles from './Gallery.module.css';
-import img from '../../img/products/product_1/img_1.jpg';
 
 class Gallery extends Component {
     state = {
@@ -16,7 +15,7 @@ class Gallery extends Component {
         for(let i = 1; i <= this.props.imagesCount; i++) {
             allThumbs.push(
                 <img
-                    src={require(`../../img/products/product_${this.props.productIndex}/img_${i}.jpg`)}
+                    src={require(`../../img/products/product_${this.props.productIndex}/${i}.jpg`)}
                     alt={this.props.productIndex}
                     onClick={()=>this.changeImage(i)}
                     className={styles.thumb}
@@ -28,7 +27,7 @@ class Gallery extends Component {
             <div className={styles.container}>
                 <div className={styles.fullImageCont}>
                     <img
-                        src={require(`../../img/products/product_${this.props.productIndex}/img_${this.state.currImg}.jpg`)}
+                        src={require(`../../img/products/product_${this.props.productIndex}/${this.state.currImg}.jpg`)}
                         alt="Full"
                         className={styles.fullImage}
                     />
