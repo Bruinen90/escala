@@ -9,17 +9,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 220px;
+    width: 100%;
 }
 
 .fullImage {
     margin: 20px 0px;
-    height: 180px;
-    opacity: 0;
-    animation: fadeIn 1s linear forwards;
+    width: 100%;
+    animation: fadeIn .5s linear forwards;
 }
 
 @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
     to {
         opacity: 1;
     }
@@ -33,7 +35,7 @@
 }
 
 .thumb {
-    height: 70px;
+    height: 60px;
     margin: 10px;
     cursor: pointer;
 }
@@ -46,6 +48,7 @@
 
     .fullImage {
         height: 38vh;
+        width: auto;
         margin: 0;
         margin-bottom: 30px;
     }

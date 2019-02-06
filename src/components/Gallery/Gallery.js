@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import styles from './Gallery.module.css';
+import './Animations.css';
+
+import { CSSTransitionGroup } from 'react-transition-group';
 
 class Gallery extends Component {
     state = {
@@ -26,14 +29,21 @@ class Gallery extends Component {
         return (
             <div className={styles.container}>
                 <div className={styles.fullImageCont}>
-                    <img
-                        src={require(`../../img/products/product_${this.props.productIndex}/${this.state.currImg}.jpg`)}
-                        alt="Full"
-                        className={styles.fullImage}
-                    />
+                    <CSSTransitionGroup
+                        transitionName="fadeIn"
+                        transitionEnterTimeout={100}
+                        transitionLeaveTimeout={100}
+                    >
+                        <img
+                            src={require(`../../img/products/product_${this.props.productIndex}/${this.state.currImg}.jpg`)}
+                            alt="Full"
+                            className={styles.fullImage}
+                            key={this.state.currImg}
+                        />
+                    </CSSTransitionGroup>
                 </div>
                 <div className={styles.thumbsCont}>
-                    {allThumbs}
+                        {allThumbs}
                 </div>
             </div>
         );

@@ -16,12 +16,6 @@ import Contact from '../Contact/Contact';
 import productsData from '../../data/products';
 
 class App extends Component {
-    state = {
-        showMenu: false,
-    }
-    toggleMenuHandler = () => {
-        this.setState({showMenu: !this.state.showMenu})
-    }
   render() {
       const allProducts = [];
       for(let i = 1; i<productsData.length+1; i++) {
@@ -35,10 +29,7 @@ class App extends Component {
       }
     return (
       <div className="App">
-        <Nav
-            showMenu = {this.state.showMenu}
-            toggleMenu = {this.toggleMenuHandler}
-        />
+        <Nav/>
         <section className={styles.mainContainer}>
             <Switch>
                 <Route path='/' exact component={Home} />
