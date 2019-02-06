@@ -36,6 +36,13 @@
     width: calc(100% + 30px);
     margin-left: -30px;
     margin-top: 30px;
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0) !important;
 }
 
 @media (min-width: 768px) {
@@ -56,6 +63,7 @@
         padding: 0;
         width: 100%;
         margin-left: -100vw;
+        transform: translateX(-20%);
     }
 
     .text {
@@ -69,5 +77,6 @@
         padding: 0;
         margin-top: 0;
         margin-left: 50px;
+        transform: translateX(20%);
     }
 }

@@ -31,7 +31,7 @@ class ProductThumb extends Component {
                             src={require(`../../../img/products/product_${this.props.index+1}/${this.state.picNum}.jpg`)}
                             alt="Test"
                             className={styles.thumb}
-                            key={this.props.index}
+                            key={this.props.index + '_' + this.state.picNum}
                         />
                     </CSSTransitionGroup>
                 </div>
