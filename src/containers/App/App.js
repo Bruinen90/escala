@@ -12,10 +12,21 @@ import Info from '../Info/Info';
 import Cooperation from '../Cooperation/Cooperation';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
+import Policy from '../../components/Policy/Policy';
 
 import productsData from '../../data/products';
 
 class App extends Component {
+    state={
+        showPrivatePolicy: false,
+        showCookies: false,
+    }
+    togglePrivatePolicy = () => {
+        this.setState({showPrivatePolicy: !this.state.showPrivatePolicy})
+    }
+    toggleCookies = () => {
+        this.setState({showCookies: !this.state.showCookies})
+    }
   render() {
       const allProducts = [];
       for(let i = 1; i<productsData.length+1; i++) {
@@ -31,6 +42,20 @@ class App extends Component {
       <div className="App">
         <Nav/>
         <section className={styles.mainContainer}>
+            <Policy
+                close={this.togglePrivatePolicy}
+                show={this.state.showPrivatePolicy}
+                header='Polityka'
+                type='privacy'
+            >
+            </Policy>
+            <Policy
+                close={this.toggleCookies}
+                show={this.state.showCookies}
+                header='Cookies'
+                type='cookies'
+            >
+            </Policy>
             <Switch>
                 <Route path='/' exact component={Home} />
                 <Route path='/products' exact component={Products} />
@@ -41,7 +66,10 @@ class App extends Component {
                 {allProducts}
             </Switch>
         </section>
-        <Footer />
+        <Footer
+            clickShowPrivace={this.togglePrivatePolicy}
+            clickShowCookies={this.toggleCookies}
+        />
       </div>
     );
   }

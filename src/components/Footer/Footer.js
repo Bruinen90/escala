@@ -3,7 +3,7 @@ import styles from './Footer.module.css';
 import Logo from '../Logo/Logo';
 import SocialIcons from '../SocialIcons/SocialIcons';
 
-const Footer = () => (
+const Footer = (props) => (
     <div className={styles.container}>
         <div className={styles.logo}>
             <Logo
@@ -38,8 +38,8 @@ const Footer = () => (
             </div>
             <div className={styles.year}>2019 Escala Poland</div>
             <div className={styles.cookies}>
-                <div>Cookies</div>
-                <div>Polityka prywatności</div>
+                <div onClick={props.clickShowCookies}>Cookies</div>
+                <div onClick={props.clickShowPrivace}>Polityka prywatności</div>
             </div>
         </div>
     </div>
