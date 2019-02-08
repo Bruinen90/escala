@@ -1,0 +1,106 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.form input, .form textarea {
+    background-color: #fff;
+    width: 80%;
+    border: 1px solid black;
+    padding: 7px 20px;
+    margin: 10px 0px;
+    resize: none;
+    font-family: var(--main-font);
+}
+
+input:focus {
+    outline: none;
+}
+
+.form ::placeholder {
+    color: #999;
+    font-family: var(--main-font);
+    font-size: 16px;
+}
+
+.message {
+    height: 300px;
+}
+
+.agreement {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 40px 0px;
+}
+
+.checkCont {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agreementText {
+    flex: 6;
+}
+
+.checkCont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #000;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkCont input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkCont .checkmark:after {
+    margin-left: 10px;
+    margin-top: 4px;
+    width: 8px;
+    height: 15px;
+    border: solid #000;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+}
+
+.form .button {
+    font-size: 18px;
+    width: 150px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form .sent {
+    border: 2px solid green;
+    color: green;
+    cursor: auto;
+}
+
+@media (min-width: 768px) {
+    .form {
+        width: 500px;
+    }
+}

@@ -18,14 +18,10 @@ import productsData from '../../data/products';
 
 class App extends Component {
     state={
-        showPrivatePolicy: false,
-        showCookies: false,
+        showPolicy: false,
     }
-    togglePrivatePolicy = () => {
-        this.setState({showPrivatePolicy: !this.state.showPrivatePolicy})
-    }
-    toggleCookies = () => {
-        this.setState({showCookies: !this.state.showCookies})
+    togglePolicy = (policyName) => {
+        this.setState({showPolicy: policyName})
     }
   render() {
       const allProducts = [];
@@ -43,17 +39,17 @@ class App extends Component {
         <Nav/>
         <section className={styles.mainContainer}>
             <Policy
-                close={this.togglePrivatePolicy}
-                show={this.state.showPrivatePolicy}
+                close={()=>this.togglePolicy(false)}
+                show={this.state.showPolicy==="privace"}
                 header='Polityka'
-                type='privacy'
+                type="privace"
             >
             </Policy>
             <Policy
-                close={this.toggleCookies}
-                show={this.state.showCookies}
+                close={()=>this.togglePolicy(false)}
+                show={this.state.showPolicy==="cookies"}
                 header='Cookies'
-                type='cookies'
+                type="cookies"
             >
             </Policy>
             <Switch>
@@ -67,8 +63,8 @@ class App extends Component {
             </Switch>
         </section>
         <Footer
-            clickShowPrivace={this.togglePrivatePolicy}
-            clickShowCookies={this.toggleCookies}
+            clickShowPrivace={()=>this.togglePolicy('privace')}
+            clickShowCookies={()=>this.togglePolicy('cookies')}
         />
       </div>
     );

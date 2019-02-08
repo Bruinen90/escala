@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-class Contact extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Contact Component</h1>
-      </div>
-    );
-  }
-}
+import React from 'react';
+import styles from './Contact.module.css';
+import ContactForm from '../../components/ContactForm/ContactForm';
+import SubPage from '..//SubPage/SubPage';
+
+const Contact = (props) => (
+    <SubPage>
+        <ContactForm></ContactForm>
+    </SubPage>
+);
 export default Contact;
