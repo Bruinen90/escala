@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    padding: 30px;
+    padding-left: 60px;
+    width: 100%;
+}
+
+.topBar {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header {
+    font-size: 30px;
+    margin: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.header::before {
+    content: "04";
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+@media (min-width: 768px) {
+    .container {
+    padding: 40px 100px;
+    }
+
+    .topBar {
+        justify-content: space-between;
+    }
+}

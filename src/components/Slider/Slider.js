@@ -28,20 +28,20 @@ class Slider extends Component {
             newSlide = this.props.slidesCount -1
         }
         this.setState({currSlide: newSlide})
-        clearInterval(this.slideShow);
+        clearInterval(this.slideShow)
         this.autoPlay();
     }
 
     componentDidMount() {
         this.autoPlay()
-        document.addEventListener("keydown", (e)=> {
-            if(e.keyCode === 39) {
-                this.changeSlide(this.state.currSlide + 1)
-            }
-            if(e.keyCode === 37) {
-                this.changeSlide(this.state.currSlide - 1)
-            }
-        })
+        // document.addEventListener("keydown", (e)=> {
+        //     if(e.keyCode === 39) {
+        //         this.changeSlide(this.state.currSlide + 1)
+        //     }
+        //     if(e.keyCode === 37) {
+        //         this.changeSlide(this.state.currSlide - 1)
+        //     }
+        // })
     }
   render() {
       const slides = [];
@@ -61,11 +61,7 @@ class Slider extends Component {
       <div className={styles.slider} style={fullHeightMobile}>
         {slides}
         <SocialIcons />
-        <SliderIcons
-            count = {this.props.slidesCount}
-            active = {this.state.currSlide}
-            clickedIcon={(i)=>this.changeSlide(i)}
-        />
+        <SliderIcons />
       </div>
     );
   }

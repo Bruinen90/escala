@@ -5,13 +5,15 @@ const SocialIcons = (props) => {
     let noBorder = {
         border: "0",
     }
+    let classList = [styles.icon];
+    props.black && classList.push(styles.black);
     return(
     <div className={styles.container}>
         <a
             href="https://www.facebook.com/escalapoland/"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.icon}
+            className={classList.join(' ')}
             style={props.noBorder ? noBorder : null}
         >
             F
@@ -20,7 +22,7 @@ const SocialIcons = (props) => {
             href="https://www.instagram.com/escalapoland/"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.icon}
+            className={classList.join(' ')}
             style={props.noBorder ? noBorder : null}
         >
             IN
@@ -29,7 +31,7 @@ const SocialIcons = (props) => {
             href="https://www.facebook.com/escalapoland/"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.icon}
+            className={classList.join(' ')}
             style={props.noBorder ? noBorder : null}
         >
             P
