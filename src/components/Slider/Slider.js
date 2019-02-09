@@ -17,7 +17,7 @@ class Slider extends Component {
                 this.setState({currSlide: 0})
             }
         }
-        this.slideShow = setInterval(()=>change(), 2500);
+        this.slideShow = setInterval(()=>change(), 5000);
     }
 
     changeSlide = (newSlideNo) => {

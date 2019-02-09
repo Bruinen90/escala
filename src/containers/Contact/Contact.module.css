@@ -30,6 +30,12 @@
     margin-right: 12px;
 }
 
+.bottomBar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 @media (min-width: 768px) {
     .container {
     padding: 40px 100px;

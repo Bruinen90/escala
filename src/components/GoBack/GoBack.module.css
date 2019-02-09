@@ -1,0 +1,13 @@
+.container {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container::after {
+    content: "_";
+    margin-left: 5px;
+}
+
+.container:hover::after {
+    color: var(--color-red);
+}

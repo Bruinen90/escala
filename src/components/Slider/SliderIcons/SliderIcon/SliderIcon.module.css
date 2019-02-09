@@ -17,7 +17,7 @@
     background-image: linear-gradient(to bottom, transparent 0, #ed0700 0);
     background-position: -100px 0;
     background-repeat: no-repeat;
-    animation: load 2500ms ease-in infinite;
+    animation: load 5000ms ease-in infinite;
 }
 
 @keyframes load {
