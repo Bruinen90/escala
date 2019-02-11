@@ -13,8 +13,8 @@ class ContactForm extends Component {
             name: '',
             email: '',
             phone: '',
-            topic: '',
-            content: '',
+            topic: this.props.topic || '',
+            content: this.props.message || '',
             agreement: false,
             sent: false,
             error: null,
@@ -175,6 +175,7 @@ class ContactForm extends Component {
                     handleChange={(e) => this.inputChangeHandler(e, params.label)}
                     changed={this.state.inputs[params.label].changed}
                     valid={this.state.inputs[params.label].validity}
+                    value={this.state[params.label]}
                 />
             )
         })

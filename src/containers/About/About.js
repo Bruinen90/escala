@@ -47,7 +47,10 @@ class About extends Component {
             )
         })
         return (
-            <SubPage>
+            <SubPage
+                title="O nas"
+                number="04"
+            >
                 <NarrowPage>
                     <div className={styles.container}>
                         {content}

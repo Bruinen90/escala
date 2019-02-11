@@ -32,11 +32,19 @@ class Product extends Component {
                         <div className={product[i].description}>
                             {product[i].description}
                         </div>
-                        <Button>
+                        <Button
+                            target="/contact"
+                            productName={product[i].name}
+                            question='price'
+                        >
                             Zapytaj o cenę
                         </Button>
-                        <Button>
-                            Specyfikacja
+                        <Button
+                            target="/contact"
+                            productName={product[i].name}
+                            question='3dmodel'
+                        >
+                            Model 3D
                         </Button>
                     </div>
                     <Gallery

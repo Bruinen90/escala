@@ -19,7 +19,10 @@ class Products extends Component {
             )
         })
         return (
-            <SubPage>
+            <SubPage
+                title="Produkty"
+                number="02"
+            >
                 <div className={styles.container}>
                     <div className={styles.grid}>
                         {productsOutput}

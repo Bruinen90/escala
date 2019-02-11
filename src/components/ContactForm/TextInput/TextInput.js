@@ -29,6 +29,7 @@ class TextInput extends Component {
                     style = {setStyle()}
                     ref={(ref) => this.inputsArr[this.props.inputName] = ref}
                     onFocus={()=>this.scrollToElement(this.props.inputName)}
+                    value={this.props.value}
                 />
             )
         } else {
@@ -41,6 +42,7 @@ class TextInput extends Component {
                     style = {setStyle()}
                     ref={(ref) => this.inputsArr[this.props.inputName] = ref}
                     onFocus={()=>this.scrollToElement(this.props.inputName)}
+                    value={this.props.value}
                 />
             )
         }
