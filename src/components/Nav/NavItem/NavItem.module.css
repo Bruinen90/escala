@@ -3,6 +3,13 @@
     align-items: center;
     height: 2rem;
     margin-bottom: 1rem;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.container:hover > .number, .active > .number {
+    color: red;
 }
 
 .number {
@@ -16,14 +23,11 @@
 }
 
 .text {
-    text-decoration: none;
-    color: inherit;
-    text-transform: uppercase;
     font-size: 20px;
-    position: relative;
+    /* position: relative; */
 }
 
-.text:hover::after {
+/* .text:hover::after {
     content: "_";
     margin-left: 10px;
 }
@@ -32,7 +36,7 @@
     content: "_";
     color: red;
     margin-left: 10px;
-}
+} */
 
 @media (min-width: 768px) {
     .text {

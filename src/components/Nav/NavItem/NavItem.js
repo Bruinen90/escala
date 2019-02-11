@@ -4,16 +4,14 @@ import { NavLink } from 'react-router-dom';
 
 const NavItem = (props) => {
     return (
-    <div className={styles.container}>
+    <NavLink
+        to={props.target}
+        className={styles.container}
+        activeClassName={styles.active}
+        exact={props.exact}
+    >
         <div className={styles.number}>{props.number}</div>
-        <NavLink
-            to={props.target}
-            className={styles.text}
-            activeClassName={styles.active}
-            exact={props.exact}
-        >
-            {props.text}
-        </NavLink>
-    </div>
+        <div className={styles.text}>{props.text}</div>
+    </NavLink>
 )};
 export default NavItem;

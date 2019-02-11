@@ -90,7 +90,7 @@ class Nav extends Component {
                 onTouchMove={this.touchMoveHandler}
             >
               <div className={styles.toggler} style={togglerStyle}>menu _</div>
-              <div className={styles.header}>menu _</div>
+              {/* <div className={styles.header}>menu _</div> */}
               <div className={styles.navItems}>
                   {navItems}
               </div>

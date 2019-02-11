@@ -35,7 +35,7 @@ class ProductThumb extends Component {
                         />
                     </CSSTransitionGroup>
                 </div>
-                <h3 className={styles.type}>{this.props.type}</h3>
+                {/* <h3 className={styles.type}>{this.props.type}</h3> */}
                 <h3 className={styles.name}>{this.props.name}</h3>
             </div>
         );
