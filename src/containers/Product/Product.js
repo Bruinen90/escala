@@ -23,7 +23,11 @@ class Product extends Component {
         const imagesCount = product[i].imagesCount;
         const bigImg = require(`../../img/products/product_${this.props.index}/${imagesCount}.jpg`);
         return (
-            <SubPage>
+            <SubPage
+                title="Produkty"
+                number="02"
+                noGoBack={true}
+            >
                 <div className={styles.grid}>
                     <div className={styles.description}>
                         <h2 className={styles.name}>
@@ -39,6 +43,7 @@ class Product extends Component {
                         >
                             Zapytaj o cenę
                         </Button>
+                        <br />
                         <Button
                             target="/contact"
                             productName={product[i].name}

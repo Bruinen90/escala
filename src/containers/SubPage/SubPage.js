@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './SubPage.module.css';
 import TopHeader from '../../components/TopHeader/TopHeader';
+import GoBack from '../../components/GoBack/GoBack';
+
 
 const SubPage = (props) => (
     <div className={styles.container}>
@@ -9,6 +11,7 @@ const SubPage = (props) => (
             number={props.number}
         />
         {props.children}
+        {!props.noGoBack && <GoBack/>}
     </div>
 );
 export default SubPage;

@@ -23,9 +23,6 @@ class Contact extends Component {
                     message = {message}
                     topic = {topic}
                 />
-                <div className={styles.bottomBar}>
-                    <GoBack/>
-                </div>
             </SubPage>
         );
     }

@@ -8,11 +8,11 @@ class GoBack extends Component {
     }
     render() {
         return (
-            <div
-                className={styles.container}
-                onClick={this.context.router.history.goBack}
-            >
-                powrót
+            <div className={styles.container}>
+                <span
+                    onClick={this.context.router.history.goBack}>
+                    powrót
+                </span>
             </div>
         );
     }

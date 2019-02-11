@@ -5,6 +5,7 @@
     align-items: center;
     position: relative;
     margin: 30px 0;
+    width: 90%;
 }
 
 .form input, .form textarea {
@@ -132,7 +133,7 @@ input:focus {
     }
 
     .agreementText {
-        font-size: 14px;
+        font-size: 12px;
         flex: 5;
     }
 }

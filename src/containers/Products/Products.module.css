@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .grid {
@@ -17,11 +17,14 @@
 
 @media (min-width: 768px) {
     .container {
-        padding: 75px;
+        padding: 2vw;
+        max-width: 1920px;
     }
 
     .grid {
+        width: 100%;
         grid-template: auto / 1fr 1fr 1fr;
-        grid-gap: 50px;
+        grid-column-gap: 50px;
+        grid-row-gap: 30px;
     }
 }

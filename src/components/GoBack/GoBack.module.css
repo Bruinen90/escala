@@ -1,13 +1,28 @@
 .container {
-    font-size: 20px;
+    font-size: 16px;
+    width: 100%;
+    text-align: right;
+    margin: 30px;
+    margin-left: 0;
+}
+
+.container span {
     cursor: pointer;
 }
 
-.container::after {
+
+.container span::after {
     content: "_";
     margin-left: 5px;
 }
 
-.container:hover::after {
+.container span:hover::after {
     color: var(--color-red);
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
 }
