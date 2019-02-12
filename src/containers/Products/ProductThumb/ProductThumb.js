@@ -11,7 +11,9 @@ class ProductThumb extends Component {
     }
 
     hoverHandler = (on) => {
-        on ? this.setState({picNum: product[this.props.index].imagesCount}) : this.setState({picNum: 1})
+        if(window.innerWidth > 767) {
+            on ? this.setState({picNum: product[this.props.index].imagesCount}) : this.setState({picNum: 1})
+        }
     }
     render() {
         return (

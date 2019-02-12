@@ -21,7 +21,6 @@
 
 .container > div {
     position: relative;
-    margin-bottom: 30px;
 }
 
 .container > div:last-child {
@@ -33,6 +32,10 @@
 .container a {
     text-decoration: none;
     color: inherit;
+}
+
+.header {
+    font-weight: normal;
 }
 
 .cookies {
@@ -48,30 +51,40 @@
 }
 
 .socials {
-    margin: 5px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.follow {
+    margin-right: 10px;
+}
+
+.socialContainer {
+    align-self: center;
 }
 
 @media (min-width: 768px) {
     .container {
         flex-direction: row;
         justify-content: space-around;
-        align-items: flex-start;
+        align-items: center;
         min-height: 20vh;
     }
 
-    .container > div:last-child {
+    .socials {
         display: flex;
-        flex-direction: column;
         align-items: flex-end;
     }
 
-    .cookies div {
+    /* .container > div:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    } */
+
+    /* .cookies div {
         margin-left: 50px;
         margin-right: 0;
         cursor: pointer;
-    }
-
-    .logo {
-        align-self: flex-start;
-    }
+    } */
 }
