@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Contact.module.css';
 import ContactForm from '../../components/ContactForm/ContactForm';
-import GoBack from '../../components/GoBack/GoBack';
 import SubPage from '../SubPage/SubPage';
 
 class Contact extends Component {

@@ -31,7 +31,7 @@ const SocialIcons = (props) => {
             rel="noopener noreferrer"
             className={classList.join(' ')}
         >
-            <i class="fab fa-pinterest-p"></i>
+            <i className="fab fa-pinterest-p"></i>
         </a>
     </div>
 )};

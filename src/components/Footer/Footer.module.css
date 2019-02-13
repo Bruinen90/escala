@@ -21,6 +21,7 @@
 
 .container > div {
     position: relative;
+    margin-bottom: 30px;
 }
 
 .container > div:last-child {
@@ -69,6 +70,10 @@
         justify-content: space-around;
         align-items: center;
         min-height: 20vh;
+    }
+
+    .container > div {
+        margin: 0;
     }
 
     .socials {

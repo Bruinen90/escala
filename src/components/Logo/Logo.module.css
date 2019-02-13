@@ -5,12 +5,16 @@
 .absolute {
     position: absolute;
     top: 2vh;
-    left: 0;
+    left: 27px;
     right: 0;
     margin: auto;
 }
 
 @media (min-width: 768px) {
+    .absolute {
+        left: 42px;
+    }
+
     .topLeft {
         margin-top: 25px;
     }
