@@ -1,5 +1,6 @@
 .container {
     width: 85px;
+    margin-bottom: -8px;
 }
 
 .absolute {

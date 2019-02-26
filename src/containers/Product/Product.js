@@ -4,7 +4,7 @@ import styles from './Product.module.css';
 import SubPage from '../SubPage/SubPage';
 import Gallery from '../../components/Gallery/Gallery';
 import Button from '../../components/Button/Button';
-import product from '../../data/products';
+import product from '../../data/productsDone';
 
 class Product extends Component {
     render() {
@@ -20,8 +20,9 @@ class Product extends Component {
                 />
             )
         }
-        const imagesCount = product[i].imagesCount;
-        const bigImg = require(`../../img/products/product_${this.props.index}/${imagesCount}.jpg`);
+        // const imagesCount = product[i].imagesCount;
+        // const bigImg = require(`../../img/products/product_${this.props.index}/${imagesCount}.jpg`);
+        const bigImg = require(`../../img/products/product_${this.props.index}/4.jpg`);
         return (
             <SubPage
                 title="Produkty"
@@ -64,9 +65,9 @@ class Product extends Component {
                             <h4>
                                 Wymiary
                             </h4>
-                            szerokość: {product[i].width} mm <br />
-                            głębokość: {product[i].depth} mm <br />
-                            wysokość: {product[i].height} mm <br />
+                            szerokość: {product[i].diameters.width} mm <br />
+                            głębokość: {product[i].diameters.depth} mm <br />
+                            wysokość: {product[i].diameters.height} mm <br />
                         </div>
                         <div className={styles.info}>
                             <h4>

@@ -6,15 +6,25 @@ $_POST = json_decode($rest_json, true);
 if ($_POST)
 	{
 		http_response_code(200);
-		$subject = $_POST['name'];
+		$subject = $_POST['topic'];
 		$to = "bruinen@interia.pl";
 		$from = $_POST['email'];
-		$msg = $_POST['number'] . $_POST['content'] . "<br />numer telefonu: " . $_POST['phone'];
+		$message = '<html><body>';
+		$message .= '<center>';
+		$message .= '<table rules="all" style="border-color: #666; max-width: 800px;" cellpadding="10">';
+		$message .= "<tr><td><strong>Imię i nazwisko:</strong> </td><td>" . strip_tags($_POST['name']) . "</td></tr>";
+		$message .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($_POST['email']) . "</td></tr>";
+		$message .= "<tr><td><strong>Temat:</strong> </td><td>" . strip_tags($_POST['topic']) . "</td></tr>";
+		$message .= "<tr><td><strong>Numer telefonu</strong> </td><td>" . strip_tags($_POST['phone']) . "</td></tr>";
+		$message .= "<tr><td><strong>Wiadomość</strong> </td><td>" . $_POST['content'] . "</td></tr>";
+		$message .= "</table>";
+		$message .= "</center>";
+		$message .= "</body></html>";
 
 		$headers = "MIME-Version: 1.0\r\n";
 		$headers.= "Content-type: text/html; charset=UTF-8\r\n";
 		$headers.= "From: <" . $from . ">";
-		mail($to, $subject, $msg, $headers);
+		mail($to, $subject, $message, $headers);
 
 		echo json_encode(array(
 			"sent" => true

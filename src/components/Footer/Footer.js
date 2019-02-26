@@ -28,6 +28,7 @@ const Footer = (props) => (
             <h3 className={styles.header}>Kontakt</h3>
             <div className={styles.text}>
                 <a href="mailto: info@escalapoland.com">info@escalapoland.com</a><br/>
+                <a href="http://www.escalapoland.com">www.escalapoland.com</a><br/>
                 <a href="tel: +48 530 90 10 90" className={styles.phone}>+48 530 90 10 90</a>
             </div>
         </div>
@@ -40,7 +41,8 @@ const Footer = (props) => (
                     rel="noopener noreferrer"
                 >
                     ul. Cegielniana 29<br/>
-                    38-500 Sanok
+                    38-500 Sanok<br />
+                    Polska
                 </a>
             </div>
         </div>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Slide from './Slide/Slide.js';
-import SliderIcons from './SliderIcons/SliderIcons';
-import SocialIcons from '../SocialIcons/SocialIcons';
+import SliderIcon from './SliderIcon/SliderIcon';
 import styles from './Slider.module.css';
 
 class Slider extends Component {
@@ -34,14 +33,6 @@ class Slider extends Component {
 
     componentDidMount() {
         this.autoPlay()
-        // document.addEventListener("keydown", (e)=> {
-        //     if(e.keyCode === 39) {
-        //         this.changeSlide(this.state.currSlide + 1)
-        //     }
-        //     if(e.keyCode === 37) {
-        //         this.changeSlide(this.state.currSlide - 1)
-        //     }
-        // })
     }
   render() {
       const slides = [];
@@ -60,8 +51,8 @@ class Slider extends Component {
     return (
       <div className={styles.slider} style={fullHeightMobile}>
         {slides}
-        <SocialIcons />
-        <SliderIcons />
+        {/* <SocialIcons /> */}
+        <SliderIcon />
       </div>
     );
   }

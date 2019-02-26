@@ -11,11 +11,11 @@ const TopHeader = (props) => (
         </h1>
         <div className={styles.logoCont}>
             <Logo
-                black={true}
+                black={!props.white}
             />
         </div>
         <SocialIcons
-            black={true}
+            black={!props.white}
         />
     </div>
 );

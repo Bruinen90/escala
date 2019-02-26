@@ -44,6 +44,7 @@
     font-weight: normal;
     text-transform: uppercase;
     margin: 0px;
+    font-size: 21px;
 }
 
 @media (min-width: 768px) {

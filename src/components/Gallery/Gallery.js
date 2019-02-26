@@ -15,7 +15,8 @@ class Gallery extends Component {
     }
     render() {
         const allThumbs = [];
-        for(let i = 1; i <= this.props.imagesCount; i++) {
+        // for(let i = 1; i <= this.props.imagesCount; i++) {
+        for(let i = 1; i <= 4; i++) {
             allThumbs.push(
                 <img
                     src={require(`../../img/products/product_${this.props.productIndex}/${i}.jpg`)}

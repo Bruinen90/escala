@@ -21,3 +21,9 @@
 .message {
     height: 250px;
 }
+
+.option {
+    color: red;
+    background-color: blue;
+    width: 10%;
+}

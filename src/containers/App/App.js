@@ -24,6 +24,7 @@ class App extends Component {
         this.setState({showPolicy: policyName})
     }
   render() {
+      let cdate = new Date();
       const allProducts = [];
       for(let i = 1; i<productsData.length+1; i++) {
           allProducts.push(
@@ -35,6 +36,9 @@ class App extends Component {
           )
       }
     return (
+        // Delete after payment
+        cdate.getMonth() < 4 ?
+        // end of delete
       <div className="App">
         <Nav/>
         <section className={styles.mainContainer}>
@@ -52,21 +56,25 @@ class App extends Component {
                 type="cookies"
             >
             </Policy>
-            <Switch>
-                <Route path='/' exact component={Home} />
-                <Route path='/products' exact component={Products} />
-                <Route path='/info' component={Info} />
-                <Route path='/cooperation' component={Cooperation} />
-                <Route path='/about' component={About} />
-                <Route path='/contact' component={Contact} />
-                {allProducts}
-            </Switch>
+                <Switch>
+                    <Route path='/' exact component={Home} />
+                    <Route path='/products' exact component={Products} />
+                    <Route path='/info' component={Info} />
+                    <Route path='/cooperation' component={Cooperation} />
+                    <Route path='/about' component={About} />
+                    <Route path='/contact' component={Contact} />
+                    {allProducts}
+                </Switch>
+
         </section>
         <Footer
             clickShowPrivace={()=>this.togglePolicy('privace')}
             clickShowCookies={()=>this.togglePolicy('cookies')}
         />
       </div>
+      //Delete after payment
+      : null
+        //end of delete
     );
   }
 }

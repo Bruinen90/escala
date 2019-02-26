@@ -3,7 +3,7 @@ import styles from './Products.module.css';
 
 import SubPage from '../SubPage/SubPage';
 import ProductThumb from './ProductThumb/ProductThumb';
-import productsData from '../../data/products';
+import productsData from '../../data/productsDone';
 
 class Products extends Component {
     render() {

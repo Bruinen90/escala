@@ -111,8 +111,9 @@ input:focus {
 }
 
 .form .sent {
-    border: 1px solid green;
-    color: green;
+    border: none;
+    background-color: green;
+    color: #fff;
     cursor: auto;
 }
 

@@ -20,7 +20,28 @@ class TextInput extends Component {
                 return {}
             }
         }
-        if(this.props.type === 'textarea') {
+        if(this.props.inputName === 'topic') {
+            return (
+                <React.Fragment>
+                    <input
+                        className={styles.input}
+                        type={this.props.type}
+                        placeholder={this.props.placeholder}
+                        onChange={(e) => this.props.handleChange(e, this.props.inputName)}
+                        style = {setStyle()}
+                        ref={(ref) => this.inputsArr[this.props.inputName] = ref}
+                        onFocus={()=>this.scrollToElement(this.props.inputName)}
+                        value={this.props.value}
+                        list="browsers"
+                    />
+                    <datalist id="browsers">
+                        <option value="Prośba o wycenę" className={styles.option}/>
+                        <option value="Propozycja współpracy" />
+                        <option value="Oferta dla architekta" />
+                    </datalist>
+                </React.Fragment>
+            )
+        } else if(this.props.type === 'textarea') {
             return (
                 <textarea
                     className={[styles.input, styles.message].join(' ')}

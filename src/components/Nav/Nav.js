@@ -100,6 +100,10 @@ class Nav extends Component {
               <div className={styles.navItems}>
                   {navItems}
               </div>
+              <div className={styles.langs}>
+                  <img src={require('../../img/icons/pl_flag.svg')} alt="Język polski" className={styles.langIcon}/>
+                  <img src={require('../../img/icons/eng_flag.svg')} alt="English language" className={styles.langIcon}/>
+              </div>
             </div>
             <Cover
                 toggleMenu={this.toggleMenuHandler}
