@@ -42,7 +42,7 @@
 
 .name {
     font-weight: normal;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin: 0px;
     font-size: 21px;
 }
@@ -54,6 +54,6 @@
     }
 
     .imageContainer {
-        min-height: 18vw;
+        min-height: 12vw;
     }
 }

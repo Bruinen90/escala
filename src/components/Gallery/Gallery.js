@@ -10,8 +10,20 @@ class Gallery extends Component {
     }
 
     changeImage = (newImgIndex) => {
-        this.setState({currImg: newImgIndex});
+        if(newImgIndex <= this.props.imagesCount && newImgIndex > 0) {
+            this.setState({currImg: newImgIndex});
+        }
+    }
 
+    componentDidMount() {
+        document.addEventListener("keydown", (e)=> {
+            if(e.keyCode === 39) {
+                this.changeImage(this.state.currImg + 1)
+            }
+            if(e.keyCode === 37) {
+                this.changeImage(this.state.currImg - 1)
+            }
+        })
     }
     render() {
         const allThumbs = [];
@@ -42,9 +54,30 @@ class Gallery extends Component {
                             key={this.state.currImg}
                         />
                     </CSSTransitionGroup>
+                    <img
+                        src={require(`../../img/icons/arrow_left.svg`)}
+                        alt="Poprzednie zdjęcie"
+                        onClick={()=>this.changeImage(this.state.currImg-1)}
+                        style={{opacity: this.state.currImg === 1 ? 0 : 1}}
+                        className={[styles.arrow, styles.arrowLeft].join(' ')}
+                    />
+                    <img
+                        src={require(`../../img/icons/arrow_right.svg`)}
+                        alt="Następne zdjęcie"
+                        onClick={()=>this.changeImage(this.state.currImg+1)}
+                        style={{opacity: this.state.currImg === this.props.imagesCount ? 0 : 1}}
+                        className={[styles.arrow, styles.arrowRight].join(' ')}
+                    />
                 </div>
                 <div className={styles.thumbsCont}>
                         {allThumbs}
+                </div>
+                <div className={styles.closeIcon}>
+                    <img
+                        src={require(`../../img/icons/close_icon.svg`)}
+                        alt="Zamknij galerię"
+                        onClick={this.props.clickClose}
+                    />
                 </div>
             </div>
         );

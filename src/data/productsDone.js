@@ -16,7 +16,10 @@ const productsData = [
             body: 'płyta MDF 18 mm',
             frame: 'stal'
         },
-        finish: 'metal – żelazo utleniane (rdza), lakier poliuretanowy: czarny matowy'
+        finish: {
+            metal:  'metal – żelazo utleniane (rdza)',
+            other: 'lakier poliuretanowy: czarny matowy'
+        },
     },
     {
         name: 'Lagoon',
@@ -34,7 +37,10 @@ const productsData = [
             body: 'płyta MDF 18 mm',
             frame: 'stal'
         },
-        finish: 'mosiądz patynowany, lakier poliuretanowy: czarny matowy',
+        finish: {
+            metal:  'mosiądz patynowany',
+            other: 'lakier poliuretanowy: czarny matowy'
+        },
     },
     {
         name: 'Diamond',
@@ -52,7 +58,10 @@ const productsData = [
             body: 'płyta MDF 18 mm',
             frame: 'stal'
         },
-        finish: 'metal:  mosiądz, żelazo, lakier poliuretanowy: czarny matowy',
+        finish: {
+            metal:  'mosiądz, żelazo',
+            other: 'lakier poliuretanowy: czarny matowy'
+        },
     },
     {
         name: 'Mystic ver. Iron',
@@ -70,7 +79,10 @@ const productsData = [
             body: 'płyta MDF 18 mm',
             frame: 'stal'
         },
-        finish: 'metal:  żelazo, lakier poliuretanowy: czarny matowy',
+        finish: {
+            metal:  'mosiądz, żelazo',
+            other: 'lakier poliuretanowy: czarny matowy'
+        },
     },
     {
         name: 'Shadows short ver. Coral',
@@ -88,7 +100,9 @@ const productsData = [
             body: 'płyta MDF 18 mm',
             frame: 'stal'
         },
-        finish: 'lakier poliuretanowy: koralowy matowy',
+        finish: {
+            other: 'lakier poliuretanowy: koralowy matowy'
+        },
     },
     {
         name: 'Mystic ver. Brass',
@@ -106,7 +120,10 @@ const productsData = [
             body: 'płyta MDF 18 mm',
             frame: 'stal'
         },
-        finish: 'metal:  mosiądz, lakier poliuretanowy: czarny matowy',
+        finish: {
+            metal:  'mosiądz',
+            other: 'lakier poliuretanowy: czarny matowy'
+        },
     },
     {
         name: 'Shades ver. 2',
@@ -124,7 +141,10 @@ const productsData = [
             body: 'płyta MDF 18 mm',
             frame: 'stal'
         },
-        finish: 'metal:  mosiądz, lakier poliuretanowy: czarny matowy',
+        finish: {
+            metal:  'mosiądz',
+            other: 'lakier poliuretanowy: czarny matowy'
+        },
     },
     {
         name: 'Shades ver. 3',
@@ -142,7 +162,10 @@ const productsData = [
             body: 'płyta MDF 18 mm',
             frame: 'stal'
         },
-        finish: 'metal:  żelazo, lakier poliuretanowy: czarny matowy',
+        finish: {
+            metal:  'żelazo',
+            other: 'lakier poliuretanowy: czarny matowy'
+        },
     },
     {
         name: 'Shades ver. 4',
@@ -160,7 +183,10 @@ const productsData = [
             body: 'płyta MDF 18 mm',
             frame: 'stal'
         },
-        finish: 'lakier akrylowy: miedź, lakier poliuretanowy: czarny matowy',
+        finish: {
+            lakierAkrylowy: 'lakier akrylowy: miedź',
+            other: 'lakier poliuretanowy: czarny matowy'
+        },
     },
     {
         name: 'Butterfly',
@@ -178,7 +204,9 @@ const productsData = [
             body: 'płyta MDF 18 mm',
             frame: 'stal'
         },
-        finish: 'akier poliuretanowy: Blaugrun 6004 matowy',
+        finish: {
+            other: 'lakier poliuretanowy: Blaugrun 6004 matowy',
+        }
     },
     {
         name: 'Belle',
@@ -196,7 +224,10 @@ const productsData = [
             body: 'płyta MDF 18 mm',
             frame: 'drewno lakierowane czarny matowy'
         },
-        finish: 'metal:  mosiądz, lakier poliuretanowy: czarny matowy',
+        finish: {
+            metal:  'mosiądz',
+            other: 'lakier poliuretanowy: czarny matowy'
+        },
     },
 
 ];

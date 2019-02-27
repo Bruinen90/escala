@@ -16,6 +16,7 @@
     align-self: flex-end;
     margin-right: 1rem;
     font-weight: lighter;
+    font-size: 16px;
 }
 
 .number::before {
@@ -23,7 +24,7 @@
 }
 
 .text {
-    font-size: 18px;
+    /* font-size: 18px; */
     /* position: relative; */
 }
 
@@ -39,7 +40,5 @@
 } */
 
 @media (min-width: 768px) {
-    .text {
-        font-size: 20px;
-    }
+
 }

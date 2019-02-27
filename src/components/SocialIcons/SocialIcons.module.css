@@ -1,10 +1,6 @@
 .container {
-    color: #fff;
-    font-size: 28px;
     z-index: 100;
     display: none;
-    text-shadow: 0px 2px 5px rgba(0,0,0,.5);
-    /* margin-bottom: 20px; */
 }
 
 .mobile {
@@ -12,10 +8,11 @@
 }
 
 .icon {
-    color: inherit;
-    text-decoration: none;
-    margin: 0px;
-    margin: 0px 10px;
+    width: 22px;
+    height: 22px;
+    margin: 0px 3px;
+    margin-bottom: -2px;
+    transition: all .4s cubic-bezier(0.45,-0.59, 0.75, 1.85);
 }
 
 .black {
@@ -31,5 +28,9 @@
 @media (min-width: 768px) {
     .container {
         display: block;
+    }
+
+    .icon:hover {
+        transform: scale(1.3);
     }
 }

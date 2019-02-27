@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="25.876249mm"
+   height="25.876249mm"
+   viewBox="0 0 25.876249 25.876249"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="facebook.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.2"
+     inkscape:cx="82.644133"
+     inkscape:cy="48.491915"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g29"
+     showgrid="false"
+     inkscape:window-width="3840"
+     inkscape:window-height="2066"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(577.63455,-75.419018)">
+    <g
+       id="g29"
+       transform="matrix(0.26458333,0,0,0.26458333,-608.2733,75.55131)">
+      <g
+         id="g14">
+	<path
+   id="path12"
+   d="m 164.7,-0.5 c -27,0 -48.9,21.9 -48.9,48.9 0,27 21.9,48.9 48.9,48.9 27,0 48.9,-21.9 48.9,-48.9 0,-27 -21.9,-48.9 -48.9,-48.9 z"
+   class="st0"
+   inkscape:connector-curvature="0"
+   style="fill:#ffffff" />
+
+</g>
+      <path
+         id="path16"
+         d="m 178,32.2 h -4.8 c -3.8,0 -4.5,1.8 -4.5,4.5 v 5.8 h 9.1 v 9.2 h -9.1 v 23.5 h -9.5 V 51.6 h -7.9 v -9.2 h 7.9 v -6.8 c 0,-7.8 4.8,-12.1 11.8,-12.1 h 7.1 z"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+  <style
+     id="style10"
+     type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+</svg>

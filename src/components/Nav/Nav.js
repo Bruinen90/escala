@@ -63,9 +63,9 @@ class Nav extends Component {
        let navItems = [
            {fullName: 'Home', target: '/', exact: true},
            {fullName: 'Produkty', target: '/products'},
-           {fullName: 'Info', target: '/info'},
-           {fullName: 'Współpraca', target: '/cooperation'},
            {fullName: 'O nas', target: '/about'},
+           {fullName: 'Współpraca', target: '/cooperation'},
+           {fullName: 'Info', target: '/info'},
            {fullName: 'Kontakt', target: '/contact'},
        ];
        navItems = navItems.map((item, index) => {
@@ -101,8 +101,10 @@ class Nav extends Component {
                   {navItems}
               </div>
               <div className={styles.langs}>
-                  <img src={require('../../img/icons/pl_flag.svg')} alt="Język polski" className={styles.langIcon}/>
-                  <img src={require('../../img/icons/eng_flag.svg')} alt="English language" className={styles.langIcon}/>
+                  <div className={[styles.lang, styles.langActive].join(' ')}>PL</div>
+                  <div className={styles.lang}>EN</div>
+                  {/* <img src={require('../../img/icons/pl_flag.svg')} alt="Język polski" className={styles.langIcon}/>
+                  <img src={require('../../img/icons/eng_flag.svg')} alt="English language" className={styles.langIcon}/> */}
               </div>
             </div>
             <Cover

@@ -6,14 +6,43 @@
     margin-top: 20px;
 }
 
-.description {
-    width: 100%;
-}
-
 .name {
     font-weight: normal;
     margin-top: 0;
     font-size: 21px;
+}
+
+.description {
+    width: 100%;
+}
+
+.galleryCont {
+    margin: auto;
+    background-color: #fff;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.galleryImg {
+    width: 100%;
+}
+
+.enlargeIcon {
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .5s cubic-bezier(0.06, -0.96, 0.92, 2.18);
 }
 
 .info {
@@ -26,14 +55,13 @@
     margin-bottom: 50px;
 }
 
-.techHeader::after {
+/* .techHeader::after {
     content: "_";
     margin-left: 10px;
-}
+} */
 
 h4 {
     font-size: 18px;
-    text-transform: uppercase;
     font-weight: normal;
     margin-top: 30px;
 }
@@ -65,6 +93,28 @@ h5 {
     background-repeat: no-repeat;
 }
 
+.lightbox {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.cover {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--menu-grey);
+}
+
 @media (min-width: 768px) {
     .grid {
         grid-template: auto / 1fr 3fr;
@@ -72,6 +122,61 @@ h5 {
         grid-row-gap: 10vh;
         padding: 0;
         margin-top: 60px;
+        align-items: center;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        max-height: 70vh;
+    }
+
+    .text {
+        max-height: 50%;
+        overflow-y: auto;
+        text-align: justify;
+        padding-right: 15px;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      border: 1px solid #ddd;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      border: 1px solid #aaa;
+    }
+
+    .galleryCont {
+        height: 70vh;
+    }
+
+    .galleryImg {
+        height: 100%;
+        width: auto;
+    }
+
+    .galleryCont:hover {
+        cursor: pointer;
+    }
+
+    .galleryCont:hover > .galleryImg {
+        opacity: .6;
+    }
+
+    .galleryCont:hover > .enlargeIcon {
+        opacity: 1;
+        transform: scale(1);
     }
 
     .bigImgCont {

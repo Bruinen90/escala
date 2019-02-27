@@ -3,6 +3,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #fff;
+    position: relative;
 }
 
 .fullImageCont {
@@ -10,6 +12,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: relative;
 }
 
 .fullImage {
@@ -28,7 +31,7 @@
 }
 
 .thumbsCont {
-    display: flex;
+    display: none;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
@@ -40,20 +43,73 @@
     cursor: pointer;
 }
 
+.closeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    width: 25px;
+}
+
+.arrowRight {
+    right: 10px;
+}
+
+.arrowLeft {
+    left: 10px;
+}
+
 @media (min-width: 768px) {
+    .container {
+        width: 80%;
+        height: 95vh;
+        flex-direction: row;
+        justify-content: center;
+        padding: 30px;
+    }
+
     .fullImageCont {
         width: 80%;
-        height: 40vh;
+        height: 80vh;
     }
 
     .fullImage {
-        height: 38vh;
+        max-height: 100%;
         width: auto;
+        max-width: 100%;
         margin: 0;
     }
 
+    .thumbsCont {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 10%;
+        margin-left: 30px;
+    }
+
     .thumb {
-        height: 10vh;
-        margin: 25px;
+        width: 100%;
+        height: auto;
+        margin: 25px 0;
+    }
+
+    .closeIcon {
+        width: 40px;
+        height: 40px
+    }
+
+    .arrow {
+        width: 40px;
     }
 }
