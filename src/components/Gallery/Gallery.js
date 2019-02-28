@@ -7,6 +7,27 @@ import { CSSTransitionGroup } from 'react-transition-group';
 class Gallery extends Component {
     state = {
         currImg: 1,
+        touchStartPoint: 0,
+        touchEndPoint: 0,
+        touchMoveX: 0,
+    }
+
+    touchStartHandler = (e) => {
+        this.setState({touchStartPoint: e.touches[0].clientX, trans: false})
+    }
+
+    touchMoveHandler = (e) => {
+        this.setState({touchMoveX: e.touches[0].clientX - this.state.touchStartPoint});
+    }
+
+    touchEndHandler = (e) => {
+        if(this.state.touchMoveX > 30) {
+            this.changeImage(this.state.currImg-1);
+        }
+        if(this.state.touchMoveX < -30) {
+            this.changeImage(this.state.currImg+1);
+        }
+        this.setState({touchMoveX: 0});
     }
 
     changeImage = (newImgIndex) => {
@@ -52,6 +73,9 @@ class Gallery extends Component {
                             alt="Full"
                             className={styles.fullImage}
                             key={this.state.currImg}
+                            onTouchStart={this.touchStartHandler}
+                            onTouchEnd={this.touchEndHandler}
+                            onTouchMove={this.touchMoveHandler}
                         />
                     </CSSTransitionGroup>
                     <img
@@ -72,13 +96,12 @@ class Gallery extends Component {
                 <div className={styles.thumbsCont}>
                         {allThumbs}
                 </div>
-                <div className={styles.closeIcon}>
-                    <img
-                        src={require(`../../img/icons/close_icon.svg`)}
-                        alt="Zamknij galerię"
-                        onClick={this.props.clickClose}
-                    />
-                </div>
+                <img
+                    src={require(`../../img/icons/close_icon.svg`)}
+                    alt="Zamknij galerię"
+                    onClick={this.props.clickClose}
+                    className={styles.closeIcon}
+                />
             </div>
         );
     }

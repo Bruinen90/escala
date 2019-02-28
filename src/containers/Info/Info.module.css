@@ -1,0 +1,41 @@
+.container {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.link {
+    color: inherit;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    width: 90%;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.linkText {
+    flex: 1;
+}
+
+.file {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        font-size: 18px;
+    }
+
+    .link {
+        width: 100%;
+    }
+}

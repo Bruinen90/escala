@@ -94,7 +94,7 @@ h5 {
 }
 
 .lightbox {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -138,25 +138,6 @@ h5 {
         padding-right: 15px;
     }
 
-    ::-webkit-scrollbar {
-      width: 6px;
-    }
-
-    /* Track */
-    ::-webkit-scrollbar-track {
-      background: transparent;
-    }
-
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      border: 1px solid #ddd;
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      border: 1px solid #aaa;
-    }
-
     .galleryCont {
         height: 70vh;
     }
@@ -177,6 +158,10 @@ h5 {
     .galleryCont:hover > .enlargeIcon {
         opacity: 1;
         transform: scale(1);
+    }
+
+    .info {
+        padding-bottom: 0;
     }
 
     .bigImgCont {

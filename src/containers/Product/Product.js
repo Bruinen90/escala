@@ -28,27 +28,27 @@ class Product extends Component {
         const bigImg = require(`../../img/products/product_${this.props.index}/4.jpg`);
         return (
             <React.Fragment>
-                <div
-                    className={styles.lightbox}
-                    style={{
-                        display: this.state.showLigthbox ? 'flex' : 'none',
-                    }}
-                >
-                    <div
-                        className={styles.cover}
-                        onClick={()=>this.setState({showLigthbox: false})}
-                    ></div>
-                    <Gallery
-                        productIndex = {this.props.index}
-                        imagesCount = {4}
-                        clickClose = {()=>this.setState({showLigthbox: false})}
-                    />
+                {this.state.showLigthbox ?
+                    <div className={styles.lightbox}>
+                        <div
+                            className={styles.cover}
+                            onClick={()=>this.setState({showLigthbox: false})}
+                        ></div>
+                        <Gallery
+                            productIndex = {this.props.index}
+                            imagesCount = {4}
+                            clickClose = {()=>this.setState({showLigthbox: false})}
+                            visible = {this.state.showLigthbox}
+                        />
 
-                </div>
+                    </div>
+                : null
+                }
+
                 <SubPage
                     title="Produkty"
                     number="02"
-                    noGoBack={true}
+                    headerGoesBack = {true}
                 >
                     <div className={styles.grid}>
                         <div className={styles.description}>

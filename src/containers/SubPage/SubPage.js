@@ -9,6 +9,7 @@ const SubPage = (props) => (
         <TopHeader
             title={props.title}
             number={props.number}
+            headerGoesBack = {props.headerGoesBack}
         />
         {props.children}
         {!props.noGoBack && <GoBack/>}

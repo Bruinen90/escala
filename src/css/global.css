@@ -25,3 +25,23 @@ code {
 * {
     box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4c4c4c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  border: 1px solid #aaa;
+}

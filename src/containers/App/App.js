@@ -12,17 +12,21 @@ import Info from '../Info/Info';
 import Cooperation from '../Cooperation/Cooperation';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
-import Policy from '../../components/Policy/Policy';
+// import Policy from '../../components/Policy/Policy';
+import PolicyWarning from '../../components/PolicyWarning/PolicyWarning';
 
 import productsData from '../../data/products';
 
 class App extends Component {
-    state={
-        showPolicy: false,
+    state = {
+        showWarning: true,
     }
-    togglePolicy = (policyName) => {
-        this.setState({showPolicy: policyName})
-    }
+    // state={
+    //     showPolicy: false,
+    // }
+    // togglePolicy = (policyName) => {
+    //     this.setState({showPolicy: policyName})
+    // }
   render() {
       let cdate = new Date();
       const allProducts = [];
@@ -42,7 +46,7 @@ class App extends Component {
       <div className="App">
         <Nav/>
         <section className={styles.mainContainer}>
-            <Policy
+            {/* <Policy
                 close={()=>this.togglePolicy(false)}
                 show={this.state.showPolicy==="privace"}
                 header='Polityka'
@@ -55,7 +59,7 @@ class App extends Component {
                 header='Cookies'
                 type="cookies"
             >
-            </Policy>
+            </Policy> */}
                 <Switch>
                     <Route path='/' exact component={Home} />
                     <Route path='/products' exact component={Products} />
@@ -71,6 +75,12 @@ class App extends Component {
             clickShowPrivace={()=>this.togglePolicy('privace')}
             clickShowCookies={()=>this.togglePolicy('cookies')}
         />
+        {
+            this.state.showWarning &&
+            <PolicyWarning
+                clickClose = {()=>this.setState({showWarning: false})}
+            />
+        }
       </div>
       //Delete after payment
       : null
