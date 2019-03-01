@@ -14,8 +14,9 @@ class ProductThumb extends Component {
             >
                 <div className={styles.imageContainer}>
                     <img
-                        src={require(`../../../img/products/product_${this.props.index+1}/${this.state.picNum}.jpg`)}
-                        alt="Miniatura"
+                        // src={require(`../../../img/products/product_${this.props.index+1}/${this.state.picNum}.jpg`)}
+                        src={require(`../../../img/thumbs/${this.props.index+1}.jpg`)}
+                        alt={this.props.name}
                         className={styles.thumb}
                     />
                 </div>

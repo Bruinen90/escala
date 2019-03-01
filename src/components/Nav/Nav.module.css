@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 60px;
     z-index: 10;
     animation: attentionOnLoad .75s .5s 2 ease-in-out alternate;
     -webkit-tap-highlight-color: transparent;

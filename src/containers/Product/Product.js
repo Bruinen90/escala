@@ -23,9 +23,8 @@ class Product extends Component {
                 />
             )
         }
-        // const imagesCount = product[i].imagesCount;
-        // const bigImg = require(`../../img/products/product_${this.props.index}/${imagesCount}.jpg`);
-        const bigImg = require(`../../img/products/product_${this.props.index}/4.jpg`);
+        const imagesCount = product[i].imagesCount;
+        const bigImg = require(`../../img/products/product_${this.props.index}/${imagesCount}.jpg`);
         return (
             <React.Fragment>
                 {this.state.showLigthbox ?
@@ -36,7 +35,7 @@ class Product extends Component {
                         ></div>
                         <Gallery
                             productIndex = {this.props.index}
-                            imagesCount = {4}
+                            imagesCount = {product[i].imagesCount}
                             clickClose = {()=>this.setState({showLigthbox: false})}
                             visible = {this.state.showLigthbox}
                         />

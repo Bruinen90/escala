@@ -20,6 +20,7 @@ const productsData = [
             metal:  'metal – żelazo utleniane (rdza)',
             other: 'lakier poliuretanowy: czarny matowy'
         },
+        imagesCount: 5,
     },
     {
         name: 'Lagoon',
@@ -41,6 +42,7 @@ const productsData = [
             metal:  'mosiądz patynowany',
             other: 'lakier poliuretanowy: czarny matowy'
         },
+        imagesCount: 5,
     },
     {
         name: 'Diamond',
@@ -62,6 +64,7 @@ const productsData = [
             metal:  'mosiądz, żelazo',
             other: 'lakier poliuretanowy: czarny matowy'
         },
+        imagesCount: 3,
     },
     {
         name: 'Mystic ver. Iron',
@@ -83,9 +86,10 @@ const productsData = [
             metal:  'mosiądz, żelazo',
             other: 'lakier poliuretanowy: czarny matowy'
         },
+        imagesCount: 2,
     },
     {
-        name: 'Shadows short ver. Coral',
+        name: 'Mystic low ver. Coral',
         description:
             'Komoda Mystic low ver. Coral — subtelna, piękna i lekka dzięki swoim proporcjom. Ozdobny, ryflowany frez podkreśla głębię powierzchni pokrytej matowym lakierem w modnym, koralowym kolorze, a powstające refleksy i cienie, dodają zmysłowości. Połączenie frezowanych elementów pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż w kolorze mosiądzu dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Mystic low ver. Coral wyposażona jest w dwa uchylne fronty. Konstrukcja i fronty wykonane są z płyty z włókien drzewnych.',
         warning:
@@ -103,6 +107,7 @@ const productsData = [
         finish: {
             other: 'lakier poliuretanowy: koralowy matowy'
         },
+        imagesCount: 4,
     },
     {
         name: 'Mystic ver. Brass',
@@ -124,6 +129,7 @@ const productsData = [
             metal:  'mosiądz',
             other: 'lakier poliuretanowy: czarny matowy'
         },
+        imagesCount: 3,
     },
     {
         name: 'Shades ver. 2',
@@ -145,6 +151,7 @@ const productsData = [
             metal:  'mosiądz',
             other: 'lakier poliuretanowy: czarny matowy'
         },
+        imagesCount: 5,
     },
     {
         name: 'Shades ver. 3',
@@ -166,6 +173,7 @@ const productsData = [
             metal:  'żelazo',
             other: 'lakier poliuretanowy: czarny matowy'
         },
+        imagesCount: 5,
     },
     {
         name: 'Shades ver. 4',
@@ -187,6 +195,7 @@ const productsData = [
             lakierAkrylowy: 'lakier akrylowy: miedź',
             other: 'lakier poliuretanowy: czarny matowy'
         },
+        imagesCount: 4,
     },
     {
         name: 'Butterfly',
@@ -206,7 +215,8 @@ const productsData = [
         },
         finish: {
             other: 'lakier poliuretanowy: Blaugrun 6004 matowy',
-        }
+        },
+        imagesCount: 3,
     },
     {
         name: 'Belle',
@@ -228,6 +238,7 @@ const productsData = [
             metal:  'mosiądz',
             other: 'lakier poliuretanowy: czarny matowy'
         },
+        imagesCount: 3,
     },
 
 ];

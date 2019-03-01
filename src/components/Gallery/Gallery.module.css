@@ -16,7 +16,7 @@
 }
 
 .fullImage {
-    margin: 20px 0px;
+    margin: 15px 0px;
     width: 100%;
     animation: fadeIn .5s linear forwards;
 }
@@ -101,7 +101,7 @@
     .thumb {
         width: 100%;
         height: auto;
-        margin: 25px 0;
+        margin: 18px 0;
     }
 
     .closeIcon {
