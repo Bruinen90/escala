@@ -1,6 +1,7 @@
 :root {
     --desktop: 768px;
     --menu-grey: rgba(0,0,0,.7);
+    --menu-solid: #4c4c4c;
     --color-red: red;
     --main-font: 'Montserrat', sans-serif;
 }
@@ -32,7 +33,7 @@ code {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #4c4c4c;
+  background: var(--menu-solid);
 }
 
 /* Handle */

@@ -1,18 +1,25 @@
 .container {
-    border: 1px solid #000;
+    border: 1px solid var(--menu-solid);
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 155px;
-    height: 35px;
-    margin-top: 12px;
-    cursor: pointer;
+    cursor: auto;
     font-size: 12px;
+    height: 100%;
+    cursor: pointer;
 }
 
 .link {
     display: inline-block;
     text-decoration: none;
     color: inherit;
+    width: 155px;
+    height: 35px;
+    margin-top: 12px;
+}
+
+.link:hover {
+    background-color: var(--menu-solid);
+    color: #fff;
 }

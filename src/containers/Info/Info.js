@@ -30,7 +30,18 @@ const Info = (props) => {
                             className={styles.icon}
                         />
                         <span className={styles.linkText}>
-                            Polityka prywatności i polityka cookies
+                            Polityka cookies
+                        </span>
+                    </a>
+                    <br/>
+                    <a href={cookies} target="_blank" className={styles.link}>
+                        <img
+                            src={require('../../img/icons/pdf_icon.svg')}
+                            alt="PDF"
+                            className={styles.icon}
+                        />
+                        <span className={styles.linkText}>
+                            Zasady RODO
                         </span>
                     </a>
                 </div>
