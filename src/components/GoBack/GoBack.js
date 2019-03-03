@@ -8,7 +8,7 @@ class GoBack extends Component {
     }
     render() {
         return (
-            <div className={styles.container}>
+            <div className={[styles.container, this.props.left && styles.left].join(' ')}>
                 <span
                     onClick={this.context.router.history.goBack}>
                     powrót

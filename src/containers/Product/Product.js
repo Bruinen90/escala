@@ -5,6 +5,7 @@ import SubPage from '../SubPage/SubPage';
 import Gallery from '../../components/Gallery/Gallery';
 import Button from '../../components/Button/Button';
 import product from '../../data/productsDone';
+import GoBack from '../../components/GoBack/GoBack';
 
 class Product extends Component {
     state = {
@@ -48,6 +49,7 @@ class Product extends Component {
                     title="Produkty"
                     number="02"
                     headerGoesBack = {true}
+                    noGoBack={true}
                 >
                     <div className={styles.grid}>
                         <div className={styles.description}>
@@ -61,7 +63,6 @@ class Product extends Component {
                                 <Button click={()=>this.setState({showLigthbox: true})}>
                                     Galeria produktu
                                 </Button>
-                                <br />
                                 <Button
                                     target="/contact"
                                     productName={product[i].name}
@@ -69,7 +70,6 @@ class Product extends Component {
                                 >
                                     Zapytaj o cenę
                                 </Button>
-                                <br />
                                 <Button
                                     target="/contact"
                                     productName={product[i].name}
@@ -121,7 +121,7 @@ class Product extends Component {
                                 <div>{product[i].finish.lakierAkrylowy}</div>
                                 <div>{product[i].finish.other}</div>
                             </div>
-                            {/* <div className={styles.info}>
+                            <div className={styles.info}>
                                 <h4>
                                     Kolorystyka
                                 </h4>
@@ -137,7 +137,10 @@ class Product extends Component {
                                 <div className={styles.colours}>
                                     {colours}
                                 </div>
-                            </div> */}
+                            </div>
+                            <GoBack
+                                left={true}
+                            />
                         </div>
                         <div
                             className={styles.bigImgCont}

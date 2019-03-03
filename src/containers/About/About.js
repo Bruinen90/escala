@@ -29,6 +29,12 @@ class About extends Component {
         data.sections.forEach((section, index) => {
             content.push(
                 <div className={styles.row} key={index}>
+                    <img
+                        src={require(`../../img/about/img_${index+1}.jpg`)}
+                        alt={section.header}
+                        className={styles.img}
+                        ref={this.imgRefs[index]}
+                    />
                     <div className={styles.text}>
                         <h3 className={styles.header}>
                             {section.header}
@@ -37,12 +43,6 @@ class About extends Component {
                             {section.description}
                         </div>
                     </div>
-                    <img
-                        src={require(`../../img/about/img_${index+1}.jpg`)}
-                        alt={section.header}
-                        className={styles.img}
-                        ref={this.imgRefs[index]}
-                    />
                 </div>
             )
         })

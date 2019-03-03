@@ -16,6 +16,15 @@
     width: 100%;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: auto;
+    min-height: 110px;
+}
+
 .galleryCont {
     margin: auto;
     background-color: #fff;
@@ -132,7 +141,6 @@ h5 {
     }
 
     .text {
-        max-height: 50%;
         overflow-y: auto;
         text-align: justify;
         padding-right: 15px;

@@ -9,7 +9,7 @@
 .row {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-bottom: 50px;
 }
 
@@ -49,6 +49,8 @@
     .row {
         margin-bottom: 100px;
         flex-direction: row;
+        width: 100%;
+        position: relative;
     }
 
     .row:nth-child(2n) {
@@ -57,13 +59,14 @@
 
     .row:nth-child(2n) .text {
         padding-right: 0;
+        padding-left: 100px;
     }
 
     .row:nth-child(2n) .img {
         padding: 0;
-        width: 100%;
-        margin-left: -100vw;
-        transform: translateX(-20%);
+        transform: translateX(20%);
+        position: relative;
+        right: -40px;
     }
 
     .text {
@@ -75,8 +78,8 @@
         height: auto;
         width: 60%;
         padding: 0;
-        margin-top: 0;
-        margin-left: 50px;
-        transform: translateX(20%);
+        margin: 0;
+        padding-left: 100px;
+        transform: translateX(-20%);
     }
 }

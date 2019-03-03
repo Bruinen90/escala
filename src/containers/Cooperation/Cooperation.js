@@ -7,45 +7,19 @@ import NarrowPage from '../NarrowPage/NarrowPage';
 class Cooperation extends Component {
     constructor(props) {
         super(props);
-        this.imgRefs = [];
-        for(let i = 0; i<data.sections.length; i++) {
-            this.imgRefs.push(React.createRef())
-        }
+        this.image = React.createRef();
     }
     componentDidMount() {
-        const allImg = this.imgRefs.map(ref => ref.current)
+        const img = this.image.current
         const fadeIn = (e) =>{
-            allImg.forEach(image => {
-                if(image.getBoundingClientRect().top < window.innerHeight*0.8) {
-                    image.classList.add(styles.show)
-                }
-            })
+        if(img.getBoundingClientRect().top < window.innerHeight*0.8) {
+            img.classList.add(styles.show)
+            }
         }
         fadeIn();
         document.addEventListener('scroll', fadeIn);
     }
     render() {
-        const content = [];
-        data.sections.forEach((section, index) => {
-            content.push(
-                <div className={styles.row} key={index}>
-                    <div className={styles.text}>
-                        <h3 className={styles.header}>
-                            {section.header}
-                        </h3>
-                        <div>
-                            {section.description}
-                        </div>
-                    </div>
-                    <img
-                        src={require(`../../img/cooperation/img_${index+1}.jpg`)}
-                        alt={section.header}
-                        className={styles.img}
-                        ref={this.imgRefs[index]}
-                    />
-                </div>
-            )
-        })
         return (
             <SubPage
                 title="O nas"
@@ -53,7 +27,36 @@ class Cooperation extends Component {
             >
                 <NarrowPage>
                     <div className={styles.container}>
-                        {content}
+                        <div className={styles.row}>
+                            <h3 className={styles.header}>
+                                {data.sections[0].header}
+                            </h3>
+                            <div>
+                                {data.sections[0].description}
+                            </div>
+                        </div>
+                        <img
+                            src={require(`../../img/cooperation/img_1.jpg`)}
+                            alt="Współpraca"
+                            className={styles.img}
+                            ref={this.image}
+                        />
+                        <div className={styles.row}>
+                            <h3 className={styles.header}>
+                                {data.sections[1].header}
+                            </h3>
+                            <div>
+                                {data.sections[1].description}
+                            </div>
+                        </div>
+                        <div className={styles.row}>
+                            <h3 className={styles.header}>
+                                {data.sections[2].header}
+                            </h3>
+                            <div>
+                                {data.sections[2].description}
+                            </div>
+                        </div>
                     </div>
                 </NarrowPage>
             </SubPage>

@@ -6,6 +6,8 @@
     margin: 10px 0px;
     resize: none;
     font-family: var(--main-font);
+    color: #000;
+    font-size: 14px;
 }
 
 .input:focus {
@@ -26,4 +28,19 @@
     color: red;
     background-color: blue;
     width: 10%;
+}
+
+.firstOption {
+    background-color: red;
+}
+
+select:required:invalid {
+  color: #aaa;
+  font-size: 16px;
+}
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: black;
 }

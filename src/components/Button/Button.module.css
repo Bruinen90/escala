@@ -1,22 +1,23 @@
 .container {
-    border: 1px solid var(--menu-solid);
-    text-transform: uppercase;
+    border-bottom: 1px solid var(--menu-solid);
+    /* text-transform: uppercase; */
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     cursor: auto;
-    font-size: 12px;
+    font-size: 18px;
     height: 100%;
     cursor: pointer;
+    padding: 3px 2px;
 }
 
 .link {
     display: inline-block;
     text-decoration: none;
     color: inherit;
-    width: 155px;
-    height: 35px;
-    margin-top: 12px;
+    /* width: 155px; */
+    width: 95%;
+    height: 100%;
 }
 
 .link:hover {

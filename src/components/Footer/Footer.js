@@ -46,6 +46,15 @@ const Footer = (props) => (
                 </a>
             </div>
         </div>
+        <div className={styles.line}></div>
+        <div></div>
+        <div></div>
+        <div>
+            Ogólne warunki sprzedaży
+        </div>
+        <div>
+            Polityka prywatności
+        </div>
     </div>
 );
 export default Footer;

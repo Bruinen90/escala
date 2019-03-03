@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './TextInput.module.css';
+import products from '../../../data/productsDone.js';
 
 class TextInput extends Component {
     constructor(props) {
@@ -20,10 +21,38 @@ class TextInput extends Component {
                 return {}
             }
         }
+        const productsOptions = products.map(product => {
+            return (
+                <option value={product.name} key={product.name}>{product.name}</option>
+            )
+        })
         if(this.props.inputName === 'topic') {
             return (
                 <React.Fragment>
-                    <input
+                    <select
+                        className={styles.input}
+                        type={this.props.type}
+                        placeholder={this.props.placeholder}
+                        onChange={(e) => this.props.handleChange(e, this.props.inputName)}
+                        style = {setStyle()}
+                        ref={(ref) => this.inputsArr[this.props.inputName] = ref}
+                        onFocus={()=>this.scrollToElement(this.props.inputName)}
+                        value={this.props.value}
+                        name="topics"
+                        required={true}
+                    >
+                        <option value="" disabled defaultValue hidden>temat</option>
+                        <option value="Zapytaj o cenę">Zapytaj o cenę</option>
+                        <option value="Oferta">Oferta</option>
+                        <option value="Współpraca">Współpraca</option>
+                        <option value="Model 3D">Model 3D</option>
+                        <option value="Katalog produktów">Katalog produktów</option>
+                        <option value="Współpraca">Współpraca</option>
+                        <option value="Wzornik">Wzornik</option>
+                        <option value="Press">Press</option>
+                        {productsOptions}
+                    </select>
+                    {/* <input
                         className={styles.input}
                         type={this.props.type}
                         placeholder={this.props.placeholder}
@@ -35,10 +64,16 @@ class TextInput extends Component {
                         list="browsers"
                     />
                     <datalist id="browsers">
-                        <option value="Prośba o wycenę" className={styles.option}/>
-                        <option value="Propozycja współpracy" />
-                        <option value="Oferta dla architekta" />
-                    </datalist>
+                        <option value="Zapytaj o cenę" />
+                        <option value="Oferta" />
+                        <option value="Współpraca" />
+                        <option value="Model 3D" />
+                        <option value="Katalog produktów" />
+                        <option value="Współpraca" />
+                        <option value="Wzornik" />
+                        <option value="Press" />
+                        {productsOptions}
+                    </datalist> */}
                 </React.Fragment>
             )
         } else if(this.props.type === 'textarea') {
