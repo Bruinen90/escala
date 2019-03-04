@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Footer.module.css';
 import Logo from '../Logo/Logo';
 import SocialIcons from '../SocialIcons/SocialIcons';
+import { Link } from 'react-router-dom';
 
 const Footer = (props) => (
     <div className={styles.container}>
@@ -50,10 +51,18 @@ const Footer = (props) => (
         <div></div>
         <div></div>
         <div>
-            Ogólne warunki sprzedaży
+            <Link
+                to='/info'
+            >
+                Ogólne warunki sprzedaży
+            </Link>
         </div>
         <div>
-            Polityka prywatności
+            <Link
+                to='/info'
+            >
+                Polityka prywatności
+            </Link>
         </div>
     </div>
 );

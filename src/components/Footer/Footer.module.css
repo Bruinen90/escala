@@ -72,15 +72,20 @@
         display: grid;
         grid-template: 10fr 1fr 5fr / 1fr 1fr 1fr 1fr;
         justify-items: start;
-        grid-row-gap: 10px;
+        grid-row-gap: 15px;
         min-height: 20vh;
         padding: 50px 0;
+    }
+
+    .logo, .socialContainer {
+        justify-self: center;
     }
 
     .line {
         grid-column-start: span 4;
         width: 100%;
         border-bottom: 1px solid #fff;
+        align-self: center;
     }
 
     .container > div {

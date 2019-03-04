@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './Info.module.css';
 import SubPage from '../SubPage/SubPage';
-import ows from '../../pdf/ows.pdf';
-import cookies from '../../pdf/cookies.pdf';
+// import ows from '../../pdf/ows.pdf';
+// import cookies from '../../pdf/cookies.pdf';
+import OWS from '../../components/OWS/OWS';
+import NarrowPage from '../NarrowPage/NarrowPage';
 
 const Info = (props) => {
     return(
@@ -10,42 +12,45 @@ const Info = (props) => {
             title='Info'
             number='05'
         >
-            <div className={styles.container}>
-                <div className={styles.links}>
-                    <a href={ows} target="_blank" className={styles.link}>
-                        <img
-                            src={require('../../img/icons/pdf_icon.svg')}
-                            alt="PDF"
-                            className={styles.icon}
-                        />
-                        <span className={styles.linkText}>
-                            Ogólne warunki sprzedaży
-                        </span>
-                    </a>
-                    <br/>
-                    <a href={cookies} target="_blank" className={styles.link}>
-                        <img
-                            src={require('../../img/icons/pdf_icon.svg')}
-                            alt="PDF"
-                            className={styles.icon}
-                        />
-                        <span className={styles.linkText}>
-                            Polityka cookies
-                        </span>
-                    </a>
-                    <br/>
-                    <a href={cookies} target="_blank" className={styles.link}>
-                        <img
-                            src={require('../../img/icons/pdf_icon.svg')}
-                            alt="PDF"
-                            className={styles.icon}
-                        />
-                        <span className={styles.linkText}>
-                            Zasady RODO
-                        </span>
-                    </a>
+            <NarrowPage>
+                <div className={styles.container}>
+                    <OWS />
+                    {/* <div className={styles.links}>
+                        <a href={ows} target="_blank" className={styles.link}>
+                            <img
+                                src={require('../../img/icons/pdf_icon.svg')}
+                                alt="PDF"
+                                className={styles.icon}
+                            />
+                            <span className={styles.linkText}>
+                                Ogólne warunki sprzedaży
+                            </span>
+                        </a>
+                        <br/>
+                        <a href={cookies} target="_blank" className={styles.link}>
+                            <img
+                                src={require('../../img/icons/pdf_icon.svg')}
+                                alt="PDF"
+                                className={styles.icon}
+                            />
+                            <span className={styles.linkText}>
+                                Polityka cookies
+                            </span>
+                        </a>
+                        <br/>
+                        <a href={cookies} target="_blank" className={styles.link}>
+                            <img
+                                src={require('../../img/icons/pdf_icon.svg')}
+                                alt="PDF"
+                                className={styles.icon}
+                            />
+                            <span className={styles.linkText}>
+                                Zasady RODO
+                            </span>
+                        </a>
+                    </div> */}
                 </div>
-            </div>
+            </NarrowPage>
         </SubPage>
     );
 };
