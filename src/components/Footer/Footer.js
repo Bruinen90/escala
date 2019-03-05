@@ -59,7 +59,9 @@ const Footer = (props) => (
         </div>
         <div>
             <Link
-                to='/info'
+                to={{
+                    pathname: '/info',
+                }}
             >
                 Polityka prywatności
             </Link>

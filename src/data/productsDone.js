@@ -20,7 +20,8 @@ const productsData = [
             metal:  'metal – żelazo utleniane (rdza)',
             other: 'lakier poliuretanowy: czarny matowy'
         },
-        imagesCount: 5,
+        imagesCount: 6,
+        noColors: true,
     },
     {
         name: 'Lagoon',
@@ -43,6 +44,7 @@ const productsData = [
             other: 'lakier poliuretanowy: czarny matowy'
         },
         imagesCount: 5,
+        noColors: true,
     },
     {
         name: 'Diamond',
@@ -65,6 +67,7 @@ const productsData = [
             other: 'lakier poliuretanowy: czarny matowy'
         },
         imagesCount: 3,
+        noColors: true,
     },
     {
         name: 'Mystic ver. Iron',
@@ -183,9 +186,9 @@ const productsData = [
             'Do czyszczenia komody należy używać wyłącznie bawełnianej ściereczki zwilżonej wodą lub specjalnych, neutralnych produktów do powierzchni lakierowanych. Zalecany jest montaż do ściany.',
         colours: ['bronze', 'silver', 'gold'],
         diameters: {
-            width: '1209',
-            depth: '380',
-            height: '900',
+            width: '1263',
+            depth: '360',
+            height: '1433',
         },
         materials: {
             body: 'płyta MDF 18 mm',

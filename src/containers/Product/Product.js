@@ -121,7 +121,8 @@ class Product extends Component {
                                 <div>{product[i].finish.lakierAkrylowy}</div>
                                 <div>{product[i].finish.other}</div>
                             </div>
-                            <div className={styles.info}>
+                            {!product[i].noColors &&
+                            <div className={styles.size}>
                                 <h4>
                                     Kolorystyka
                                 </h4>
@@ -138,6 +139,7 @@ class Product extends Component {
                                     {colours}
                                 </div>
                             </div>
+                            }
                             <GoBack
                                 left={true}
                             />

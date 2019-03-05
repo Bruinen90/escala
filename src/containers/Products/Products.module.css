@@ -28,5 +28,6 @@
         grid-template: auto / 1fr 1fr 1fr;
         grid-column-gap: 45px;
         grid-row-gap: 0px;
+        align-items: end;
     }
 }

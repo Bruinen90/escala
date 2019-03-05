@@ -123,6 +123,10 @@ input:focus {
     cursor: auto;
 }
 
+.link {
+    margin-left: 4px;
+}
+
 @media (min-width: 768px) {
     .form {
         width: 500px;

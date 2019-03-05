@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import styles from './ContactForm.module.css';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 import TextInput from './TextInput/TextInput';
 
-const API_PATH = 'http://woloveburgers.pl/api/contact/index.php';
+const API_PATH = 'https://woloveburgers.pl/api/contact/index.php';
 
 class ContactForm extends Component {
     constructor(props) {
@@ -78,6 +79,9 @@ class ContactForm extends Component {
             } else {
                 setValidity(false)
             }
+        } else if (e.target.innerHTML && inputName === 'topic') {
+            this.setState({[inputName]: e.target.innerHTML});
+            setValidity(true);
         } else {
             this.setState({[inputName]: e.target.value});
             switch (inputName) {
@@ -192,7 +196,9 @@ class ContactForm extends Component {
                         <span className={styles.checkmark} style = {setStyle('agreement')}></span>
                     </label>
                     <div className={styles.agreementText}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi deserunt necessitatibus, harum modi eos repellat excepturi dolorem, ratione nostrum sapiente corporis sed, corrupti, perspiciatis odio quo suscipit. Labore, explicabo, optio.
+                        Korzystając z formularza kontaktowego wyrażasz zgodę na przetwarzanie danych osobowych.
+                        Więcej informacji na ten temat można znaleźć w dziale
+                        <Link to="/info" className={styles.link}>Info</Link>.
                     </div>
                 </div>
                 <input

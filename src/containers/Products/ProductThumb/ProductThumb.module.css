@@ -52,6 +52,10 @@
         font-size: 24px;
     }
 
+    .high {
+        margin-top: 45px;
+    }
+
     .imageContainer {
         min-height: 12vw;
     }

@@ -5,10 +5,23 @@ import products from '../../../data/productsDone.js';
 class TextInput extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            showTopics: false,
+        }
         this.inputsArr = [];
-        this.scrollToElement = (index) => {
-            if(window.innerWidth < 769) {
-                window.scrollTo({top: this.inputsArr[index].offsetTop, behavior: 'smooth'})
+        this.scrollToElement = (index, value) => {
+            if(window.innerWidth < 769 && !this.state.showTopics) {
+                window.scrollTo({top: this.inputsArr[index].offsetTop + 50, behavior: 'smooth'})
+            }
+            if(index === 'topic') {
+                this.setState({showTopics: true})
+            }
+        }
+
+        this.changeTopic = (e) => {
+            this.props.handleChange(e, 'topic');
+            if(e.target.value) {
+                this.setState({showTopics: false})
             }
         }
     }
@@ -23,13 +36,18 @@ class TextInput extends Component {
         }
         const productsOptions = products.map(product => {
             return (
-                <option value={product.name} key={product.name}>{product.name}</option>
+                // <option value={product.name} key={product.name}>{product.name}</option>
+                // <option value={product.name} key={product.name} />
+                <li key={product.name} onClick={(e)=>this.changeTopic(e)}>{product.name}</li>
             )
         })
+
         if(this.props.inputName === 'topic') {
             return (
                 <React.Fragment>
-                    <select
+                    {/*
+                        Wersja z select
+                        <select
                         className={styles.input}
                         type={this.props.type}
                         placeholder={this.props.placeholder}
@@ -51,8 +69,10 @@ class TextInput extends Component {
                         <option value="Wzornik">Wzornik</option>
                         <option value="Press">Press</option>
                         {productsOptions}
-                    </select>
-                    {/* <input
+                    </select> */}
+                    {/*
+                        Wersja z wpisywaniem
+                        <input
                         className={styles.input}
                         type={this.props.type}
                         placeholder={this.props.placeholder}
@@ -74,6 +94,38 @@ class TextInput extends Component {
                         <option value="Press" />
                         {productsOptions}
                     </datalist> */}
+                    <div className={styles.selectCont}>
+                        <input
+                            className={styles.input}
+                            type={this.props.type}
+                            placeholder={this.props.placeholder}
+                            onChange={(e)=>this.changeTopic(e)}
+                            style = {setStyle()}
+                            ref={(ref) => this.inputsArr[this.props.inputName] = ref}
+                            onFocus={()=>this.scrollToElement(this.props.inputName, this.props.value)}
+                            onBlur={()=>
+                                setTimeout(()=>this.setState({showTopics: false}),100)
+                            }
+                            value={this.props.value}
+                        />
+                        <div
+                            className={[styles.listToggler, this.state.showTopics && styles.listTogglerActive].join(' ')}
+                            onClick={()=>this.setState({showTopics: !this.state.showTopics})}
+                        >V</div>
+                        <ul
+                            className={[styles.options, !this.state.showTopics && styles.optionsHidden].join(' ')}
+                        >
+                            <li onClick={(e)=>this.changeTopic(e)}>Zapytaj o cenę</li>
+                            <li onClick={(e)=>this.changeTopic(e)}>Oferta</li>
+                            <li onClick={(e)=>this.changeTopic(e)}>Współpraca</li>
+                            <li onClick={(e)=>this.changeTopic(e)}>Model 3D</li>
+                            <li onClick={(e)=>this.changeTopic(e)}>Katalog produktów</li>
+                            <li onClick={(e)=>this.changeTopic(e)}>Współpraca</li>
+                            <li onClick={(e)=>this.changeTopic(e)}>Wzornik</li>
+                            <li onClick={(e)=>this.changeTopic(e)}>Press</li>
+                            {productsOptions}
+                        </ul>
+                    </div>
                 </React.Fragment>
             )
         } else if(this.props.type === 'textarea') {

@@ -12,7 +12,9 @@ class ProductThumb extends Component {
                 className={styles.container}
                 onClick={()=>this.props.history.push(`/products/product_${this.props.index+1}`)}
             >
-                <div className={styles.imageContainer}>
+                <div className={[
+                    styles.imageContainer,
+                    this.props.index === 8 && styles.high].join(' ')}>
                     <img
                         // src={require(`../../../img/products/product_${this.props.index+1}/${this.state.picNum}.jpg`)}
                         src={require(`../../../img/thumbs/${this.props.index+1}.jpg`)}

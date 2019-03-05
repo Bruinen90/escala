@@ -24,17 +24,7 @@
     height: 250px;
 }
 
-.option {
-    color: red;
-    background-color: blue;
-    width: 10%;
-}
-
-.firstOption {
-    background-color: red;
-}
-
-select:required:invalid {
+/* select:required:invalid {
   color: #aaa;
   font-size: 16px;
 }
@@ -43,4 +33,70 @@ option[value=""][disabled] {
 }
 option {
   color: black;
+} */
+
+.selectCont {
+    width: 100%;
+    position: relative;
+}
+
+.listToggler {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) scaleY(.5);
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.listTogglerActive {
+    transform: translateY(-50%) scaleY(.5) rotate(180deg);
+}
+
+.options {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: auto;
+    top: -130px;
+    left: 0;
+    right: 0;
+    height: 140px;
+    background-color: #fff;
+    list-style: none;
+    overflow: auto;
+    border: 1px solid black;
+    border-bottom: 0;
+    max-height: 140px;
+    transition: opacity .2s ease-in, max-height .3s ease-in;
+}
+
+.optionsHidden {
+    max-height: 0px;
+    border: 0 !important;
+    opacity: 0;
+}
+
+.options li {
+    margin: 0;
+    height: 30px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .options {
+        top: calc(100% - 10px);
+        border-bottom: 1px solid black;
+        border-top: 0;
+        bottom: calc(-100% - 10px);
+    }
+
+    .options li:hover {
+        background-color: var(--menu-solid);
+        color: #fff;
+    }
 }

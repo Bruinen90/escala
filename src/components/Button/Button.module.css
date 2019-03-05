@@ -1,14 +1,15 @@
 .container {
     border-bottom: 1px solid var(--menu-solid);
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     cursor: auto;
-    font-size: 18px;
+    font-size: 12px;
     height: 100%;
     cursor: pointer;
     padding: 3px 2px;
+    padding-top: 1rem;
 }
 
 .link {
@@ -16,11 +17,18 @@
     text-decoration: none;
     color: inherit;
     /* width: 155px; */
-    width: 95%;
+    width: 60%;
     height: 100%;
 }
 
 .link:hover {
     background-color: var(--menu-solid);
     color: #fff;
+}
+
+
+@media (min-width: 768px) {
+    .link {
+        width: 50%;
+    }
 }

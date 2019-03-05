@@ -1,0 +1,25 @@
+.container {
+    padding: 15px;
+    text-align: justify;
+}
+
+.container h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container h3 {
+    text-transform: uppercase;
+}
+
+.container h4 {
+    font-weight: bold;
+}
+
+.container ol li, ul li {
+    margin-bottom: 1rem;
+}
+
+.container ol, ul {
+    padding: 0 1rem;
+}
