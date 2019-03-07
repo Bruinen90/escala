@@ -144,7 +144,7 @@ class ContactForm extends Component {
         const textInputs = [
             {
                 type: "text",
-                placeholder: "imię i nazwisko",
+                placeholder: "imię i nazwisko / firma",
                 label: "name",
             },
             {

@@ -50,14 +50,14 @@ const Footer = (props) => (
         <div className={styles.line}></div>
         <div></div>
         <div></div>
-        <div>
+        <div className={styles.policyLink}>
             <Link
                 to='/info'
             >
                 Ogólne warunki sprzedaży
             </Link>
         </div>
-        <div>
+        <div className={styles.policyLink}>
             <Link to={{ pathname: '/info', search: 'policy'}}>
                 Polityka prywatności
             </Link>

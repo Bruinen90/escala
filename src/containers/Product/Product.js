@@ -12,6 +12,7 @@ class Product extends Component {
         showLigthbox: false,
     }
     render() {
+        console.log(this.props.index)
         const i = this.props.index - 1;
         const colours = [];
         for(let colour of product[i].colours) {
@@ -58,6 +59,9 @@ class Product extends Component {
                             </h2>
                             <div className={styles.text}>
                                 {product[i].description}
+                                <p>
+                                    UWAGI: {product[i].warning}
+                                </p>
                             </div>
                             <div className={styles.buttons}>
                                 <Button click={()=>this.setState({showLigthbox: true})}>
@@ -82,6 +86,10 @@ class Product extends Component {
                         <div
                             className={styles.galleryCont}
                             onClick={()=>this.setState({showLigthbox: true})}
+                            // For big, square furniture
+                            style={this.props.index === 9 && {
+                                padding: '30px 60px',
+                            }}
                         >
                             <img
                                 src={require(`../../img/products/product_${this.props.index}/1.jpg`)}
@@ -117,23 +125,23 @@ class Product extends Component {
                                 <h4>
                                     Wykończenie
                                 </h4>
-                                <div>{product[i].finish.metal}</div>
+                                <div>{product[i].finish.metal && 'metal - '+product[i].finish.metal}</div>
                                 <div>{product[i].finish.lakierAkrylowy}</div>
                                 <div>{product[i].finish.other}</div>
                             </div>
                             {!product[i].noColors &&
                             <div className={styles.size}>
                                 <h4>
-                                    Kolorystyka
+                                    Dostępne warianty wykończenia
                                 </h4>
                                 <h5>
-                                    płynne metale
+                                    metale
                                 </h5>
                                 <div className={styles.colours}>
                                     {colours}
                                 </div>
                                 <h5>
-                                    akryl metalizowany
+                                    lakier akrylowy metalizowany
                                 </h5>
                                 <div className={styles.colours}>
                                     {colours}

@@ -14,7 +14,7 @@ class Home extends Component {
             />
         </div>
         <Slider
-            slidesCount = {5}
+            slidesCount = {6}
         />
       </div>
     );

@@ -27,7 +27,7 @@ class Cooperation extends Component {
     render() {
         return (
             <SubPage
-                title="O nas"
+                title="Współpraca"
                 number="04"
             >
                 <NarrowPage>

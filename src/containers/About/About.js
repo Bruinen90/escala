@@ -52,7 +52,7 @@ class About extends Component {
         return (
             <SubPage
                 title="O nas"
-                number="04"
+                number="03"
             >
                 <NarrowPage>
                     <div className={styles.container}>

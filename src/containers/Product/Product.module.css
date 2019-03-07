@@ -14,6 +14,7 @@
 
 .description {
     width: 100%;
+    font-size: 15px;
 }
 
 .buttons {
@@ -154,7 +155,9 @@ h5 {
 
     .galleryCont {
         height: 70vh;
-        padding: 30px 60px;
+        /* padding: 30px 60px; */
+        /* Customers changes */
+        padding: calc(30px + 8%) calc(60px + 8%);
         padding-bottom: 0;
         max-width: 60vw;
     }
@@ -189,6 +192,7 @@ h5 {
         height: 100%;
         margin-right: -40px;
         margin-left: 2vw;
+        background-position: 0% 80%;
     }
 
     .techHeader {

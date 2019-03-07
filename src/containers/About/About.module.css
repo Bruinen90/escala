@@ -28,7 +28,7 @@
 
 .header {
     font-weight: normal;
-    font-size: 24px;
+    font-size: 23px;
     text-transform: uppercase;
 }
 
@@ -142,6 +142,7 @@
 @media (min-width: 768px) {
     .container {
         margin-top: 30px;
+        font-size: 15px;
     }
 
     .row {
@@ -175,15 +176,11 @@
         width: 50%;
     }
 
-    .text div {
-        text-align: left;
-    }
-
     .imgWrapper {
         position: relative;
         left: -82px;
-        max-width: 50vw;
-        max-height: 80vh;
+        max-width: 45vw;
+        max-height: 72vh;
         margin: 0;
     }
 
