@@ -58,6 +58,7 @@
 
 .follow {
     margin-right: 10px;
+    line-height: 2rem;
 }
 
 .socialContainer {
@@ -92,6 +93,10 @@
     .container > div {
         margin: 0;
         padding-left: 100px;
+    }
+
+    .follow {
+        line-height: normal;
     }
 
     .socials {

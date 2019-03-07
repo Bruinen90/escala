@@ -132,7 +132,7 @@ const productsData = [
             metal:  'mosiądz',
             other: 'lakier poliuretanowy: czarny matowy'
         },
-        imagesCount: 3,
+        imagesCount: 4,
     },
     {
         name: 'Shades ver. 2',

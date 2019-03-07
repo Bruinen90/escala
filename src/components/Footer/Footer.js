@@ -58,11 +58,7 @@ const Footer = (props) => (
             </Link>
         </div>
         <div>
-            <Link
-                to={{
-                    pathname: '/info',
-                }}
-            >
+            <Link to={{ pathname: '/info', search: 'policy'}}>
                 Polityka prywatności
             </Link>
         </div>

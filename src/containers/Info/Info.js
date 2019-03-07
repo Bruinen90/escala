@@ -8,17 +8,16 @@ import PrivacyPolicy from '../../components/PrivacyPolicy/PrivacyPolicy';
 import NarrowPage from '../NarrowPage/NarrowPage';
 
 class Info extends Component {
-    state = {
-        scrollToPolicy: false,
-    }
     constructor(props) {
         super(props)
         this.privacyPolicyRef = React.createRef();
     }
 
     componentDidMount() {
-        if(this.state.scrollToPolicy) {
+        if(this.props.location.search === '?policy') {
             window.scrollTo(0, this.privacyPolicyRef.current.offsetTop)
+        } else {
+            window.scrollTo(0, 0)
         }
     }
     render() {

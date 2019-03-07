@@ -15,7 +15,7 @@ class About extends Component {
     componentDidMount() {
         const allImg = this.imgRefs.map(ref => ref.current)
         const fadeIn = (e) =>{
-            allImg.forEach(image => {
+            allImg.forEach((image, index) => {
                 if(image.getBoundingClientRect().top < window.innerHeight*0.8) {
                     image.classList.add(styles.show)
                 }
@@ -28,13 +28,16 @@ class About extends Component {
         const content = [];
         data.sections.forEach((section, index) => {
             content.push(
-                <div className={styles.row} key={index}>
-                    <img
-                        src={require(`../../img/about/img_${index+1}.jpg`)}
-                        alt={section.header}
-                        className={styles.img}
-                        ref={this.imgRefs[index]}
-                    />
+                <div className={styles.row} key={index} ref={this.imgRefs[index]}>
+                    <div className={styles.imgWrapper}>
+                        <div className={styles.whiteCover}></div>
+                        <div className={styles.blackCover}></div>
+                        <img
+                            src={require(`../../img/about/img_${index+1}.jpg`)}
+                            alt={section.header}
+                            className={styles.img}
+                        />
+                    </div>
                     <div className={styles.text}>
                         <h3 className={styles.header}>
                             {section.header}
