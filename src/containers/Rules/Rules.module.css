@@ -24,3 +24,7 @@
 .container ol, ul {
     padding: 0 1rem;
 }
+
+.container a {
+    color: inherit;;
+}

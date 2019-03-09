@@ -11,7 +11,9 @@ class GoBack extends Component {
             <div className={[styles.container, this.props.left && styles.left].join(' ')}>
                 <span
                     onClick={this.context.router.history.goBack}>
-                    powrót
+                    <span className={styles.arrow}>
+                        <ion-icon name="arrow-dropleft"></ion-icon>
+                    </span> back
                 </span>
             </div>
         );

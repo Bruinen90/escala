@@ -22,6 +22,8 @@
     padding: 0px 20px;
     transform: translateY(40px);
     opacity: 0;
+    font-size: 15px;
+    text-align: justify;
 }
 
 @keyframes textFadeIn {
@@ -185,10 +187,6 @@
         padding: 0 15px;
         padding-left: 120px;
         width: 50%;
-    }
-
-    .text div {
-        text-align: left;
     }
 
     .imgWrapper {

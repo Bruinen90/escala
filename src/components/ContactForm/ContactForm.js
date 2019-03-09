@@ -198,7 +198,7 @@ class ContactForm extends Component {
                     <div className={styles.agreementText}>
                         Korzystając z formularza kontaktowego wyrażasz zgodę na przetwarzanie danych osobowych.
                         Więcej informacji na ten temat można znaleźć w dziale
-                        <Link to="/info" className={styles.link}>Info</Link>.
+                        <Link to={{ pathname: '/info', search: 'policy'}} className={styles.link}>Info</Link>.
                     </div>
                 </div>
                 <input

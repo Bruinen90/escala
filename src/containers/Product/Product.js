@@ -12,7 +12,6 @@ class Product extends Component {
         showLigthbox: false,
     }
     render() {
-        console.log(this.props.index)
         const i = this.props.index - 1;
         const colours = [];
         for(let colour of product[i].colours) {
@@ -24,7 +23,8 @@ class Product extends Component {
                     key={colour}
                 />
             )
-        }
+        };
+        let enlargeIcon = product[i].blackGalleryIcon ? 'enlarge_black' : 'enlarge';
         const imagesCount = product[i].imagesCount;
         const bigImg = require(`../../img/products/product_${this.props.index}/${imagesCount}.jpg`);
         return (
@@ -60,7 +60,7 @@ class Product extends Component {
                             <div className={styles.text}>
                                 {product[i].description}
                                 <p>
-                                    UWAGI: {product[i].warning}
+                                    {product[i].warning && product[i].warning}
                                 </p>
                             </div>
                             <div className={styles.buttons}>
@@ -84,12 +84,12 @@ class Product extends Component {
                             </div>
                         </div>
                         <div
-                            className={styles.galleryCont}
+                            className={[styles.galleryCont, product[i].moveUp && styles.moveUp].join(' ')}
                             onClick={()=>this.setState({showLigthbox: true})}
                             // For big, square furniture
-                            style={this.props.index === 9 && {
+                            style={this.props.index === 9 ? {
                                 padding: '30px 60px',
-                            }}
+                            } : {}}
                         >
                             <img
                                 src={require(`../../img/products/product_${this.props.index}/1.jpg`)}
@@ -97,7 +97,7 @@ class Product extends Component {
                                 className={styles.galleryImg}
                             />
                             <img
-                                src={require(`../../img/icons/enlarge.svg`)}
+                                src={require(`../../img/icons/${enlargeIcon}.svg`)}
                                 alt="Powiększ zdjecie"
                                 className={styles.enlargeIcon}
                             />
@@ -129,7 +129,9 @@ class Product extends Component {
                                 <div>{product[i].finish.lakierAkrylowy}</div>
                                 <div>{product[i].finish.other}</div>
                             </div>
-                            {!product[i].noColors &&
+                            <div className={styles.placeHolder}></div>
+                            {/* Waits for photos from customer */}
+                            {/* {!product[i].noColors &&
                             <div className={styles.size}>
                                 <h4>
                                     Dostępne warianty wykończenia
@@ -147,7 +149,7 @@ class Product extends Component {
                                     {colours}
                                 </div>
                             </div>
-                            }
+                            } */}
                             <GoBack
                                 left={true}
                             />

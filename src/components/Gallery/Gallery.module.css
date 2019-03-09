@@ -42,7 +42,6 @@
 .thumbsCont {
     display: none;
     justify-content: center;
-    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -80,16 +79,18 @@
 
 @media (min-width: 768px) {
     .container {
-        width: 80%;
+        width: 85%;
         height: 95vh;
         flex-direction: row;
         justify-content: center;
         padding: 30px;
+        padding-left: 0px;
     }
 
     .fullImageCont {
         width: 80%;
         height: 80vh;
+        padding: 0 60px;
     }
 
     .fullImage {
@@ -111,6 +112,10 @@
         width: 100%;
         height: auto;
         margin: 18px 0;
+    }
+
+    .thumbSmall {
+        margin: 8px;
     }
 
     .closeIcon {

@@ -47,7 +47,6 @@ class Gallery extends Component {
         })
     }
     render() {
-        console.log(this.props.imagesCount)
         const allThumbs = [];
         for(let i = 1; i <= this.props.imagesCount; i++) {
             allThumbs.push(
@@ -55,7 +54,7 @@ class Gallery extends Component {
                     src={require(`../../img/products/product_${this.props.productIndex}/${i}.jpg`)}
                     alt={this.props.productIndex}
                     onClick={()=>this.changeImage(i)}
-                    className={styles.thumb}
+                    className={[styles.thumb, this.props.imagesCount > 6 && styles.thumbSmall].join(' ')}
                     key={i}
                 />
             )

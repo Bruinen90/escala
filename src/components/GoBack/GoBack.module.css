@@ -1,23 +1,29 @@
 .container {
     font-size: 16px;
-    width: 100%;
-    text-align: right;
+    /* width: 100%; */
     margin: 30px;
     margin-left: 0;
+    margin-right: auto;
 }
 
 .container span {
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 
-.container span::after {
+/* .container span::after {
     content: "_";
     margin-left: 5px;
+} */
+
+.container span:hover > .arrow {
+    color: var(--color-red);
 }
 
-.container span:hover::after {
-    color: var(--color-red);
+.arrow {
+    font-size: 26px;
 }
 
 @media (min-width: 768px) {
@@ -27,7 +33,6 @@
     }
 
     .left {
-        text-align: left;
-        margin: 60px 0;
+        margin: 45px 0;
     }
 }
