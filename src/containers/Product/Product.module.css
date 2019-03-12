@@ -39,7 +39,7 @@
 }
 
 .galleryImg {
-    width: 100%;
+    max-width: 100%;
 }
 
 .enlargeIcon {
@@ -86,12 +86,6 @@ h5 {
 .colours {
     display: flex;
     justify-content: flex-start;
-}
-
-.colourImg {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
 }
 
 .bigImgCont {
@@ -168,9 +162,8 @@ h5 {
 
     .galleryImg {
         max-height: 100%;
-        max-width: 100%;
-        width: auto;
         margin-top: auto;
+        flex: 0;
     }
 
     .galleryCont:hover {

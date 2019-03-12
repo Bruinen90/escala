@@ -1,0 +1,63 @@
+.container {
+    position: relative;
+    width: auto;
+}
+
+.coloursCont {
+    width: 180px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.coloursSlides {
+    display: flex;
+    transition: all .5s ease-out;
+}
+
+.arrow {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrowLeft {
+    left: -30px;
+}
+
+.arrowRight {
+    right: -30px;
+}
+
+.colourImg {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.lightbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.cover {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--menu-grey);
+}

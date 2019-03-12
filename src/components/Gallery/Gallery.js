@@ -31,7 +31,7 @@ class Gallery extends Component {
     }
 
     changeImage = (newImgIndex) => {
-        if(newImgIndex <= this.props.imagesCount && newImgIndex > 0) {
+        if(newImgIndex <= this.props.imagesList.length && newImgIndex > 0) {
             this.setState({currImg: newImgIndex});
         }
     }
@@ -45,20 +45,26 @@ class Gallery extends Component {
                 this.changeImage(this.state.currImg - 1)
             }
         })
+
+        if(this.props.chosenImage) { this.setState({currImg: this.props.chosenImage}) }
     }
     render() {
-        const allThumbs = [];
-        for(let i = 1; i <= this.props.imagesCount; i++) {
-            allThumbs.push(
+        const allThumbs = this.props.imagesList.map((img, index) => {
+            return(
                 <img
-                    src={require(`../../img/products/product_${this.props.productIndex}/${i}.jpg`)}
+                    src={require(`../../img/${this.props.imgFolderPath}/${img}.jpg`)}
                     alt={this.props.productIndex}
-                    onClick={()=>this.changeImage(i)}
-                    className={[styles.thumb, this.props.imagesCount > 6 && styles.thumbSmall].join(' ')}
-                    key={i}
+                    onClick={()=>this.changeImage(index+1)}
+                    className={[
+                        styles.thumb,
+                        this.props.imagesList.length === 7 && styles.thumbSmall,
+                        this.props.outlineChosenImage && styles.outlineChosenImage_notChosen,
+                        this.props.outlineChosenImage && this.state.currImg === index + 1 && styles.outlineChosenImage_chosen,
+                    ].join(' ')}
+                    key={index}
                 />
             )
-        }
+        })
         return (
             <div className={styles.container}>
                 <div className={styles.fullImageCont}>
@@ -68,9 +74,17 @@ class Gallery extends Component {
                         transitionLeaveTimeout={100}
                     >
                         <img
-                            src={require(`../../img/products/product_${this.props.productIndex}/${this.state.currImg}.jpg`)}
+                            src={require(`../../img/${this.props.imgFolderPath}/${this.props.imagesList[this.state.currImg-1]}.jpg`)}
                             alt="Full"
-                            className={styles.fullImage}
+                            //Some images smaller according to my dear customer - list in data file (productsDone.js)
+                            className={
+                                [
+                                    styles.fullImage,
+                                    this.props.smallImagesList ? this.props.smallImagesList.indexOf(this.state.currImg) >= 0 &&
+                                    styles.fullImage_small : null,
+                                    this.props.mediumImagesList ? this.props.mediumImagesList.indexOf(this.state.currImg) >= 0 &&
+                                    styles.fullImage_medium : null
+                                ].join(' ')}
                             key={this.state.currImg}
                             onTouchStart={this.touchStartHandler}
                             onTouchEnd={this.touchEndHandler}
@@ -88,11 +102,14 @@ class Gallery extends Component {
                         src={require(`../../img/icons/arrow_right.svg`)}
                         alt="Następne zdjęcie"
                         onClick={()=>this.changeImage(this.state.currImg+1)}
-                        style={{opacity: this.state.currImg === this.props.imagesCount ? 0 : 1}}
+                        style={{opacity: this.state.currImg === this.props.imagesList.length ? 0 : 1}}
                         className={[styles.arrow, styles.arrowRight].join(' ')}
                     />
                 </div>
-                <div className={styles.thumbsCont}>
+                <div className={[
+                    styles.thumbsCont,
+                    this.props.imagesList.length > 7 && styles.thumbsCont_2rows
+                ].join(' ')}>
                         {allThumbs}
                 </div>
                 <img

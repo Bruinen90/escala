@@ -7,7 +7,7 @@ if ($_POST)
 	{
 		http_response_code(200);
 		$subject = $_POST['topic'];
-		$to = "bruinen@interia.pl";
+		$to = "info@escalapoland.com";
 		$from = $_POST['email'];
 		$message = '<html><body>';
 		$message .= '<center>';

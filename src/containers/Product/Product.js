@@ -6,6 +6,7 @@ import Gallery from '../../components/Gallery/Gallery';
 import Button from '../../components/Button/Button';
 import product from '../../data/productsDone';
 import GoBack from '../../components/GoBack/GoBack';
+import ColoursSlider from '../../components/ColoursSlider/ColoursSlider';
 
 class Product extends Component {
     state = {
@@ -13,19 +14,12 @@ class Product extends Component {
     }
     render() {
         const i = this.props.index - 1;
-        const colours = [];
-        for(let colour of product[i].colours) {
-            colours.push(
-                <img
-                    src={require(`../../img/colours/${colour}.jpg`)}
-                    alt={`Kolor ${colour}`}
-                    className={styles.colourImg}
-                    key={colour}
-                />
-            )
-        };
+
         let enlargeIcon = product[i].blackGalleryIcon ? 'enlarge_black' : 'enlarge';
         const imagesCount = product[i].imagesCount;
+        const imagesList = [];
+        for (let i = 1; i <= imagesCount; i++) { imagesList.push(i) };
+        const imgFolderPath =  `products/product_${this.props.index}`;
         const bigImg = require(`../../img/products/product_${this.props.index}/${imagesCount}.jpg`);
         return (
             <React.Fragment>
@@ -36,8 +30,10 @@ class Product extends Component {
                             onClick={()=>this.setState({showLigthbox: false})}
                         ></div>
                         <Gallery
-                            productIndex = {this.props.index}
-                            imagesCount = {product[i].imagesCount}
+                            imgFolderPath = {imgFolderPath}
+                            imagesList = {imagesList}
+                            smallImagesList = {product[i].smallImagesList}
+                            mediumImagesList = {product[i].mediumImagesList}
                             clickClose = {()=>this.setState({showLigthbox: false})}
                             visible = {this.state.showLigthbox}
                         />
@@ -129,9 +125,8 @@ class Product extends Component {
                                 <div>{product[i].finish.lakierAkrylowy}</div>
                                 <div>{product[i].finish.other}</div>
                             </div>
-                            <div className={styles.placeHolder}></div>
                             {/* Waits for photos from customer */}
-                            {/* {!product[i].noColors &&
+                            {product[i].colours ?
                             <div className={styles.size}>
                                 <h4>
                                     Dostępne warianty wykończenia
@@ -140,16 +135,23 @@ class Product extends Component {
                                     metale
                                 </h5>
                                 <div className={styles.colours}>
-                                    {colours}
+                                    <ColoursSlider
+                                        coloursList={product[i].colours.metal}
+                                    />
                                 </div>
                                 <h5>
                                     lakier akrylowy metalizowany
                                 </h5>
                                 <div className={styles.colours}>
-                                    {colours}
+                                    <ColoursSlider
+                                        coloursList={product[i].colours.acryl}
+                                    />
                                 </div>
                             </div>
-                            } */}
+                            :
+                            <div className={styles.placeHolder}></div>
+                            }
+                            {/* <div className={styles.placeHolder}></div> */}
                             <GoBack
                                 left={true}
                             />
