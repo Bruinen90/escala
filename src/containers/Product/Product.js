@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
 import styles from './Product.module.css';
+import { Translate, withLocalize } from 'react-localize-redux';
 
 import SubPage from '../SubPage/SubPage';
 import Gallery from '../../components/Gallery/Gallery';
 import Button from '../../components/Button/Button';
-import product from '../../data/productsDone';
 import GoBack from '../../components/GoBack/GoBack';
 import ColoursSlider from '../../components/ColoursSlider/ColoursSlider';
 
+import product from '../../data/productsDone';
+import data from '../../data/productsData.json';
+// import colours from '../../data/colours';
+
 class Product extends Component {
-    state = {
-        showLigthbox: false,
+    constructor(props) {
+        super(props);
+        this.state = {
+            showLigthbox: false,
+        }
+        this.props.addTranslation(data);
     }
     render() {
+        console.log(this.props.keyName, this.props.index);
         const i = this.props.index - 1;
 
         let enlargeIcon = product[i].blackGalleryIcon ? 'enlarge_black' : 'enlarge';
@@ -21,6 +30,7 @@ class Product extends Component {
         for (let i = 1; i <= imagesCount; i++) { imagesList.push(i) };
         const imgFolderPath =  `products/product_${this.props.index}`;
         const bigImg = require(`../../img/products/product_${this.props.index}/${imagesCount}.jpg`);
+
         return (
             <React.Fragment>
                 {this.state.showLigthbox ?
@@ -43,7 +53,7 @@ class Product extends Component {
                 }
 
                 <SubPage
-                    title="Produkty"
+                    title={<Translate id="title" />}
                     number="02"
                     headerGoesBack = {true}
                     noGoBack={true}
@@ -54,7 +64,8 @@ class Product extends Component {
                                 {product[i].name}
                             </h2>
                             <div className={styles.text}>
-                                {product[i].description}
+                                <Translate id={`data.${this.props.keyName}.description`} />
+                                {/* {product[i].description} */}
                                 <p>
                                     {product[i].warning && product[i].warning}
                                 </p>
@@ -126,32 +137,46 @@ class Product extends Component {
                                 <div>{product[i].finish.other}</div>
                             </div>
                             {/* Waits for photos from customer */}
-                            {product[i].colours ?
                             <div className={styles.size}>
-                                <h4>
-                                    Dostępne warianty wykończenia
-                                </h4>
-                                <h5>
-                                    metale
-                                </h5>
-                                <div className={styles.colours}>
-                                    <ColoursSlider
-                                        coloursList={product[i].colours.metal}
-                                    />
-                                </div>
-                                <h5>
-                                    lakier akrylowy metalizowany
-                                </h5>
-                                <div className={styles.colours}>
-                                    <ColoursSlider
-                                        coloursList={product[i].colours.acryl}
-                                    />
-                                </div>
+                                {product[i].colours.metal.length > 2 ?
+                                    <React.Fragment>
+                                        <h4>
+                                            Dostępne warianty wykończenia
+                                        </h4>
+                                        <h5>
+                                            metale
+                                        </h5>
+                                    </React.Fragment>
+                                    : <br />
+                                }
+                                {product[i].colours.metal &&
+                                        <div className={styles.colours}>
+                                            <ColoursSlider
+                                                coloursList={product[i].colours.metal}
+                                                // coloursList={colours.metal}
+                                                imgFolderPath={'metals'}
+                                            />
+                                        </div>
+                                }
+                                {product[i].colours.acryl &&
+                                    <React.Fragment>
+                                        <h5>
+                                            lakier akrylowy metalizowany
+                                        </h5>
+                                        <div className={styles.colours}>
+                                            <ColoursSlider
+                                                coloursList={product[i].colours.acryl}
+                                                // coloursList={colours.acryl}
+                                                imgFolderPath={'varnishes'}
+                                            />
+                                        </div>
+                                    </React.Fragment>
+                                }
                             </div>
-                            :
-                            <div className={styles.placeHolder}></div>
+                            {
+                                product[i].colours.metal.length < 3 &&
+                                <div className={styles.placeHolder}></div>
                             }
-                            {/* <div className={styles.placeHolder}></div> */}
                             <GoBack
                                 left={true}
                             />
@@ -169,4 +194,4 @@ class Product extends Component {
         );
     }
 }
-export default Product;
+export default withLocalize(Product);

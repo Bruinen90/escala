@@ -7,6 +7,7 @@
     width: 180px;
     height: 50px;
     overflow: hidden;
+    margin-left: 5px;
 }
 
 .coloursSlides {
@@ -25,11 +26,11 @@
 }
 
 .arrowLeft {
-    left: -30px;
+    left: -25px;
 }
 
 .arrowRight {
-    right: -30px;
+    right: -25px;
 }
 
 .colourImg {
@@ -59,5 +60,20 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--menu-grey);
+    background-color: rgba(0,0,0,.7);
+    /* background-color: var(--menu-grey); */
+}
+
+@media (min-width: 768px) {
+    .coloursCont {
+        margin: 0;
+    }
+
+    .arrowLeft {
+        left: -35px;
+    }
+
+    .arrowRight {
+        right: -30px;
+    }
 }

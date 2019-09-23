@@ -34,11 +34,11 @@ class ContactForm extends Component {
                     changed: false,
                 },
                 topic: {
-                    validity: false,
+                    validity: this.props.fromProduct,
                     changed: false,
                 },
                 content: {
-                    validity: false,
+                    validity: this.props.fromProduct,
                     changed: false,
                 },
                 agreement: {

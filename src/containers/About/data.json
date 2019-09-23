@@ -1,0 +1,28 @@
+{
+    "sections": {
+        "idea": {
+            "header": ["Idea", "Idea"],
+            "description":
+                [
+                    "Marka Escala powstała w wyniku połączenia zdobytej wiedzy i doświadczeń w projektowaniu oraz produkcji mebli z kreatywnością i poszukiwaniem ponadczasowego piękna. Ideą marki jest tworzenie nieszablonowych projektów, produkcja z niekonwencjonalnych materiałów i precyzja ręcznego wykonania. Meble Escala powstają w  niewielkiej rodzinnej manufakturze specjalizującej się od 1990 roku w produkcji wyjątkowych mebli na zamówienie. Twórcami marki jest duet projektantów — Justyna Daszko i Tomasz Wojtas, według których prawdziwą wartość przedmiotu kreuje jego unikatowość i pasja twórcy.", 
+                    "Escala Poland brand was founded on the principle of combining our knowledge of furniture design and manufacturing with creativity and constant search of beauty. Our idea is to create unconventional projects, made of unique materials and crafted manually by Escala artisans. Escala furniture are crafted in a family-run workshop, specialised in creative furniture manufacturing since 1990. Justyna Daszko and Tomasz Wojtas are the two designers behind the concept of Escala - that the real value of furniture is created by their uniqueness and passion of their designers."
+                ]
+        },
+        "design": {
+            "header": ["Unikalne wzornictwo i materiały", "Unique materials and design"],
+            "description":
+                [
+                    "Komody i konsole marki Escala przyciągają wzrok jak biżuteria i podkreślają charakter różnorodnych stylizacji. Produkcja mebli oparta o niekonwencjonalne materiały kreuje ich zaskakujący i nieszablonowy design, a ręczne wykonanie z dbałością o każdy detal zapewnia wysoką jakość. Unikalną wartość produktów gwarantują nowatorskie metody aplikacji metali takich jak mosiądz, brąz, miedź, żelazo, a także niepowtarzalne procesy ich utleniania i patynowania. Wykończenie wnętrz w matowym lakierze dodaje elegancji, a stalowe stelaże dostępne w kilkunastu kolorach powłok lakierniczych stanowią wyrafinowane dopełnienie produktów.",
+                    "Escala Poland sideboards and consoles are truly enticing and can be a perfect match for diverse styles. The process of furniture manufacturing is based on the use of unconventional materials which contribute to its uniqueness, while the top-notch crafting skills of Escala artisans stand for its quality. Our modern methods applied in the production process are yet another contribution to the originality of Escala furniture. These include the use of metals such as brass, bronze, copper or iron in the coating process as well as unique ways of patination and oxidisation. Matt finishes suit the elegance of Escala products while steel frames available in different colours are an excellent finishing touch."
+                ]
+        },
+        "production": {
+            "header": ["Produkcja", "Production"],
+            "description":
+                [
+                    "Jakość materiału oraz poświęcony czas doświadczonego rzemieślnika na jego obróbkę ma zasadnicze znaczenie w cyklu całej produkcji mebli. Na każdym jej etapie od operacji związanych z cięciem płyt MDF po cykl nakładania powłok lakierniczych każdy element zostaje poddany kontroli jakości. W celu uzyskania najlepszych efektów końcowych wykorzystywane są najwyższej jakości metale i oksydanty, lakiery akrylowe i poliuretanowe. Połączenia konstrukcji mebli wykonywane są pod kątem 45 stopni w sposób, który nie pozwala dostrzec na zewnątrz krawędzi łączonych elementów oraz gwarantuje precyzję i wytrzymałość produktów. ",
+                    "The quality of materials along with the knowledge and experience of an artisan are the key factors in the manufacturing process.\nEvery manufacturing stage is subject to strict quality control, including all the processes from cutting MDF boards to coating.\nTo achieve the best results, we use top-quality metals, oxidants as well both acrylic and polyurethane finishes.\nJoining parts of Escala Poland furniture structures are joined at a 45-degree angle, creating a pure and solid core with seamless edges, which guarantees quality and durability."
+                ]
+        }
+    }
+}

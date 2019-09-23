@@ -24,7 +24,7 @@ class ColoursSlider extends Component {
         this.props.coloursList.forEach((colour, index) => {
             colours.push(
                 <img
-                    src={require(`../../img/colours/${colour}.jpg`)}
+                    src={require(`../../img/${this.props.imgFolderPath}/${colour}.jpg`)}
                     alt={`Kolor ${colour}`}
                     className={styles.colourImg}
                     key={index}
@@ -32,8 +32,6 @@ class ColoursSlider extends Component {
                 />
             )
         });
-        console.log(this.state.chosenColour)
-        console.log(this.props.coloursList.indexOf(this.state.chosenColour))
         const scrollable = this.props.coloursList.length > 3;
         const slidesCount = Math.ceil(this.props.coloursList.length/3);
         return (
@@ -45,12 +43,14 @@ class ColoursSlider extends Component {
                             onClick={()=>this.setState({showLigthbox: false})}
                         ></div>
                         <Gallery
-                            imgFolderPath={'colours/full'}
+                            imgFolderPath={this.props.imgFolderPath+'/full'}
                             imagesList={this.props.coloursList}
                             clickClose = {()=>this.setState({showLigthbox: false})}
                             visible = {this.state.showLigthbox}
                             chosenImage = {this.props.coloursList.indexOf(this.state.chosenColour) + 1}
                             outlineChosenImage = {true}
+                            dark = {true}
+                            withCaption = {true}
                         />
                     </div>
                 : null

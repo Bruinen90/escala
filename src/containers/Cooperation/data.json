@@ -1,0 +1,28 @@
+{
+    "cooperation": {
+        "title": ["Współpraca", "Collaboration"],
+        "contact": ["KONTAKT", "CONTACT form"],
+        "or": ["lub pod adresem e-mail:", "or by e-mail:"],
+        "contracts": {
+            "header": ["Oferta kontraktowa", "Contract offers"],
+            "text": [
+                "Marka Escala realizuje zamówienia detaliczne i kontraktowe, zapewniając najwyższą jakość oferowanych produktów i profesjonalną obsługę każdego klienta. Oferta ekskluzywnych mebli skierowana jest zarówno do przestrzeni prywatnych, jak i użyteczności publicznej tj. prywatne rezydencje, hotele, powierzchnie recepcyjne i restauracje. Escala realizuje również zamówienia indywidualne, spełniając przy tym oczekiwania najbardziej wymagających klientów. Ogólne warunki sprzedaży dostępne są w zakładce INFO. Dodatkowe informacje na temat warunków współpracy i oferty cenowej można uzyskać poprzez formularz kontaktowy w zakładce",
+                "Escala Poland can finalise both retail and contractual orders, guaranteeing highest quality and excellent customer service. Our offer is addressed for both private and public spaces such as private residences, hotels, restaurants or receptions amongs others.  We also provide our services to individual customers with consideration of their expectations. Our sales terms and conditions are available in the INFO section on our website. Should you require any additional information regarding terms of collaboration or pricing, do not hesitate to contact us through our "
+            ],
+            "welcome": [
+                "Zapraszamy do współpracy showroomy i salony meblowe zainteresowane ofertą ekspozycyjną.",
+                "We will be more than happy to work with showrooms and wholesalers interested in our exhibition offer."
+            ]
+        },
+        "architects": {
+            "header": [
+                "Współpraca architekci, projektanci i dekoratorzy wnętrz", 
+                "Collaboration - architects, interior designers and decorators"
+            ],
+            "text": [
+                "Oferta marki Escala skierowana jest do osób realizujących projekty przestrzeni prywatnych i użyteczności publicznej. Zapraszamy do współpracy architektów, projektantów i dekoratorów wnętrz. Zapewniamy atrakcyjne warunki współpracy oraz dostęp do: katalogów, próbek materiałów, informacji technicznych oraz modeli produktów. W celu zapoznania się z warunkami współpracy i szczegółową ofertą cenową prosimy o kontakt poprzez formularz w zakładce",
+                "Our offer is addressed for clients carrying out projects for both private and public spaces. We are interested in working with architect, interior designers and decorators. We provide excellent terms of collaboration and access to: catalogues, samples, materials, technical information and product models. Should you require any additional information regarding terms of collaboration or pricing, do not hesitate to contact us through our "
+            ]
+        }
+    } 
+}

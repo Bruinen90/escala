@@ -6,7 +6,10 @@ const Button = (props) => (
     <Link
         to={{
             pathname: props.target,
-            state: {productName: props.productName, question: props.question},
+            state: {
+                productName: props.productName,
+                question: props.question,  
+            },
         }}
         className={styles.link}
     >

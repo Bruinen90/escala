@@ -163,7 +163,7 @@ h5 {
     .galleryImg {
         max-height: 100%;
         margin-top: auto;
-        flex: 0;
+        flex-shrink: 1;
     }
 
     .galleryCont:hover {

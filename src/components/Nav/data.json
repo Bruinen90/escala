@@ -1,0 +1,10 @@
+{
+    "navItems": {
+       "home": { "fullName": ["Home", "Home"], "target": "/", "exact": true },
+       "products": { "fullName": ["Produkty", "Products"], "target": "/products" },
+       "about": { "fullName": ["O nas", "About us"], "target": "/about" },
+       "cooperation": { "fullName": ["Współpraca", "Collaboration"], "target": "/cooperation" },
+       "info": { "fullName": ["Info", "Info"], "target": "/info" },
+       "contact": { "fullName": ["Kontakt", "Contact"], "target": "/contact" }
+    }
+}

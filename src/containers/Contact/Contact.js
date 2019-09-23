@@ -21,6 +21,7 @@ class Contact extends Component {
                 <ContactForm
                     message = {message}
                     topic = {topic}
+                    fromProduct = {prodInput}
                 />
             </SubPage>
         );

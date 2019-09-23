@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch} from 'react-router-dom';
+import { withLocalize } from 'react-localize-redux';
+import { renderToStaticMarkup } from 'react-dom/server';
 
 import styles from './App.module.css';
 import Nav from '../../components/Nav/Nav';
@@ -15,51 +17,39 @@ import Contact from '../Contact/Contact';
 // import Policy from '../../components/Policy/Policy';
 import PolicyWarning from '../../components/PolicyWarning/PolicyWarning';
 
-import productsData from '../../data/products';
+// import productsData from '../../data/products';
+import productsData from '../../data/productsData.json';
 
 class App extends Component {
-    state = {
-        showWarning: true,
+    constructor(props) {
+        super(props);
+        this.props.initialize({
+            languages: [
+                { name: 'Polski', code: 'pl'},
+                { name: 'English', code: 'en'},
+            ],
+            options: { renderToStaticMarkup }
+        })
+
+        this.state = {
+            showWarning: true,
+        }
     }
-    // state={
-    //     showPolicy: false,
-    // }
-    // togglePolicy = (policyName) => {
-    //     this.setState({showPolicy: policyName})
-    // }
   render() {
-      let cdate = new Date();
-      const allProducts = [];
-      for(let i = 1; i<productsData.length+1; i++) {
-          allProducts.push(
-              <Route path={`/products/product_${i}`} key={i}>
+      const allProducts = Object.entries(productsData.data).map(([keyName, info], i) => {
+          return(
+              <Route path={`/products/product_${i+1}`} key={keyName}>
                 <Product
-                    index = {i}
+                    index = {i+1}
+                    keyName={keyName}
                 />
               </Route>
           )
-      }
+      })
     return (
-        // Delete after payment
-        cdate.getMonth() < 4 ?
-        // end of delete
       <div className="App">
         <Nav/>
         <section className={styles.mainContainer}>
-            {/* <Policy
-                close={()=>this.togglePolicy(false)}
-                show={this.state.showPolicy==="privace"}
-                header='Polityka'
-                type="privace"
-            >
-            </Policy>
-            <Policy
-                close={()=>this.togglePolicy(false)}
-                show={this.state.showPolicy==="cookies"}
-                header='Cookies'
-                type="cookies"
-            >
-            </Policy> */}
                 <Switch>
                     <Route path='/' exact component={Home} />
                     <Route path='/products' exact component={Products} />
@@ -82,11 +72,8 @@ class App extends Component {
             />
         }
       </div>
-      //Delete after payment
-      : null
-        //end of delete
     );
   }
 }
 
-export default App;
+export default withLocalize(App);

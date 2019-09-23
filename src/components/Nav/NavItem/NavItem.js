@@ -9,6 +9,7 @@ const NavItem = (props) => {
         className={styles.container}
         activeClassName={styles.active}
         exact={props.exact}
+        onClick={props.clicked}
     >
         <div className={styles.number}>{props.number}</div>
         <div className={styles.text}>{props.text}</div>

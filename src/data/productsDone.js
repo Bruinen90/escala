@@ -5,8 +5,9 @@ const productsData = [
             'Komoda Rust to unikatowe połączenie barwy i geometrycznej formy. Prawdziwa powierzchnia z rdzy uzyskana w procesie utleniania żelaza inspiruje i wyzwala silne emocje. Frez na bokach, blacie i frontach oraz stalowy stelaż, na którym jest osadzona komoda, eksponują jej surowy i industrialny charakter. Korpus i fronty, wykonane z płyty z włókien drzewnych, połączone pod kątem 45 stopni, tworzą wrażenie jednolitej bryły bez widocznych krawędzi. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Rust wyposażona jest w cztery półki.',
         warning:
             'Zewnętrzna warstwa rdzy jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla procesu utleniania żelaza. Powierzchnia uzyskanego efektu rdzy jest zabezpieczana specjalnym, bezbarwnym lakierem.',
-        // imagesCount: 7,
-        // sceneImg: true,
+        colours: {
+                metal: ['Rusted_Iron'],
+            },
         diameters: {
             width: '1209',
             depth: '380',
@@ -18,10 +19,11 @@ const productsData = [
         },
         finish: {
             metal:  'żelazo utleniane (rdza)',
-            other: 'lakier poliuretanowy: czarny matowy'
+            other: 'lakier poliuretanowy - czarny matowy'
         },
         imagesCount: 7,
         smallImagesList: [1, 2, 3],
+
     },
     {
         name: 'Lagoon',
@@ -29,6 +31,9 @@ const productsData = [
             'Komoda Lagoon to fascynujące połączenie barwy i prostej formy. Piękno powierzchni patynowanego mosiądzu doskonale współgra z linią mebla. Korpus i fronty wykonane z płyty z włókien drzewnych, połączone pod kątem 45 stopni, tworzą wrażenie jednolitej bryły bez widocznych krawędzi. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem, natomiast stalowy stelaż w kolorze mosiądzu znakomicie podkreśla lekką formę komody Lagoon. Wnętrze wyposażone jest w cztery półki.',
         warning:
             'Zewnętrzna warstwa patyny jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla procesu patynowania mosiądzu. Powierzchnia uzyskanego efektu patyny jest zabezpieczana specjalnym bezbarwnym lakierem.',
+        colours: {
+                metal: ['Patina_Bras'],
+            },
         diameters: {
             width: '1209',
             depth: '380',
@@ -40,7 +45,7 @@ const productsData = [
         },
         finish: {
             metal:  'mosiądz patynowany',
-            other: 'lakier poliuretanowy: czarny matowy'
+            other: 'lakier poliuretanowy - czarny matowy'
         },
         imagesCount: 5,
         smallImagesList: [1, 2],
@@ -51,6 +56,9 @@ const productsData = [
             'Komoda Diamond to intrygująca bryła o geometrycznym kształcie. Wybiórcze pokrycie zewnętrznej powierzchni przy zastosowaniu dwóch metali: żelaza i mosiądzu uwydatnia trójwymiarową formę mebla. Charakterystyczny frez przechodzący przez boki, blat i fronty nawiązuje do stalowego stelaża, jednocześnie podkreślając głębię i dynamizm. Korpus i fronty, wykonane z płyty z włókien drzewnych, połączone pod kątem 45 stopni, tworzą wrażenie jednolitej bryły bez widocznych krawędzi. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Diamond wyposażona jest w cztery półki.',
         warning:
             'Zewnętrzna warstwa żelaza i mosiądzu jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem.',
+        colours: {
+            metal: ['Brass', 'Iron'],
+        },
         diameters: {
             width: '1209',
             depth: '380',
@@ -62,20 +70,20 @@ const productsData = [
         },
         finish: {
             metal:  'mosiądz, żelazo',
-            other: 'lakier poliuretanowy: czarny matowy'
+            other: 'lakier poliuretanowy - czarny matowy'
         },
         imagesCount: 3,
         smallImagesList: [1, 2],
     },
     {
-        name: 'Mystic Iron',
+        name: 'Magnetic  Iron',
         description:
-            'Komoda Mystic — subtelna, piękna i lekka dzięki swoim proporcjom. Ozdobny, ryflowany frez podkreśla głębię powierzchni pokrytej żelazem, a powstające refleksy i cienie, dodają zmysłowości. Połączenie frezowanych elementów pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż o prostej formie dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Mystic wyposażona jest w cztery półki. Konstrukcja i fronty wykonane są z płyty z włókien drzewnych.',
+            'Komoda Magnetic  — subtelna, piękna i lekka dzięki swoim proporcjom. Ozdobny, ryflowany frez podkreśla głębię powierzchni pokrytej żelazem, a powstające refleksy i cienie, dodają zmysłowości. Połączenie frezowanych elementów pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż o prostej formie dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Magnetic  wyposażona jest w cztery półki. Konstrukcja i fronty wykonane są z płyty z włókien drzewnych.',
         warning:
             'Zewnętrzna warstwa żelaza jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem. ',
         colours: {
-            metal: ['bronze', 'silver', 'gold'],
-            acryl: ['bronze', 'silver', 'gold'],
+            metal: ['Brass', 'Bronze', 'Iron'],
+            acryl: ['Bottle_Green', 'Brass', 'Bronze', 'Copper', 'Iron', 'Light_Blue', 'Light_Gold', 'Light_Pink', 'Light_Silver', 'Navy_Blue', 'Purple', 'Red', 'Turquoise_Green'],
         },
         diameters: {
             width: '1227',
@@ -88,18 +96,18 @@ const productsData = [
         },
         finish: {
             metal:  'żelazo',
-            other: 'lakier poliuretanowy: czarny matowy'
+            other: 'lakier poliuretanowy - czarny matowy'
         },
         imagesCount: 3,
         smallImagesList: [1, 2],
     },
     {
-        name: 'Mystic Low',
+        name: 'Magnetic Low',
         description:
-            'Komoda Mystic Low — subtelna, piękna i lekka dzięki swoim proporcjom. Ozdobny, ryflowany frez podkreśla głębię powierzchni pokrytej matowym lakierem w modnym, koralowym kolorze, a powstające refleksy i cienie, dodają zmysłowości. Połączenie frezowanych elementów pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż w kolorze mosiądzu dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Mystic Low wyposażona jest w dwa uchylne fronty. Konstrukcja i fronty wykonane są z płyty z włókien drzewnych.',
+            'Komoda Magnetic  Low — subtelna, piękna i lekka dzięki swoim proporcjom. Ozdobny, ryflowany frez podkreśla głębię powierzchni pokrytej matowym lakierem w modnym, koralowym kolorze, a powstające refleksy i cienie, dodają zmysłowości. Połączenie frezowanych elementów pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż w kolorze mosiądzu dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Magnetic  Low wyposażona jest w dwa uchylne fronty. Konstrukcja i fronty wykonane są z płyty z włókien drzewnych.',
         colours: {
-            metal: ['bronze', 'bronze', 'bronze', 'silver', 'silver', 'silver', 'gold', 'gold', 'gold', 'bronze'],
-            acryl: ['bronze', 'silver', 'gold'],
+            metal: ['Brass', 'Bronze', 'Iron'],
+            acryl: ['Bottle_Green', 'Brass', 'Bronze', 'Copper', 'Iron', 'Light_Blue', 'Light_Gold', 'Light_Pink', 'Light_Silver', 'Navy_Blue', 'Purple', 'Red', 'Turquoise_Green'],
         },
         diameters: {
             width: '1227',
@@ -111,20 +119,20 @@ const productsData = [
             frame: 'stal'
         },
         finish: {
-            other: 'lakier poliuretanowy: Pantone Living Coral matowy'
+            other: 'lakier poliuretanowy - Pantone Living Coral matowy'
         },
         imagesCount: 4,
         smallImagesList: [1, 2],
     },
     {
-        name: 'Mystic Brass',
+        name: 'Magnetic Brass',
         description:
-            'Komoda Mystic — subtelna, piękna i lekka dzięki swoim proporcjom. Ozdobny, ryflowany frez podkreśla głębię powierzchni pokrytej mosiądzem, a powstające refleksy i cienie, dodają zmysłowości. Połączenie frezowanych elementów pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż o prostej formie dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Mystic wyposażona jest w cztery półki. Konstrukcja i fronty wykonane są z płyty z włókien drzewnych.',
+            'Komoda Magnetic  — subtelna, piękna i lekka dzięki swoim proporcjom. Ozdobny, ryflowany frez podkreśla głębię powierzchni pokrytej mosiądzem, a powstające refleksy i cienie, dodają zmysłowości. Połączenie frezowanych elementów pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż o prostej formie dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Magnetic  wyposażona jest w cztery półki. Konstrukcja i fronty wykonane są z płyty z włókien drzewnych.',
         warning:
             'Zewnętrzna warstwa mosiądzu jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem. ',
         colours: {
-            metal: ['bronze', 'silver', 'gold'],
-            acryl: ['bronze', 'silver', 'gold'],
+            metal: ['Brass', 'Bronze', 'Iron'],
+            acryl: ['Bottle_Green', 'Brass', 'Bronze', 'Copper', 'Iron', 'Light_Blue', 'Light_Gold', 'Light_Pink', 'Light_Silver', 'Navy_Blue', 'Purple', 'Red', 'Turquoise_Green'],
         },
         diameters: {
             width: '1227',
@@ -137,7 +145,7 @@ const productsData = [
         },
         finish: {
             metal:  'mosiądz',
-            other: 'lakier poliuretanowy: czarny matowy'
+            other: 'lakier poliuretanowy - czarny matowy'
         },
         imagesCount: 4,
         smallImagesList: [1, 2],
@@ -149,8 +157,8 @@ const productsData = [
         warning:
             'Zewnętrzna warstwa mosiądzu jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem.',
         colours: {
-            metal: ['bronze', 'silver', 'gold'],
-            acryl: ['bronze', 'silver', 'gold'],
+            metal: ['Brass', 'Bronze', 'Iron'],
+            acryl: ['Bottle_Green', 'Brass', 'Bronze', 'Copper', 'Iron', 'Light_Blue', 'Light_Gold', 'Light_Pink', 'Light_Silver', 'Navy_Blue', 'Purple', 'Red', 'Turquoise_Green'],
         },
         diameters: {
             width: '1263',
@@ -163,7 +171,7 @@ const productsData = [
         },
         finish: {
             metal:  'mosiądz',
-            other: 'lakier poliuretanowy: czarny matowy'
+            other: 'lakier poliuretanowy - czarny matowy'
         },
         imagesCount: 5,
         smallImagesList: [1, 2, 3],
@@ -175,8 +183,8 @@ const productsData = [
         warning:
             'Zewnętrzna warstwa żelaza jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem.',
         colours: {
-            metal: ['bronze', 'silver', 'gold'],
-            acryl: ['bronze', 'silver', 'gold'],
+            metal: ['Brass', 'Bronze', 'Iron'],
+            acryl: ['Bottle_Green', 'Brass', 'Bronze', 'Copper', 'Iron', 'Light_Blue', 'Light_Gold', 'Light_Pink', 'Light_Silver', 'Navy_Blue', 'Purple', 'Red', 'Turquoise_Green'],
         },
         diameters: {
             width: '1896',
@@ -189,7 +197,7 @@ const productsData = [
         },
         finish: {
             metal:  'żelazo',
-            other: 'lakier poliuretanowy: czarny matowy'
+            other: 'lakier poliuretanowy - czarny matowy'
         },
         imagesCount: 5,
         moveUp: true,
@@ -200,8 +208,8 @@ const productsData = [
         description:
             'Komoda Shades 4 to niebanalne połączenie prostej formy i stylowego wzoru. Zewnętrzna powierzchnia i stalowy stelaż pokryte akrylowym lakierem w kolorze miedzi doskonale komponują się z ozdobnym i wyrazistym frezem na frontach komody. Korpus ukryty za frontami i połączony pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż o prostej formie dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Shades 4 wyposażona jest w sześć półek. ',
         colours: {
-            metal: ['bronze', 'silver', 'gold'],
-            acryl: ['bronze', 'silver', 'gold'],
+            metal: ['Brass', 'Bronze', 'Iron'],
+            acryl: ['Bottle_Green', 'Brass', 'Bronze', 'Copper', 'Iron', 'Light_Blue', 'Light_Gold', 'Light_Pink', 'Light_Silver', 'Navy_Blue', 'Purple', 'Red', 'Turquoise_Green'],
         },
         diameters: {
             width: '1263',
@@ -213,8 +221,8 @@ const productsData = [
             frame: 'stal'
         },
         finish: {
-            lakierAkrylowy: 'lakier akrylowy: miedź',
-            other: 'lakier poliuretanowy: czarny matowy'
+            lakierAkrylowy: 'lakier akrylowy - miedź',
+            other: 'lakier poliuretanowy - czarny matowy'
         },
         imagesCount: 4,
         mediumImagesList: [1, 2, 3],
@@ -224,8 +232,8 @@ const productsData = [
         description:
             'Konsola Butterfly — lekka i zmysłowa dzięki swoim proporcjom. Delikatny frez przechodzący przez całą konstrukcję dodaje energii i zwiewności. Połączenie lakierowanej, matowej powierzchni w kolorze turkusowej zieleni ze szlachetnym mosiądzem na stalowej podstawie tworzy  wyrafinowane i eleganckie wykończenie. Cała konstrukcja konsoli połączona pod kątem 45 stopni daje wrażenie jednolitej bryły bez widocznych krawędzi. Konstrukcja blatu wykonana jest z płyty z włókien drzewnych.',
         colours: {
-            metal: ['bronze', 'silver', 'gold'],
-            acryl: ['bronze', 'silver', 'gold'],
+            metal: ['Brass', 'Bronze', 'Iron'],
+            acryl: ['Bottle_Green', 'Brass', 'Bronze', 'Copper', 'Iron', 'Light_Blue', 'Light_Gold', 'Light_Pink', 'Light_Silver', 'Navy_Blue', 'Purple', 'Red', 'Turquoise_Green'],
         },
         diameters: {
             width: '1000',
@@ -237,7 +245,7 @@ const productsData = [
             frame: 'stal'
         },
         finish: {
-            other: 'lakier poliuretanowy: RAL Blaugrun 6004 matowy',
+            other: 'lakier poliuretanowy - RAL Blaugrun 6004 matowy',
         },
         imagesCount: 3,
         blackGalleryIcon: true,
@@ -250,12 +258,12 @@ const productsData = [
         warning:
             'Zewnętrzna warstwa mosiądzu jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem. ',
         colours: {
-            metal: ['bronze', 'silver', 'gold'],
-            acryl: ['bronze', 'silver', 'gold'],
+            metal: ['Brass', 'Bronze', 'Iron', 'Rusted_Iron', 'Textured_Brass', 'Textured_Iron'],
+            acryl: ['Bottle_Green', 'Brass', 'Bronze', 'Copper', 'Iron', 'Light_Blue', 'Light_Gold', 'Light_Pink', 'Light_Silver', 'Navy_Blue', 'Purple', 'Red', 'Turquoise_Green'],
         },
         diameters: {
             width: '1692',
-            depth: '331',
+            depth: '550',
             height: '752',
         },
         materials: {
@@ -264,7 +272,7 @@ const productsData = [
         },
         finish: {
             metal:  'mosiądz',
-            other: 'lakier poliuretanowy: czarny matowy'
+            other: 'lakier poliuretanowy - czarny matowy'
         },
         imagesCount: 3,
         moveUp: true,
