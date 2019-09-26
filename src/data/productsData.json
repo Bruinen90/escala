@@ -1,4 +1,21 @@
 {   "title": ["Produkty", "Products"],
+    "properties": {
+        "gallery": ["galeria produktu", "product gallery"],
+        "ask-for-price": ["zapytaj o cenę", "ask for price"],
+        "3dmodel": ["model 3d", "3d model"],
+        "techinfo": ["Informacje techniczne", "Technical info"],
+        "diameters": ["Wymiary", "Diameters"],
+        "width": ["szerokość", "width"],
+        "height": ["wysokość", "height"],
+        "depth": ["głębokość", "depth"],
+        "materials": ["Materiał", "Materials"],
+        "carcass": ["skrzynia", "carcass"],
+        "frame": ["stelaż", "frame"],
+        "finishes": ["Wykończenie", "Finishes"],
+        "available-finishes": ["Dostępne warianty wykończenia", "Available Finishes"],
+        "metals": ["metale", "metals"],
+        "acrylic": ["lakier akrylowy metalizowany", "metallic acrylic lacquers"]
+    },
     "data": {
         "rust": {
             "name": "Rust",
@@ -8,7 +25,10 @@
                     "Fervent and inspiring, Rust is an interplay between shades, texture and geometrical form – a unique result of bold design and exquisite craftsmanship. The authentic surface rust is formed in the process of redox reaction of iron and oxygen, done manually by Escala artisans. This structure along with the specifically designed steel frame complement the raw and industrial personality of Rust. The carcasses and doors are joined at a 45-degree angle, creating a pure and solid core with seamless edges. The coherence of the interior coated using black matt finish enriches its powerful and elegant design.\n A standard version comes with four shelves fitted into the sideboard."
                 ],
             "warning":
-                "Zewnętrzna warstwa rdzy jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla procesu utleniania żelaza. Powierzchnia uzyskanego efektu rdzy jest zabezpieczana specjalnym, bezbarwnym lakierem.",
+                [
+                    "Zewnętrzna warstwa rdzy jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla procesu utleniania żelaza. Powierzchnia uzyskanego efektu rdzy jest zabezpieczana specjalnym, bezbarwnym lakierem.",
+                    "The differences of tone and texture are a characteristic result of the redox reaction making every Rust sideboard a unique work of art.  To preserve this effect, transparent protective varnish is applied."
+                ],
             "colours": {
                     "metal": ["Rusted_Iron"]
                 },
@@ -18,12 +38,12 @@
                 "height": "900"
             },
             "materials": {
-                "body": "płyta MDF 18 mm",
-                "frame": "stal"
+                "body": ["płyta MDF 18 mm", "MDF board, 18 mm"],
+                "frame": ["stal", "lacquered steel"]
             },
             "finish": {
                 "metal":  "żelazo utleniane (rdza)",
-                "other": "lakier poliuretanowy - czarny matowy"
+                "other": ["lakier poliuretanowy - czarny matowy", "black matt lacquer"]
             },
             "imagesCount": 7,
             "smallImagesList": [1, 2, 3]
@@ -32,9 +52,15 @@
         "lagoon": {
             "name": "Lagoon",
             "description":
-                "Komoda Lagoon to fascynujące połączenie barwy i prostej formy. Piękno powierzchni patynowanego mosiądzu doskonale współgra z linią mebla. Korpus i fronty wykonane z płyty z włókien drzewnych, połączone pod kątem 45 stopni, tworzą wrażenie jednolitej bryły bez widocznych krawędzi. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem, natomiast stalowy stelaż w kolorze mosiądzu znakomicie podkreśla lekką formę komody Lagoon. Wnętrze wyposażone jest w cztery półki.",
+                [
+                    "Komoda Lagoon to fascynujące połączenie barwy i prostej formy. Piękno powierzchni patynowanego mosiądzu doskonale współgra z linią mebla. Korpus i fronty wykonane z płyty z włókien drzewnych, połączone pod kątem 45 stopni, tworzą wrażenie jednolitej bryły bez widocznych krawędzi. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem, natomiast stalowy stelaż w kolorze mosiądzu znakomicie podkreśla lekką formę komody Lagoon. Wnętrze wyposażone jest w cztery półki.",
+                    "The deep azure of Lagoon is vivid, yet curiously calm.  The aesthetics of its patinated surface are a perfect match for the gentle line of the sideboard. The carcasses and doors are joined at a 45-degree angle, creating a pure and solid core with seamless edges. The coherence of the interior coated using black matt finish along with the brass-coloured steel frame complement the subtleness of Lagoon. A standard version comes with four shelves fitted into the sideboard."
+                ],
             "warning":
-                "Zewnętrzna warstwa patyny jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla procesu patynowania mosiądzu. Powierzchnia uzyskanego efektu patyny jest zabezpieczana specjalnym bezbarwnym lakierem.",
+                [
+                    "Zewnętrzna warstwa patyny jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla procesu patynowania mosiądzu. Powierzchnia uzyskanego efektu patyny jest zabezpieczana specjalnym bezbarwnym lakierem.",
+                    "The differences of tone and texture are a characteristic result of the patination process making every Lagoon sideboard a unique work of art. To preserve this effect, transparent protective varnish is applied."
+                ],
             "colours": {
                     "metal": ["Patina_Bras"]
                 },
@@ -44,12 +70,12 @@
                 "height": "900"
             },
             "materials": {
-                "body": "płyta MDF 18 mm",
-                "frame": "stal"
+                "body": ["płyta MDF 18 mm", "MDF board, 18 mm"],
+                "frame": ["stal", "lacquered steel"]
             },
             "finish": {
                 "metal":  "mosiądz patynowany",
-                "other": "lakier poliuretanowy - czarny matowy"
+                "other": ["lakier poliuretanowy - czarny matowy", "black matt lacquer"]
             },
             "imagesCount": 5,
             "smallImagesList": [1, 2]
@@ -57,9 +83,15 @@
         "diamond": {
             "name": "Diamond",
             "description":
-                "Komoda Diamond to intrygująca bryła o geometrycznym kształcie. Wybiórcze pokrycie zewnętrznej powierzchni przy zastosowaniu dwóch metali: żelaza i mosiądzu uwydatnia trójwymiarową formę mebla. Charakterystyczny frez przechodzący przez boki, blat i fronty nawiązuje do stalowego stelaża, jednocześnie podkreślając głębię i dynamizm. Korpus i fronty, wykonane z płyty z włókien drzewnych, połączone pod kątem 45 stopni, tworzą wrażenie jednolitej bryły bez widocznych krawędzi. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Diamond wyposażona jest w cztery półki.",
+                [
+                    "Komoda Diamond to intrygująca bryła o geometrycznym kształcie. Wybiórcze pokrycie zewnętrznej powierzchni przy zastosowaniu dwóch metali: żelaza i mosiądzu uwydatnia trójwymiarową formę mebla. Charakterystyczny frez przechodzący przez boki, blat i fronty nawiązuje do stalowego stelaża, jednocześnie podkreślając głębię i dynamizm. Korpus i fronty, wykonane z płyty z włókien drzewnych, połączone pod kątem 45 stopni, tworzą wrażenie jednolitej bryły bez widocznych krawędzi. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Diamond wyposażona jest w cztery półki.",
+                    "Diamond is an expression of pure elegance combined with geometrical design. Selective coating of the external surface using two metals, iron and brass, highlight its three-dimensional aesthetics. The unique geometrical pattern along with the specifically designed steel frame bring out the depth and dynamics of Diamond. The carcasses and doors are joined at a 45-degree angle, creating a pure and solid core with seamless edges. The coherence of the interior coated using black matt finish enriches its powerful and elegant design. A standard version comes with four shelves fitted into the sideboard."
+                ],
             "warning":
-                "Zewnętrzna warstwa żelaza i mosiądzu jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem.",
+                [ 
+                    "Zewnętrzna warstwa żelaza i mosiądzu jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem.",
+                    "The differences of tone and texture are a characteristic result of the coating process making every Diamond sideboard a unique work of art. To preserve this effect, transparent protective varnish is applied."
+                ],
             "colours": {
                 "metal": ["Brass", "Iron"]
             },
@@ -69,12 +101,12 @@
                 "height": "900"
             },
             "materials": {
-                "body": "płyta MDF 18 mm",
-                "frame": "stal"
+                "body": ["płyta MDF 18 mm", "MDF board, 18 mm"],
+                "frame": ["stal", "lacquered steel"]
             },
             "finish": {
-                "metal":  "mosiądz, żelazo",
-                "other": "lakier poliuretanowy - czarny matowy"
+                "metal":  ["mosiądz, żelazo", "iron, brass"],
+                "other": ["lakier poliuretanowy - czarny matowy", "black matt lacquer"]
             },
             "imagesCount": 3,
             "smallImagesList": [1, 2]
@@ -82,9 +114,15 @@
         "magnetic_iron": {
             "name": "Magnetic  Iron",
             "description":
-                "Komoda Magnetic  — subtelna, piękna i lekka dzięki swoim proporcjom. Ozdobny, ryflowany frez podkreśla głębię powierzchni pokrytej żelazem, a powstające refleksy i cienie, dodają zmysłowości. Połączenie frezowanych elementów pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż o prostej formie dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Magnetic  wyposażona jest w cztery półki. Konstrukcja i fronty wykonane są z płyty z włókien drzewnych.",
+                [ 
+                    "Komoda Magnetic  — subtelna, piękna i lekka dzięki swoim proporcjom. Ozdobny, ryflowany frez podkreśla głębię powierzchni pokrytej żelazem, a powstające refleksy i cienie, dodają zmysłowości. Połączenie frezowanych elementów pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż o prostej formie dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Magnetic  wyposażona jest w cztery półki. Konstrukcja i fronty wykonane są z płyty z włókien drzewnych.", 
+                    "Subtle and delicate, Magnetic is an epitome of minimalist elegance. The surface coated with iron enhances its depth while shades and light reflections exhibit classic sensuality. The ribbed elements are joined at a 45-degree angle, creating a pure and solid core with seamless edges. The final touch is a specifically designed steel frame complementing the stylish design of Magnetic Iron. The coherence of the interior coated using black matt finish enriches its powerful and elegant design. A standard version comes with four shelves fitted into the sideboard."
+                ],
             "warning":
-                "Zewnętrzna warstwa żelaza jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem. ",
+                [
+                    "Zewnętrzna warstwa żelaza jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem. ",
+                    "The differences of tone and texture are a characteristic result of the coating process making every Magnetic sideboard a unique work of art. To preserve this effect, transparent protective varnish is applied."
+                ],
             "colours": {
                 "metal": ["Brass", "Bronze", "Iron"],
                 "acryl": ["Bottle_Green", "Brass", "Bronze", "Copper", "Iron", "Light_Blue", "Light_Gold", "Light_Pink", "Light_Silver", "Navy_Blue", "Purple", "Red", "Turquoise_Green"]
@@ -95,12 +133,12 @@
                 "height": "900"
             },
             "materials": {
-                "body": "płyta MDF 18 mm",
-                "frame": "stal"
+                "body": ["płyta MDF 18 mm", "MDF board, 18 mm"],
+                "frame": ["stal", "lacquered steel"]
             },
             "finish": {
-                "metal":  "żelazo",
-                "other": "lakier poliuretanowy - czarny matowy"
+                "metal":  ["żelazo"],
+                "other": ["lakier poliuretanowy - czarny matowy", "black matt lacquer"]
             },
             "imagesCount": 3,
             "smallImagesList": [1, 2]
@@ -108,7 +146,10 @@
         "magnetic_low": {
             "name": "Magnetic Low",
             "description":
-                "Komoda Magnetic  Low — subtelna, piękna i lekka dzięki swoim proporcjom. Ozdobny, ryflowany frez podkreśla głębię powierzchni pokrytej matowym lakierem w modnym, koralowym kolorze, a powstające refleksy i cienie, dodają zmysłowości. Połączenie frezowanych elementów pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż w kolorze mosiądzu dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Magnetic  Low wyposażona jest w dwa uchylne fronty. Konstrukcja i fronty wykonane są z płyty z włókien drzewnych.",
+                [
+                    "Komoda Magnetic  Low — subtelna, piękna i lekka dzięki swoim proporcjom. Ozdobny, ryflowany frez podkreśla głębię powierzchni pokrytej matowym lakierem w modnym, koralowym kolorze, a powstające refleksy i cienie, dodają zmysłowości. Połączenie frezowanych elementów pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż w kolorze mosiądzu dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Magnetic  Low wyposażona jest w dwa uchylne fronty. Konstrukcja i fronty wykonane są z płyty z włókien drzewnych.",
+                    "Subtle and delicate, Magnetic Low is an epitome of minimalist elegance. The surface coated with Living coral finish enhances its depth while shades and light reflections exhibit classic sensuality. The ribbed elements are joined at a 45-degree angle, creating a pure and solid core with seamless edges, enriched by coherent interior coated using black matt finish. The final touch is a specifically designed steel frame coated with brass finish complementing the stylish design of Magnetic Low."
+                ],
             "colours": {
                 "metal": ["Brass", "Bronze", "Iron"],
                 "acryl": ["Bottle_Green", "Brass", "Bronze", "Copper", "Iron", "Light_Blue", "Light_Gold", "Light_Pink", "Light_Silver", "Navy_Blue", "Purple", "Red", "Turquoise_Green"]
@@ -119,11 +160,11 @@
                 "height": "775"
             },
             "materials": {
-                "body": "płyta MDF 18 mm",
-                "frame": "stal"
+                "body": ["płyta MDF 18 mm", "MDF board, 18 mm"],
+                "frame": ["stal", "lacquered steel"]
             },
             "finish": {
-                "other": "lakier poliuretanowy - Pantone Living Coral matowy"
+                "other": ["lakier poliuretanowy - Pantone Living Coral matowy", "Pantone Living coral matt lacquer"]
             },
             "imagesCount": 4,
             "smallImagesList": [1, 2]
@@ -131,9 +172,15 @@
         "magnetic_brass": {
             "name": "Magnetic Brass",
             "description":
-                "Komoda Magnetic  — subtelna, piękna i lekka dzięki swoim proporcjom. Ozdobny, ryflowany frez podkreśla głębię powierzchni pokrytej mosiądzem, a powstające refleksy i cienie, dodają zmysłowości. Połączenie frezowanych elementów pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż o prostej formie dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Magnetic  wyposażona jest w cztery półki. Konstrukcja i fronty wykonane są z płyty z włókien drzewnych.",
+                [
+                    "Komoda Magnetic  — subtelna, piękna i lekka dzięki swoim proporcjom. Ozdobny, ryflowany frez podkreśla głębię powierzchni pokrytej mosiądzem, a powstające refleksy i cienie, dodają zmysłowości. Połączenie frezowanych elementów pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż o prostej formie dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Magnetic  wyposażona jest w cztery półki. Konstrukcja i fronty wykonane są z płyty z włókien drzewnych.",
+                    "Subtle and delicate, Magnetic Brass is an epitome of minimalist elegance. The surface coated with brass enhances its depth while shades and light reflections exhibit classic sensuality. The ribbed elements are joined at a 45-degree angle, creating a pure and solid core with seamless edges. The final touch is a specifically designed steel frame complementing the stylish design of Magnetic Brass. The coherence of the interior coated using black matt finish enriches its powerful and elegant design. A standard version comes with four shelves fitted into the sideboard. "
+                ],
             "warning":
-                "Zewnętrzna warstwa mosiądzu jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem. ",
+                [
+                    "Zewnętrzna warstwa mosiądzu jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem.", 
+                    "The differences of tone and texture are a characteristic result of the coating process making every Magnetic Brass sideboard a unique work of art. To preserve this effect, transparent protective varnish is applied."
+                ],
             "colours": {
                 "metal": ["Brass", "Bronze", "Iron"],
                 "acryl": ["Bottle_Green", "Brass", "Bronze", "Copper", "Iron", "Light_Blue", "Light_Gold", "Light_Pink", "Light_Silver", "Navy_Blue", "Purple", "Red", "Turquoise_Green"]
@@ -144,12 +191,12 @@
                 "height": "900"
             },
             "materials": {
-                "body": "płyta MDF 18 mm",
-                "frame": "stal"
+                "body": ["płyta MDF 18 mm", "MDF board, 18 mm"],
+                "frame": ["stal", "lacquered steel"]
             },
             "finish": {
-                "metal":  "mosiądz",
-                "other": "lakier poliuretanowy - czarny matowy"
+                "metal":  ["mosiądz", "brass"],
+                "other": ["lakier poliuretanowy - czarny matowy", "black matt lacquer"]
             },
             "imagesCount": 4,
             "smallImagesList": [1, 2]
@@ -157,9 +204,15 @@
         "shades_2": {
             "name": "Shades 2",
             "description":
-                "Komoda Shades 2 to niebanalne połączenie prostej formy i stylowego wzoru. Zewnętrzna powierzchnia pokryta mosiądzem doskonale komponuje się z ozdobnym i wyrazistym frezem na frontach komody. Korpus ukryty za frontami i połączony pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż o prostej formie dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Shades 2 wyposażona jest w dwie półki.",
+                [
+                    "Komoda Shades 2 to niebanalne połączenie prostej formy i stylowego wzoru. Zewnętrzna powierzchnia pokryta mosiądzem doskonale komponuje się z ozdobnym i wyrazistym frezem na frontach komody. Korpus ukryty za frontami i połączony pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż o prostej formie dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Shades 2 wyposażona jest w dwie półki.",
+                    "As original as it can get, Shades 2 combines simple forms and stylish design. The external surface coated with brass goes well with the distinctive pattern on the fronts, creating an integrated and powerful shape. Unique 3D-shaped elements play with light and shadow. The final touch is a specifically designed steel frame complementing the stylish design of Shades 2. The coherence of the interior coated using black matt finish enriches its powerful aesthetics. A standard version comes with two shelves fitted into the sideboard."
+                ],
             "warning":
-                "Zewnętrzna warstwa mosiądzu jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem.",
+                [
+                    "Zewnętrzna warstwa mosiądzu jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem.",
+                    "The differences of tone and texture are a characteristic result of the coating process making every Shades 2 sideboard a unique work of art. To preserve this effect, transparent protective varnish is applied."
+                ],
             "colours": {
                 "metal": ["Brass", "Bronze", "Iron"],
                 "acryl": ["Bottle_Green", "Brass", "Bronze", "Copper", "Iron", "Light_Blue", "Light_Gold", "Light_Pink", "Light_Silver", "Navy_Blue", "Purple", "Red", "Turquoise_Green"]
@@ -170,12 +223,12 @@
                 "height": "800"
             },
             "materials": {
-                "body": "płyta MDF 18 mm",
-                "frame": "stal"
+                "body": ["płyta MDF 18 mm", "MDF board, 18 mm"],
+                "frame": ["stal", "lacquered steel"]
             },
             "finish": {
-                "metal":  "mosiądz",
-                "other": "lakier poliuretanowy - czarny matowy"
+                "metal":  ["mosiądz", "brass"],
+                "other": ["lakier poliuretanowy - czarny matowy", "black matt lacquer"]
             },
             "imagesCount": 5,
             "smallImagesList": [1, 2, 3]
@@ -183,9 +236,15 @@
         "shades_3": {
             "name": "Shades 3",
             "description":
-                "Komoda Shades 3 to niebanalne połączenie prostej formy i stylowego wzoru. Zewnętrzna powierzchnia pokryta żelazem doskonale komponuje się z ozdobnym i wyrazistym frezem na frontach komody. Korpus ukryty za frontami i połączony pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż o prostej formie dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Shades 3 wyposażona jest w trzy półki.",
+                [
+                    "Komoda Shades 3 to niebanalne połączenie prostej formy i stylowego wzoru. Zewnętrzna powierzchnia pokryta żelazem doskonale komponuje się z ozdobnym i wyrazistym frezem na frontach komody. Korpus ukryty za frontami i połączony pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż o prostej formie dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Shades 3 wyposażona jest w trzy półki.",
+                    "As original as it can get, Shades 3 combines a simple form and stylish design. The external surface coated with iron goes well with the unique pattern on the doors creating an integrated and powerful shape. Unique 3D-shaped elements play with light and shadow. The final touch is a specifically designed steel frame complementing the stylish design of Shades 2. The coherence of the interior coated using black matt finish enriches its powerful aesthetics. A standard version comes with three shelves fitted into the sideboard."
+                ],
             "warning":
-                "Zewnętrzna warstwa żelaza jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem.",
+                [
+                    "Zewnętrzna warstwa żelaza jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem.",
+                    "The differences of tone and texture are a characteristic result of the coating process making every Shades 3 sideboard a unique work of art. To preserve this effect, transparent protective varnish is applied."
+                ],
             "colours": {
                 "metal": ["Brass", "Bronze", "Iron"],
                 "acryl": ["Bottle_Green", "Brass", "Bronze", "Copper", "Iron", "Light_Blue", "Light_Gold", "Light_Pink", "Light_Silver", "Navy_Blue", "Purple", "Red", "Turquoise_Green"]
@@ -196,12 +255,12 @@
                 "height": "800"
             },
             "materials": {
-                "body": "płyta MDF 18 mm",
-                "frame": "stal"
+                "body": ["płyta MDF 18 mm", "MDF board, 18 mm"],
+                "frame": ["stal", "lacquered steel"]
             },
             "finish": {
-                "metal":  "żelazo",
-                "other": "lakier poliuretanowy - czarny matowy"
+                "metal":  ["żelazo", "steel"],
+                "other": ["lakier poliuretanowy - czarny matowy", "black matt lacquer"]
             },
             "imagesCount": 5,
             "moveUp": true,
@@ -210,7 +269,10 @@
         "shades_4": {
             "name": "Shades 4",
             "description":
-                "Komoda Shades 4 to niebanalne połączenie prostej formy i stylowego wzoru. Zewnętrzna powierzchnia i stalowy stelaż pokryte akrylowym lakierem w kolorze miedzi doskonale komponują się z ozdobnym i wyrazistym frezem na frontach komody. Korpus ukryty za frontami i połączony pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż o prostej formie dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Shades 4 wyposażona jest w sześć półek. ",
+                [
+                    "Komoda Shades 4 to niebanalne połączenie prostej formy i stylowego wzoru. Zewnętrzna powierzchnia i stalowy stelaż pokryte akrylowym lakierem w kolorze miedzi doskonale komponują się z ozdobnym i wyrazistym frezem na frontach komody. Korpus ukryty za frontami i połączony pod kątem 45 stopni tworzy wrażenie jednolitej bryły bez widocznych krawędzi. Stalowy stelaż o prostej formie dodaje lekkości i nie przytłacza, stanowi delikatne dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze pokryte czarnym, matowym lakierem. Komoda Shades 4 wyposażona jest w sześć półek.",
+                    "As original as it can get, Shades 4 combines a simple form and stylish design. The specifically designed steel frame along with the external surface coated with copper finish complement the intriguing pattern on the fronts. Unique 3D-shaped elements play with light and shadow. The final touch is a specifically designed steel frame complementing the stylish design of Shades 4. The coherence of the interior coated using black matt finish enriches its powerful aesthetics. A standard version comes with six shelves fitted into the sideboard."
+                ],
             "colours": {
                 "metal": ["Brass", "Bronze", "Iron"],
                 "acryl": ["Bottle_Green", "Brass", "Bronze", "Copper", "Iron", "Light_Blue", "Light_Gold", "Light_Pink", "Light_Silver", "Navy_Blue", "Purple", "Red", "Turquoise_Green"]
@@ -221,12 +283,12 @@
                 "height": "1433"
             },
             "materials": {
-                "body": "płyta MDF 18 mm",
-                "frame": "stal"
+                "body": ["płyta MDF 18 mm", "MDF board, 18 mm"],
+                "frame": ["stal", "lacquered steel"]
             },
             "finish": {
-                "lakierAkrylowy": "lakier akrylowy - miedź",
-                "other": "lakier poliuretanowy - czarny matowy"
+                "lakierAkrylowy": ["lakier akrylowy - miedź", "metallic acrylic lacquer – copper"],
+                "other": ["lakier poliuretanowy - czarny matowy", "black matt lacquer"]
             },
             "imagesCount": 4,
             "mediumImagesList": [1, 2, 3]
@@ -234,7 +296,10 @@
         "butterfly": {
             "name": "Butterfly",
             "description":
-                "Konsola Butterfly — lekka i zmysłowa dzięki swoim proporcjom. Delikatny frez przechodzący przez całą konstrukcję dodaje energii i zwiewności. Połączenie lakierowanej, matowej powierzchni w kolorze turkusowej zieleni ze szlachetnym mosiądzem na stalowej podstawie tworzy  wyrafinowane i eleganckie wykończenie. Cała konstrukcja konsoli połączona pod kątem 45 stopni daje wrażenie jednolitej bryły bez widocznych krawędzi. Konstrukcja blatu wykonana jest z płyty z włókien drzewnych.",
+                [
+                    "Konsola Butterfly — lekka i zmysłowa dzięki swoim proporcjom. Delikatny frez przechodzący przez całą konstrukcję dodaje energii i zwiewności. Połączenie lakierowanej, matowej powierzchni w kolorze turkusowej zieleni ze szlachetnym mosiądzem na stalowej podstawie tworzy  wyrafinowane i eleganckie wykończenie. Cała konstrukcja konsoli połączona pod kątem 45 stopni daje wrażenie jednolitej bryły bez widocznych krawędzi. Konstrukcja blatu wykonana jest z płyty z włókien drzewnych.",
+                    "Butterfly’s proportions make it tenderly mesmerizing. The intricate pattern embracing the whole structure gives it an energising appeal. Elegant brass coating of the steel frame and turquoise surface are combined into a unique synergy. All the elements are joined at a 45-degree angle, creating a pure and solid core with seamless edges."
+                ],
             "colours": {
                 "metal": ["Brass", "Bronze", "Iron"],
                 "acryl": ["Bottle_Green", "Brass", "Bronze", "Copper", "Iron", "Light_Blue", "Light_Gold", "Light_Pink", "Light_Silver", "Navy_Blue", "Purple", "Red", "Turquoise_Green"]
@@ -245,11 +310,11 @@
                 "height": "850"
             },
             "materials": {
-                "body": "płyta MDF 18 mm",
-                "frame": "stal"
+                "body": ["płyta MDF 18 mm", "MDF board, 18 mm"],
+                "frame": ["stal", "lacquered steel"]
             },
             "finish": {
-                "other": "lakier poliuretanowy - RAL Blaugrun 6004 matowy"
+                "other": ["lakier poliuretanowy - RAL Blaugrun 6004 matowy", "RAL 6004, matt lacquer"]
             },
             "imagesCount": 3,
             "blackGalleryIcon": true,
@@ -258,9 +323,15 @@
         "belle": {
             "name": "Belle",
             "description":
-                "Komoda Belle — połączenie prostej formy, szlachetnego metalu i eleganckiej czerni. Konstrukcja wykonana z płyty z włókien drzewnych i połączona pod kątem 45 stopni tworzy elegancką ramę wykończoną czarnym, matowym lakierem. Prostą linię frontów i widocznego boku zdobi powłoka z mosiądzu z ręcznie wytłaczaną fakturą. Otwarta przestrzeń ze szklaną półką stanowi lekkie dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze i drewniane nogi pokryte czarnym, matowym lakierem. \n\n Komoda Belle występuje również w wersji wyspy, jako mebel dzielący pomieszczenie na strefy, dedykowany do przestrzeni otwartych.  W wersji wyspy komoda osadzona jest na sześciu nogach i posiada dwustronny dostęp do wnętrza z czterema półkami.",
+                [
+                    "Komoda Belle — połączenie prostej formy, szlachetnego metalu i eleganckiej czerni. Konstrukcja wykonana z płyty z włókien drzewnych i połączona pod kątem 45 stopni tworzy elegancką ramę wykończoną czarnym, matowym lakierem. Prostą linię frontów i widocznego boku zdobi powłoka z mosiądzu z ręcznie wytłaczaną fakturą. Otwarta przestrzeń ze szklaną półką stanowi lekkie dopełnienie całości. Eleganckim detalem wykończenia jest wnętrze i drewniane nogi pokryte czarnym, matowym lakierem. \n\n Komoda Belle występuje również w wersji wyspy, jako mebel dzielący pomieszczenie na strefy, dedykowany do przestrzeni otwartych.  W wersji wyspy komoda osadzona jest na sześciu nogach i posiada dwustronny dostęp do wnętrza z czterema półkami.",
+                    "Belle sideboard combines simple form with noble metal and elegant black. The brass texture visible on the fronts and mid-left side is coated manually by Escala artisans. The open space featuring a glass shelf adds the final touch to its modern look. The coherence of the interior and wooden legs coated using black matt finish enriches its elegant and powerful aesthetics.\n\n Belle is also available as a free-standing cabinet separating two rooms, ideal for open spaces.\n\n The free-standing version is structured on six legs and has a double-sided access to four shelves in the interior."
+                ],
             "warning":
-                "Zewnętrzna warstwa mosiądzu jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem. ",
+                [
+                    "Zewnętrzna warstwa mosiądzu jest efektem niepowtarzalnym. Różnice występujące w odcieniu i fakturze, w odniesieniu do prezentowanego produktu, nie stanowią wady, lecz są cechą charakterystyczną dla metali. Powierzchnia uzyskanego efektu jest zabezpieczana specjalnym, bezbarwnym lakierem.",
+                    "The differences of tone and texture are a characteristic result of the coating process making every Belle sideboard a unique work of art. To preserve this effect, transparent protective varnish is applied."
+                ],
             "colours": {
                 "metal": ["Brass", "Bronze", "Iron", "Rusted_Iron", "Textured_Brass", "Textured_Iron"],
                 "acryl": ["Bottle_Green", "Brass", "Bronze", "Copper", "Iron", "Light_Blue", "Light_Gold", "Light_Pink", "Light_Silver", "Navy_Blue", "Purple", "Red", "Turquoise_Green"]
@@ -271,12 +342,12 @@
                 "height": "752"
             },
             "materials": {
-                "body": "płyta MDF 18 mm",
-                "frame": "drewno lakierowane czarny matowy"
+                "body": ["płyta MDF 18 mm", "MDF board, 18 mm"],
+                "frame": ["drewno lakierowane czarny matowy", "coated wood, black matt"]
             },
             "finish": {
-                "metal":  "mosiądz",
-                "other": "lakier poliuretanowy - czarny matowy"
+                "metal":  ["mosiądz", "brass"],
+                "other": ["lakier poliuretanowy - czarny matowy", "black matt lacquer"]
             },
             "imagesCount": 3,
             "moveUp": true,
