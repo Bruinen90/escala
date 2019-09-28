@@ -42,7 +42,7 @@
                 "frame": ["stal", "lacquered steel"]
             },
             "finish": {
-                "metal":  "żelazo utleniane (rdza)",
+                "metal":  ["żelazo utleniane (rdza)", "oxidised iron (rust)"],
                 "other": ["lakier poliuretanowy - czarny matowy", "black matt lacquer"]
             },
             "imagesCount": 7,
@@ -74,7 +74,7 @@
                 "frame": ["stal", "lacquered steel"]
             },
             "finish": {
-                "metal":  "mosiądz patynowany",
+                "metal":  ["mosiądz patynowany", "patinated brass"],
                 "other": ["lakier poliuretanowy - czarny matowy", "black matt lacquer"]
             },
             "imagesCount": 5,
@@ -137,7 +137,7 @@
                 "frame": ["stal", "lacquered steel"]
             },
             "finish": {
-                "metal":  ["żelazo"],
+                "metal":  ["żelazo", "iron"],
                 "other": ["lakier poliuretanowy - czarny matowy", "black matt lacquer"]
             },
             "imagesCount": 3,

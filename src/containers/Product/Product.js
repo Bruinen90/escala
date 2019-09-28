@@ -8,9 +8,7 @@ import Button from '../../components/Button/Button';
 import GoBack from '../../components/GoBack/GoBack';
 import ColoursSlider from '../../components/ColoursSlider/ColoursSlider';
 
-import product from '../../data/productsDone';
 import data from '../../data/productsData.json';
-// import colours from '../../data/colours';
 
 class Product extends Component {
   constructor(props) {
@@ -21,11 +19,10 @@ class Product extends Component {
     this.props.addTranslation(data);
   }
   render() {
-    console.log(this.props.keyName, this.props.index);
-    const i = this.props.index - 1;
-
-    let enlargeIcon = product[i].blackGalleryIcon ? 'enlarge_black' : 'enlarge';
-    const imagesCount = product[i].imagesCount;
+    let enlargeIcon = data.data[this.props.keyName].blackGalleryIcon
+      ? 'enlarge_black'
+      : 'enlarge';
+    const imagesCount = data.data[this.props.keyName].imagesCount;
     const imagesList = [];
     for (let i = 1; i <= imagesCount; i++) {
       imagesList.push(i);
@@ -44,8 +41,8 @@ class Product extends Component {
             <Gallery
               imgFolderPath={imgFolderPath}
               imagesList={imagesList}
-              smallImagesList={product[i].smallImagesList}
-              mediumImagesList={product[i].mediumImagesList}
+              smallImagesList={data.data[this.props.keyName].smallImagesList}
+              mediumImagesList={data.data[this.props.keyName].mediumImagesList}
               clickClose={() => this.setState({ showLigthbox: false })}
               visible={this.state.showLigthbox}
             />
@@ -60,11 +57,15 @@ class Product extends Component {
         >
           <div className={styles.grid}>
             <div className={styles.description}>
-              <h2 className={styles.name}>{product[i].name}</h2>
+              <h2 className={styles.name}>
+                {data.data[this.props.keyName].name}
+              </h2>
               <div className={styles.text}>
                 <Translate id={`data.${this.props.keyName}.description`} />
                 <p>
-                  <Translate id={`data.${this.props.keyName}.warning`} />
+                  {data.data[this.props.keyName].warning && (
+                    <Translate id={`data.${this.props.keyName}.warning`} />
+                  )}
                 </p>
               </div>
               <div className={styles.buttons}>
@@ -73,14 +74,14 @@ class Product extends Component {
                 </Button>
                 <Button
                   target="/contact"
-                  productName={product[i].name}
+                  productName={data.data[this.props.keyName].name}
                   question="price"
                 >
                   <Translate id="properties.ask-for-price" />
                 </Button>
                 <Button
                   target="/contact"
-                  productName={product[i].name}
+                  productName={data.data[this.props.keyName].name}
                   question="3dmodel"
                 >
                   <Translate id="properties.3dmodel" />
@@ -90,7 +91,7 @@ class Product extends Component {
             <div
               className={[
                 styles.galleryCont,
-                product[i].moveUp && styles.moveUp,
+                data.data[this.props.keyName].moveUp && styles.moveUp,
               ].join(' ')}
               onClick={() => this.setState({ showLigthbox: true })}
               // For big, square furniture
@@ -122,11 +123,11 @@ class Product extends Component {
                   <Translate id="properties.diameters" />
                 </h4>
                 <Translate id="properties.width" />:{' '}
-                {product[i].diameters.width} mm <br />
+                {data.data[this.props.keyName].diameters.width} mm <br />
                 <Translate id="properties.depth" />:{' '}
-                {product[i].diameters.depth} mm <br />
+                {data.data[this.props.keyName].diameters.depth} mm <br />
                 <Translate id="properties.height" />:{' '}
-                {product[i].diameters.height} mm <br />
+                {data.data[this.props.keyName].diameters.height} mm <br />
               </div>
               <div className={styles.size}>
                 <h4>
@@ -136,22 +137,30 @@ class Product extends Component {
                 {<Translate id={`data.${this.props.keyName}.materials.body`} />}{' '}
                 <br />
                 <Translate id="properties.frame" /> -{' '}
-                <Translate id={`data.${this.props.keyName}.materials.frame`} /> <br />
+                <Translate id={`data.${this.props.keyName}.materials.frame`} />{' '}
+                <br />
               </div>
               <div className={styles.size}>
                 <h4>
                   <Translate id="properties.finishes" />
                 </h4>
                 <div>
-                  {product[i].finish.metal &&
-                    'metal - ' + product[i].finish.metal}
+                  {data.data[this.props.keyName].finish.metal && 'metal - '}
+                  {data.data[this.props.keyName].finish.metal && <Translate id={`data.${this.props.keyName}.finish.metal`} />}
                 </div>
-                <div>{product[i].finish.lakierAkrylowy}</div>
-                <div>{product[i].finish.other}</div>
+                <div>
+                  {data.data[this.props.keyName].finish.lakierAkrylowy && (
+                    <Translate
+                      id={`data.${this.props.keyName}.finish.lakierAkrylowy`}
+                    />
+                  )}
+                </div>
+                <div>
+                  <Translate id={`data.${this.props.keyName}.finish.other`} />
+                </div>
               </div>
-              {/* Waits for photos from customer */}
               <div className={styles.size}>
-                {product[i].colours.metal.length > 2 ? (
+                {data.data[this.props.keyName].colours.metal.length > 2 ? (
                   <React.Fragment>
                     <h4>
                       <Translate id="properties.available-finishes" />
@@ -163,31 +172,31 @@ class Product extends Component {
                 ) : (
                   <br />
                 )}
-                {product[i].colours.metal && (
+                {data.data[this.props.keyName].colours.metal && (
                   <div className={styles.colours}>
                     <ColoursSlider
-                      coloursList={product[i].colours.metal}
-                      // coloursList={colours.metal}
+                      coloursList={data.data[this.props.keyName].colours.metal}
                       imgFolderPath={'metals'}
                     />
                   </div>
                 )}
-                {product[i].colours.acryl && (
+                {data.data[this.props.keyName].colours.acryl && (
                   <React.Fragment>
                     <h5>
                       <Translate id="properties.acrylic" />
                     </h5>
                     <div className={styles.colours}>
                       <ColoursSlider
-                        coloursList={product[i].colours.acryl}
-                        // coloursList={colours.acryl}
+                        coloursList={
+                          data.data[this.props.keyName].colours.acryl
+                        }
                         imgFolderPath={'varnishes'}
                       />
                     </div>
                   </React.Fragment>
                 )}
               </div>
-              {product[i].colours.metal.length < 3 && (
+              {data.data[this.props.keyName].colours.metal.length < 3 && (
                 <div className={styles.placeHolder}></div>
               )}
               <GoBack left={true} />

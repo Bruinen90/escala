@@ -54,7 +54,7 @@ class About extends Component {
             );
         });
         return (
-            <SubPage title='O nas' number='03'>
+            <SubPage title={<Translate id="mainHeader" />} number='03'>
                 <NarrowPage>
                     <div className={styles.container}>{content}</div>
                 </NarrowPage>

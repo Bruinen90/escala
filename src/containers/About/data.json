@@ -1,4 +1,5 @@
 {
+    "mainHeader": ["O nas", "About us"],
     "sections": {
         "idea": {
             "header": ["Idea", "Idea"],

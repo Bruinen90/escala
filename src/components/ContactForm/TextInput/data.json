@@ -1,0 +1,11 @@
+{
+    "topics": {
+        "price": ["Zapytaj o cenę", "Ask for price"],
+        "offer": ["Oferta", "Offer"],
+        "cooperation": ["Współpraca", "Cooperation"],
+        "3dmodel": ["Model 3d", "3d model"],
+        "productsCatalog": ["Katalog produktów", "Products catalog"],
+        "template": ["Wzrotnik", "Template"],
+        "press": ["Press", "Press"]
+    }
+}

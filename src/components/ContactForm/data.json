@@ -1,0 +1,16 @@
+{
+    "placeholders": {
+        "name": ["imię, nazwisko / nazwa firmy", "name, surname / company name"],
+        "email": ["email", "email"],
+        "phone": ["numer telefonu", "phone number"],
+        "topic": ["temat", "topic"],
+        "content": ["treść", "message"]
+    },
+    "policy": [
+        "Korzystając z formularza kontaktowego wyrażasz zgodę na przetwarzanie danych osobowych. Więcej informacji na ten temat można znaleźć w dziale",
+        ""
+    ],
+    "sendButton": ["Wyślij", "Send"],
+    "sentButton": ["Wysłano", "Sent"],
+    "errorButton": ["Błąd", "Error"]
+}

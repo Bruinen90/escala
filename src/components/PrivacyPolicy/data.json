@@ -1,0 +1,66 @@
+{
+    "privacyHeader": ["Polityka prywatności", "PRIVACY POLICY"],
+    "privacyAdminTop": [
+        "Administratorem Twoich danych osobowych przekazanych w czasie bezpośredniego kontaktu z naszym pracownikiem lub za pośrednictwem serwisu www.escalapoland.com jest Producent Frontów i Elementów Meblowych Frontlack Justyna Daszko, posiadający nr NIP: 8672035345, REGON: 180975800, zwany dalej: „Administratorem”. Możesz skontaktować się z Administratorem pisząc na adres siedziby firmy za pośrednictwem poczty tradycyjnej lub poczty elektronicznej:", 
+        "Administration of your personal data during the contact with our employee or through our website www.escalapoland.com  is conducted by Producent Frontów I Elementów Meblowych Frontlack Justyna Daszko, having a NIP number: 8672035345, REGON: 180975800, called hereinafter ‘Administrator’. You can contact the Administrator by email or traditional mail using the following address:"
+    ],
+    "privacyAdminAddress": [
+        "Producent Frontów i Elementów Meblowych Frontlack Justyna Daszko, ul. Cegielniana 29, 38-500 Sanok, ", 
+        "Producent Frontów i Elementów Meblowych Frontlack Justyna Daszko, Cegielniana 29 street, 38-500 Sanok, "
+    ],
+    "privacy": {
+        "2": [
+            "Podstawą prawną przetwarzania Twoich danych jest art. 6 ust. 1 lit b) rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z 27.04.2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych) (Dz.Urz. UE L 119, s. 1) – RODO.",
+            "The legal basis for processing your data is Article 6, Directive 1 of Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data  on the free movement of such data and repealing Directive 95/46/EC (General Data Protection Regulation) (OJ EU L 119, p. 1) - RODO."
+        ],
+        "3": [
+            "Twoje dane osobowe przetwarzane są wyłącznie dla celów związanych z realizacją Umowy oraz do podjęcia niezbędnych działań przed zawarciem Umowy, w tym udzielenia informacji koniecznych dla podjęcia przez Ciebie decyzji o ewentualnym zawarciu umowy.",
+            "Your personal data is processed solely for the purposes of the Contract and to take the necessary actions prior to the conclusion of the Contract, including the provision of information necessary for you to decide whether or not to conclude the Contract."
+        ],
+        "4": [
+            "Podanie danych osobowych nie jest obowiązkowe, jednakże ich niepodanie spowoduje, że uzyskanie potrzebnych informacji oraz zawarcie i realizacja Umowy będą niemożliwe.",
+            "The provision of personal data is not obligatory, however, if not provided, it will make it impossible to obtain the necessary information and to conclude and perform the Contract."
+        ],
+        "5": [
+            "Twoje dane będą przechowywane nie dłużej niż jest to konieczne, tj. przez okres potrzebny dla przygotowania i udzielenia informacji, a w przypadku zawarcia umowy, do czasu przedawnienia roszczeń wynikających z Umowy.",
+            "Your data will be stored no longer than necessary, i.e. for the period of time necessary for the preparation and provision of information and, if a contract is concluded, until the statute of limitations for claims when the Contract expires."
+        ],
+        "6": [
+            "Twoje dane osobowe mogą zostać przekazane innym podmiotom przetwarzającym dane na zlecenie Administratora, takim jak: dostawcy usług IT, operatorzy pocztowi, podmioty przetwarzające dane w celu dochodzenia roszczeń lub obrony przed roszczeniami, doradcy zewnętrzni, przy czym podmioty takie przetwarzają dane na podstawie umowy z Administratorem i wyłącznie zgodnie z poleceniami Administratora. Odbiorcami danych osobowych mogą być także podmioty upoważnione na podstawie obowiązujących przepisów prawa.",
+            "Your personal data may be transferred to other entities processing data on behalf of the Administrator, such as: IT service providers, postal operators, entities processing data for the purpose of pursuing claims or defending against claims, external advisors, while such entities process data on the basis of a Contract with the Administrator and only in accordance with the Administrator's instructions. The recipients of personal data may also be authorized entities on the basis of applicable laws."
+        ],
+        "7": [
+            "Masz prawo żądać od Administratora dostępu do swoich danych, ich sprostowania, przenoszenia i usunięcia, a także prawo do ograniczenia przetwarzania danych.",
+            "You have the right to demand from the Administrator access to your data, their correction, transfer and deletion, as well as the right to limit the processing of data."
+        ],
+        "8": [
+            "W związku z przetwarzaniem Twoich danych osobowych przez Administratora przysługuje Ci prawo wniesienia skargi do organu nadzorczego.",
+            "In connection with the processing of your personal data by the Administrator, you have the right to lodge a complaint to the supervisory authority."
+        ],
+        "9": [
+            "W oparciu o Twoje dane osobowe Administrator nie będzie podejmował wobec Ciebie zautomatyzowanych decyzji, w tym decyzji będących wynikiem profilowania.",
+            "Based on your personal data, the Administrator will not make any automated decisions about you, including decisions resulting from profiling."
+        ]
+    },
+    "cookiesHeader": ["POLITYKA COOKIES", "COOKIE POLICY"],
+    "cookiesSubheader": [
+        "Strona internetowa www.escalapoland.com wykorzystuje pliki „cookies”, które pozwalają na zapamiętanie wybranych informacji o jego użytkownikach i ich preferencjach. Za ich pomocą nie są jednak przetwarzane lub przechowywane dane osobowe.",
+        "This Cookie Policy explains how Escala Poland uses cookies and similar technologies to recognize you when you visit our website at https://escalapoland.com. It explains what these technologies are and why we use them, as well as your rights to control our use of them. In some cases we may use cookies to collect personal information, or that becomes personal information if we combine it with other information."
+    ],
+    "whatIsCookiesHeader": ["CO TO JEST „COOKIES”?", "What are cookies?"],
+    "whatIsCookies": {
+        "1": [
+            "Pliki cookies to niewielkie pliki tekstowe wysyłane i przechowywane na komputerze użytkownika, smartfonie czy innym urządzeniu, z którego łączy się z Internetem.",
+            ""
+        ],
+        "2": [
+            "Pliki cookies pobierane są za pośrednictwem przeglądarki internetowej podczas pierwszego wejścia na stronę.",
+            ""
+        ],
+        "3": [
+            "Pliki cookies nie powodują zmian konfiguracyjnych w urządzeniu, z którego korzysta użytkownik; pliki pomagają w dostosowaniu zawartości strony internetowej do oczekiwań, ułatwiają nawigację na stronach i zapewniają skuteczność procedur bezpieczeństwa.",
+            ""
+        ]
+    }
+    
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './Policy.module.css';
 import PolicyCont from '../../containers/PolicyCont/PolicyCont';
 
 const Policy = (props) => {
