@@ -145,8 +145,15 @@ class Product extends Component {
                   <Translate id="properties.finishes" />
                 </h4>
                 <div>
-                  {data.data[this.props.keyName].finish.metal && 'metal - '}
-                  {data.data[this.props.keyName].finish.metal && <Translate id={`data.${this.props.keyName}.finish.metal`} />}
+                  {data.data[this.props.keyName].finish.metal && (
+                    <>
+                      <Translate id="properties.metal" />
+                      <span> - </span>
+                    </>
+                  )}
+                  {data.data[this.props.keyName].finish.metal && (
+                    <Translate id={`data.${this.props.keyName}.finish.metal`} />
+                  )}
                 </div>
                 <div>
                   {data.data[this.props.keyName].finish.lakierAkrylowy && (

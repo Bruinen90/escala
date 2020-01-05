@@ -1,0 +1,14 @@
+.techBreak {
+    background: #444;
+    color: #fff;
+    min-height: 100vh;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.techText {
+    margin-top: 30px;
+}
