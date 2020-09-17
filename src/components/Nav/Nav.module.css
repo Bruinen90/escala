@@ -41,14 +41,11 @@
     bottom: 0;
     width: 10%;
     cursor: pointer;
-    /* writing-mode: vertical-rl;
-    text-orientation: mixed; */
     transition: all .5s;
     font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* transform: rotate(180deg); */
 }
 
 .toggleIcon {

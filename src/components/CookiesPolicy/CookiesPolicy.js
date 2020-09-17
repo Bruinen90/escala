@@ -147,11 +147,11 @@ const CookiesPolicy = ({ languages, activeLanguage, setActiveLanguage }) => {
         information. In addition, most advertising networks offer you a way to
         opt out of targeted advertising. If you would like to find out more
         information, please visit{' '}
-        <a href="http://www.aboutads.info/choices/" target="_blank">
+        <a href="http://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer">
           http://www.aboutads.info/choices/
         </a>{' '}
         or{' '}
-        <a href="http://www.youronlinechoices.com" target="_blank">
+        <a href="http://www.youronlinechoices.com" target="_blank" rel="noopener noreferrer">
           http://www.youronlinechoices.com
         </a>
         .

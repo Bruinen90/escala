@@ -4,7 +4,6 @@ import { withLocalize } from 'react-localize-redux';
 import { renderToStaticMarkup } from 'react-dom/server';
 
 import styles from './App.module.css';
-import Logo from '../../components/Logo/Logo';
 import Nav from '../../components/Nav/Nav';
 import Footer from '../../components/Footer/Footer';
 import Product from '../Product/Product';
@@ -15,7 +14,6 @@ import Info from '../Info/Info';
 import Cooperation from '../Cooperation/Cooperation';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
-// import Policy from '../../components/Policy/Policy';
 import PolicyWarning from '../../components/PolicyWarning/PolicyWarning';
 
 // import productsData from '../../data/products';

@@ -5,19 +5,15 @@ import Slider from '../../components/Slider/Slider';
 import TopHeader from '../../components/TopHeader/TopHeader';
 
 class Home extends Component {
-  render() {
-    return (
-      <div>
-        <div className={styles.headerCont}>
-            <TopHeader
-                white={true}
-            />
-        </div>
-        <Slider
-            slidesCount = {6}
-        />
-      </div>
-    );
-  }
+	render() {
+		return (
+			<div>
+				<div className={styles.headerCont}>
+					<TopHeader white={true} />
+				</div>
+				<Slider slidesCount={4} />
+			</div>
+		);
+	}
 }
 export default Home;
