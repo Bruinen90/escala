@@ -1,197 +1,200 @@
 .container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #fff;
+	position: relative;
 }
 
 .containerDark {
-    /* background-color: var(--menu-solid);
+	/* background-color: var(--menu-solid);
     border: 1px solid #000; */
-    background-color: transparent;
+	background-color: transparent;
 }
 
 .fullImageCont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: relative;
 }
 
 .containerDark .fullImageCont {
-    width: auto;
+	width: auto;
 }
 
 /* Added by CSSAnimation */
 .fullImageCont span {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .containerDark .fullImageCont span {
-    color: #fff;
+	color: #fff;
 }
 
 .caption {
-    align-self: flex-end;
-    font-size: 18px;
-    margin: 10px 0;
+	align-self: flex-end;
+	font-size: 18px;
+	margin: 10px 0;
 }
 
 .fullImage {
-    margin: 15px 0px;
-    width: 100%;
-    animation: fadeIn .5s linear forwards;
+	margin: 15px 0px;
+	width: 100%;
+	animation: fadeIn 0.5s linear forwards;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .thumbsCont {
-    display: none;
-    justify-content: center;
-    width: 100%;
+	display: none;
+	justify-content: center;
+	width: 100%;
 }
 
 .thumb {
-    height: 60px;
-    margin: 10px;
-    cursor: pointer;
+	height: 60px;
+	margin: 10px;
+	cursor: pointer;
 }
 
 .closeIcon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
 }
 
 .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    cursor: pointer;
-    width: 25px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+	cursor: pointer;
+	width: 25px;
 }
 
 .arrowRight {
-    right: 10px;
+	right: 10px;
 }
 
 .arrowLeft {
-    left: 10px;
+	left: 10px;
 }
 
 @media (min-width: 768px) {
-    .container {
-        width: 85%;
-        height: 95vh;
-        flex-direction: row;
-        justify-content: center;
-        padding: 30px;
-        padding-left: 0px;
-    }
+	.container {
+		width: 85%;
+		height: 95vh;
+		flex-direction: row;
+		justify-content: center;
+		padding: 30px;
+		padding-left: 0px;
+	}
 
-    .containerDark {
-        width: auto;
-    }
+	.containerDark {
+		width: auto;
+	}
 
-    .fullImageCont {
-        width: 80%;
-        height: 80vh;
-        padding: 0 60px;
-    }
+	.fullImageCont {
+		width: 80%;
+		height: 80vh;
+		padding: 0 60px;
+	}
 
-    .fullImage {
-        max-height: 100%;
-        width: auto;
-        max-width: 100%;
-        margin: 0;
-        flex-shrink: 0;
-    }
+	.fullImage {
+		max-height: 100%;
+		width: auto;
+		max-width: 100%;
+		margin: 0;
+		flex-shrink: 0;
+	}
 
-    .fullImage_small {
-        max-height: 80%;
-        max-width: 80%;
-    }
+	.fullImage_small {
+		max-height: 80%;
+		max-width: 80%;
+	}
 
-    .fullImage_medium {
-        max-height: 90%;
-        max-width: 90%;
-    }
+	.fullImage_medium {
+		max-height: 90%;
+		max-width: 90%;
+	}
 
-    .thumbsCont {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        width: 9%;
-        margin-left: 30px;
-    }
+	.thumbsCont {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		width: 9%;
+		margin-left: 30px;
+		height: 100%;
+		overflow: auto;
+		padding-right: 5px;
+	}
 
-    .thumbsCont_2rows {
-        display: grid;
-        grid-template: auto / 1fr 1fr;
-        grid-gap: 18px;
-        /* flex-wrap: wrap;
+	.thumbsCont_2rows {
+		display: grid;
+		grid-template: auto / 1fr 1fr;
+		grid-gap: 18px;
+		/* flex-wrap: wrap;
         justify-content: flex-start; */
-        max-height: 100%;
-        width: 12%;
-        margin-right: 65px;
-    }
+		max-height: 100%;
+		width: 12%;
+		margin-right: 65px;
+	}
 
-    .thumbsCont_2rows .thumb {
-        width: 100%;
-        margin: 0;
-    }
+	.thumbsCont_2rows .thumb {
+		width: 100%;
+		margin: 0;
+	}
 
-    .thumb {
-        width: 100%;
-        height: auto;
-        margin: 18px 0;
-    }
+	.thumb {
+		width: 100%;
+		height: auto;
+		margin: 18px 0;
+	}
 
-    .thumbSmall {
-        margin: 8px;
-    }
+	.thumbSmall {
+		margin: 8px;
+	}
 
-    .containerDark .thumb {
-        width: 60px;
-        height: 60px;
-    }
+	.containerDark .thumb {
+		width: 60px;
+		height: 60px;
+	}
 
-    .outlineChosenImage_notChosen {
-        border: 2px solid transparent;
-        transition: all .3s;
-    }
+	.outlineChosenImage_notChosen {
+		border: 2px solid transparent;
+		transition: all 0.3s;
+	}
 
-    .outlineChosenImage_chosen {
-        border: 2px solid #fff;
-    }
+	.outlineChosenImage_chosen {
+		border: 2px solid #fff;
+	}
 
-    .closeIcon {
-        width: 30px;
-        height: 30px;
-        right: 20px;
-        top: 20px;
-    }
+	.closeIcon {
+		width: 30px;
+		height: 30px;
+		right: 20px;
+		top: 20px;
+	}
 
-    .arrow {
-        width: 40px;
-    }
+	.arrow {
+		width: 40px;
+	}
 }
