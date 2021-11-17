@@ -3,7 +3,7 @@ import styles from './Products.module.css';
 import { Translate, withLocalize } from 'react-localize-redux';
 
 import SubPage from '../SubPage/SubPage';
-import ProductThumb from './ProductThumb/ProductThumb';
+import ProductRow from './ProductRow/ProductRow';
 import data from '../../data/productsData';
 import translations from './translations';
 
@@ -16,12 +16,15 @@ class Products extends Component {
 		const productsOutput = Object.entries(data.data).map(
 			([keyName, info], index) => {
 				return (
-					<ProductThumb
+					<ProductRow
 						name={info.name}
 						type={info.type}
 						key={index}
 						index={index}
 						keyName={keyName}
+						thumbPhoto={info.thumbPhoto}
+						featuredPhotos={info.featuredPhotos}
+						thumbsLayout={info.thumbsLayout}
 					/>
 				);
 			}

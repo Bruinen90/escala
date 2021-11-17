@@ -52,7 +52,10 @@
 				]
 			},
 			"imagesCount": 7,
-			"smallImagesList": [1, 2, 3]
+			"smallImagesList": [1, 2, 3],
+			"thumbPhoto": 1,
+			"featuredPhotosList": [3, 1, 2],
+			"thumbsLayout": 1
 		},
 		"lagoon": {
 			"name": "Lagoon",

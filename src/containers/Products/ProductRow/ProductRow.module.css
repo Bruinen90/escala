@@ -1,0 +1,63 @@
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+	padding: 16px 0px;
+	font-size: 20px;
+	animation: fadeIn 1s linear forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.imageContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 150px;
+}
+
+.thumb {
+	height: auto;
+	width: 100%;
+	animation: fadeIn 0.5s linear forwards;
+}
+
+.type {
+	font-weight: normal;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-transform: capitalize;
+}
+
+.name {
+	font-weight: normal;
+	margin: 0px;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding: 20px;
+		font-size: 24px;
+	}
+
+	.high {
+		margin-top: 45px;
+	}
+
+	.imageContainer {
+		min-height: 12vw;
+	}
+}
